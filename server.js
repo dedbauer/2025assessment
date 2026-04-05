@@ -8,215 +8,85 @@ const PORT = process.env.PORT || 3000;
 const pdfPath = "./Cambria 2025 Final Roll by SBL.pdf";
 const outputPath = "cambria_2025_roll.json";
 
-// -------------------- Helpers --------------------
-function cleanNumber(val) {
-  return val ? val.replace(/\$/g, "").replace(/,/g, "").trim() : "";
-}
-
 // -------------------- Parser --------------------
-function parsePropertyBlock(blockText) {
-  const prop = {
-    parcel_id: "",
-    tax_id: "",
-    building_style: "",
-    number_of_stories: "",
-    exterior_wall_material: "",
-    actual_year_built: "",
-    eff_year_built: "",
-    year_remodeled: "",
-    number_of_kitchens: "",
-    number_of_full_baths: "",
-    number_of_half_baths: "",
-    number_of_bedrooms: "",
-    number_of_fireplaces: "",
-    heat_type: "",
-    fuel_type: "",
-    central_air: "",
-    basement_type: "",
-    total_sq_ft: "",
-    "1st_story_sq_ft": "",
-    "2nd_story_sq_ft": "",
-    "1_2_story_sq_ft": "",
-    "3_4_story_sq_ft": "",
-    additional_story_sq_ft: "",
-    finished_attic_sq_ft: "",
-    finished_basement_sq_ft: "",
-    finished_rec_room_sq_ft: "",
-    finished_over_garage_sq_ft: "",
-    condition: "",
-    land_assessed_value: "",
-    total_assessed_value: "",
-    equalization_rate: "",
-    full_market_value: "",
-    partial_construction: "",
-    county_taxable: "",
-    municipal_taxable: "",
-    school_taxable: "",
-    roll_section: "",
-    property_location: "",
-    property_type: "",
-    neighborhood_code: "",
-    swis: "",
-    water_supply: "",
-    utilities: "",
-    sewer_type: "",
-    zoning: "",
-    school: "",
-    grid_east: "",
-    grid_north: "",
-    acres: "",
-    front: "",
-    depth: "",
-    agricultural_district: "No",
-    "4_5": "1 text contrast ratio",
-    year_built: null,
-  };
+function parsePropertyBlock(blockText, taxLine) {
+  const prop = {};
 
-  // Split into lines
-  const lines = blockText.split("\n");
+  prop.tax_id = taxLine || "";
 
-  // Tax ID
-  const taxIdMatch = blockText.match(/(\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*)/);
-  if (taxIdMatch) prop.tax_id = taxIdMatch[1];
-  if (prop.tax_id) prop.parcel_id = prop.tax_id.replace(/\D/g, "");
+  // Full Market Value
+  const fullMatch = blockText.match(/FULL MARKET VALUE[:\s]*\$?([\d,]+)/i);
+  if (fullMatch) prop.full_market_value = fullMatch[1].replace(/,/g, "");
 
-  // Property location
-  const addrMatch = blockText.match(/\d+\s+[A-Za-z0-9 .]+(Rd|Road|St|Street|Ave|Avenue|Ln|Lane)/i);
-  if (addrMatch) prop.property_location = addrMatch[0];
+  // County Taxable Value
+  const countyMatch = blockText.match(/COUNTY TAXABLE VALUE[:\s]*\$?([\d,]+)/i);
+  if (countyMatch) prop.county_taxable = countyMatch[1].replace(/,/g, "");
 
-  // Money / assessed values
-  const moneyMatches = blockText.match(/\$?\d{1,3}(,\d{3})*/g);
-  if (moneyMatches && moneyMatches.length >= 5) {
-    prop.land_assessed_value = `$${cleanNumber(moneyMatches[0])}`;
-    prop.total_assessed_value = `$${cleanNumber(moneyMatches[1])}`;
-    prop.full_market_value = `$${cleanNumber(moneyMatches[2])}`;
-    prop.county_taxable = `$${cleanNumber(moneyMatches[3])}`;
-    prop.municipal_taxable = `$${cleanNumber(moneyMatches[4])}`;
-    prop.school_taxable = `$${cleanNumber(moneyMatches[4])}`;
+  // School Taxable Value
+  const schoolMatch = blockText.match(/SCHOOL TAXABLE VALUE[:\s]*\$?([\d,]+)/i);
+  if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
+
+  // Land Value = first number in second column
+  const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
+  for (let line of lines) {
+    const cols = line.split(/\s+/);
+    if (cols.length >= 2 && /^\$?\d/.test(cols[1])) {
+      prop.land_assessed_value = cols[1].replace(/,/g, "");
+      break;
+    }
   }
-
-  // Acres / front / depth
-  const numericMatches = blockText.match(/\d+\.\d+/g);
-  if (numericMatches) {
-    prop.acres = numericMatches[0] || "";
-    prop.front = numericMatches[1] || "";
-    prop.depth = numericMatches[2] || "";
-  }
-
-  // SWIS
-  const swisMatch = blockText.match(/SWIS[:\s]*(\d+)/i);
-  if (swisMatch) prop.swis = swisMatch[1];
-
-  // Roll section
-  const rollMatch = blockText.match(/ROLL SECTION[:\s]*(\d+)/i);
-  if (rollMatch) prop.roll_section = rollMatch[1];
-
-  // Numeric attributes
-  const numbers = blockText.match(/\b\d+\b/g);
-  if (numbers && numbers.length > 0) {
-    prop.number_of_stories = numbers[0] || "";
-    prop.number_of_bedrooms = numbers[1] || "";
-    prop.number_of_full_baths = numbers[2] || "";
-    prop.number_of_half_baths = numbers[3] || "";
-    prop.number_of_kitchens = numbers[4] || "";
-    prop.number_of_fireplaces = numbers[5] || "";
-    prop["1st_story_sq_ft"] = numbers[6] || "";
-    prop["2nd_story_sq_ft"] = numbers[7] || "";
-    prop.total_sq_ft = numbers[8] || "";
-    prop.finished_basement_sq_ft = numbers[9] || "";
-  }
-
-  // Building style / exterior / heat / fuel / air / basement / condition
-  const styleMatch = blockText.match(/(\d{2}\s*-\s*[A-Za-z \/]+)/);
-  if (styleMatch) prop.building_style = styleMatch[1];
-
-  const exteriorMatch = blockText.match(/(0[1-9]\s*-\s*[A-Za-z \/]+)/);
-  if (exteriorMatch) prop.exterior_wall_material = exteriorMatch[1];
-
-  const heatMatch = blockText.match(/(2\s*-\s*Hot air|3\s*-\s*Steam|1\s*-\s*Other)/i);
-  if (heatMatch) prop.heat_type = heatMatch[1];
-
-  const fuelMatch = blockText.match(/(9\s*-\s*Propane\/LPG|1\s*-\s*Gas|2\s*-\s*Oil)/i);
-  if (fuelMatch) prop.fuel_type = fuelMatch[1];
-
-  const airMatch = blockText.match(/(Yes|No)\s*Central Air/i);
-  if (airMatch) prop.central_air = airMatch[1];
-
-  const basementMatch = blockText.match(/(4\s*-\s*Full|2\s*-\s*Partial|0\s*-\s*None)/i);
-  if (basementMatch) prop.basement_type = basementMatch[1];
-
-  const conditionMatch = blockText.match(/(4\s*-\s*Good|3\s*-\s*Average|5\s*-\s*Excellent)/i);
-  if (conditionMatch) prop.condition = conditionMatch[1];
 
   return prop;
 }
 
 // -------------------- Extraction --------------------
-async function extractFullPDF(res = null) {
+async function extractFullPDF(res = null, maxEntries = null) {
   const dataBuffer = fs.readFileSync(pdfPath);
   const data = await pdf(dataBuffer);
   const fullText = data.text;
 
-  const blocks = fullText.split(/\*{5,}/).map(b => b.trim()).filter(Boolean);
+  // Split by ************ lines
+  const parts = fullText.split(/[\*]{5,}/).map(p => p.trim()).filter(Boolean);
 
-  let existingProperties = [];
-  if (fs.existsSync(outputPath)) {
-    existingProperties = JSON.parse(fs.readFileSync(outputPath));
-    if (res) res.write(`Resuming from ${existingProperties.length} parcels...\n`);
-  }
+  const extracted = [];
 
-  const processedTaxIds = new Set(existingProperties.map(p => p.tax_id));
+  for (let block of parts) {
+    // Stop immediately if we reached the limit
+    if (maxEntries && extracted.length >= maxEntries) break;
 
-  for (const block of blocks) {
-    const taxIdMatch = block.match(/(\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*)/);
-    const taxId = taxIdMatch ? taxIdMatch[1] : null;
+    // Tax ID = first line that looks like NN.NN-N-N.NN
+    const taxLineMatch = block.match(/\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*/);
+    const taxLine = taxLineMatch ? taxLineMatch[0] : null;
 
-    if (taxId && !processedTaxIds.has(taxId)) {
-      const propData = parsePropertyBlock(block);
-      existingProperties.push(propData);
-      processedTaxIds.add(taxId);
+    if (taxLine) {
+      const propData = parsePropertyBlock(block, taxLine);
+      extracted.push(propData);
 
-      fs.writeFileSync(outputPath, JSON.stringify(existingProperties, null, 2));
-
-      if (res) res.write(`Processed parcel: ${propData.parcel_id} | Tax ID: ${propData.tax_id}\n`);
+      if (res) res.write(`Processed parcel: Tax ID ${taxLine}\n`);
     }
   }
 
-  return existingProperties;
+  // Save JSON
+  fs.writeFileSync(outputPath, JSON.stringify(extracted, null, 2));
+
+  return extracted;
 }
 
 // -------------------- Routes --------------------
 
-// Extract + stream logs
+// Extract + stream logs with optional limit
 app.get("/extract", async (req, res) => {
   if (!fs.existsSync(pdfPath)) return res.status(404).send("PDF not found");
 
   res.setHeader("Content-Type", "text/plain; charset=utf-8");
   res.setHeader("Transfer-Encoding", "chunked");
 
-  try {
-    await extractFullPDF(res);
-    res.write("\nExtraction complete!\n");
-    res.end();
-  } catch (err) {
-    res.write(`Error: ${err.message}\n`);
-    res.end();
-  }
-});
-
-// Extract + download with logs
-app.get("/extract-download", async (req, res) => {
-  res.setHeader("Content-Type", "text/plain; charset=utf-8");
-  res.setHeader("Transfer-Encoding", "chunked");
+  const limit = req.query.limit ? parseInt(req.query.limit) : null;
 
   try {
-    await extractFullPDF(res);
-    res.write("\nExtraction complete! Preparing download...\n");
-
-    // Stream file as attachment
-    const fileStream = fs.createReadStream(outputPath);
-    fileStream.on("end", () => res.end());
-    fileStream.pipe(res, { end: false });
+    await extractFullPDF(res, limit);
+    res.write(`\nExtraction complete!${limit ? ` (${limit} parcels)` : ""}\n`);
+    res.end();
   } catch (err) {
     res.write(`Error: ${err.message}\n`);
     res.end();
@@ -233,24 +103,6 @@ app.get("/parcel/:tax_id", (req, res) => {
   if (!parcel) return res.status(404).json({ error: "Parcel not found" });
 
   res.json(parcel);
-});
-
-// All parcels (paginated)
-app.get("/parcels", (req, res) => {
-  if (!fs.existsSync(outputPath)) return res.status(404).json({ error: "Run /extract first" });
-
-  const data = JSON.parse(fs.readFileSync(outputPath));
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 50;
-  const start = (page - 1) * limit;
-  const end = start + limit;
-
-  res.json({
-    total: data.length,
-    page,
-    limit,
-    data: data.slice(start, end),
-  });
 });
 
 // Download JSON
