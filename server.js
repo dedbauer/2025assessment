@@ -92,7 +92,7 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
       } else {
         taxMap.set(taxLine, propData);
       }
-      if (res) res.write(`Processed parcel: Tax ID ${taxLine}\n`);
+      if (res && debug) res.write(`Processed parcel: Tax ID ${taxLine}\n`);
     } else if (debug && res) {
       res.write(`DEBUG: No Tax ID found in block:\n${block.slice(0, 200)}...\n`);
     }
@@ -110,18 +110,19 @@ app.get("/extract-download", async (req, res) => {
   const limit = req.query.limit ? parseInt(req.query.limit) : null;
   const debug = req.query.debug === "true";
 
-  if (debug) res.setHeader("Content-Type", "text/plain; charset=utf-8");
-  else res.setHeader("Content-Type", "application/json; charset=utf-8");
-
   try {
-    const data = await extractFullPDF(res, limit, debug);
-
-    if (!debug) {
-      res.setHeader("Content-Disposition", `attachment; filename="cambria_2025_roll.json"`);
-      res.end(JSON.stringify(data, null, 2));
-    } else {
+    if (debug) {
+      // Debug mode: stream logs directly
+      res.setHeader("Content-Type", "text/plain; charset=utf-8");
+      await extractFullPDF(res, limit, true);
       res.write("\nExtraction complete!\n");
       res.end();
+    } else {
+      // Normal mode: extract all and send JSON as download
+      const data = await extractFullPDF(null, limit, false);
+      res.setHeader("Content-Type", "application/json; charset=utf-8");
+      res.setHeader("Content-Disposition", `attachment; filename="cambria_2025_roll.json"`);
+      res.end(JSON.stringify(data, null, 2));
     }
   } catch (err) {
     res.status(500).send(`Error: ${err.message}`);
