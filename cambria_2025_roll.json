@@ -1,0 +1,7473 @@
+[
+  {
+    "tax_id": "77.00-1-5.1",
+    "full_market_value": "57500",
+    "county_taxable": "57500",
+    "school_taxable": "57500",
+    "land_assessed_value": "57500"
+  },
+  {
+    "tax_id": "77.00-1-7",
+    "full_market_value": "250000",
+    "county_taxable": "220000",
+    "school_taxable": "163900",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "77.00-1-9.1",
+    "full_market_value": "47300",
+    "county_taxable": "47300",
+    "school_taxable": "47300",
+    "land_assessed_value": "36500"
+  },
+  {
+    "tax_id": "77.00-1-12.21",
+    "full_market_value": "55900",
+    "county_taxable": "55900",
+    "school_taxable": "55900",
+    "land_assessed_value": "55900"
+  },
+  {
+    "tax_id": "77.00-1-13.21",
+    "full_market_value": "286000",
+    "county_taxable": "286000",
+    "school_taxable": "256000",
+    "land_assessed_value": "66000"
+  },
+  {
+    "tax_id": "77.00-1-15.1",
+    "full_market_value": "332900",
+    "county_taxable": "281600",
+    "school_taxable": "195500",
+    "land_assessed_value": "156200"
+  },
+  {
+    "tax_id": "77.00-1-16.2",
+    "full_market_value": "339000",
+    "county_taxable": "339000",
+    "school_taxable": "339000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "77.00-1-17.121",
+    "full_market_value": "547000",
+    "county_taxable": "397000",
+    "school_taxable": "547000",
+    "land_assessed_value": "29900"
+  },
+  {
+    "tax_id": "77.00-1-19",
+    "full_market_value": "168000",
+    "county_taxable": "168000",
+    "school_taxable": "81900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "77.00-1-20.12",
+    "full_market_value": "278000",
+    "county_taxable": "278000",
+    "school_taxable": "248000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "77.00-1-23",
+    "full_market_value": "256000",
+    "county_taxable": "256000",
+    "school_taxable": "256000",
+    "land_assessed_value": "21300"
+  },
+  {
+    "tax_id": "77.00-1-26.2",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "186000",
+    "land_assessed_value": "31100"
+  },
+  {
+    "tax_id": "77.00-1-26.111",
+    "full_market_value": "471000",
+    "county_taxable": "456000",
+    "school_taxable": "471000",
+    "land_assessed_value": "49500"
+  },
+  {
+    "tax_id": "77.00-1-28",
+    "full_market_value": "308000",
+    "county_taxable": "308000",
+    "school_taxable": "221900",
+    "land_assessed_value": "27100"
+  },
+  {
+    "tax_id": "77.00-1-30",
+    "full_market_value": "196000",
+    "county_taxable": "147000",
+    "school_taxable": "109900",
+    "land_assessed_value": "41700"
+  },
+  {
+    "tax_id": "77.00-1-33",
+    "full_market_value": "189000",
+    "county_taxable": "189000",
+    "school_taxable": "189000",
+    "land_assessed_value": "66400"
+  },
+  {
+    "tax_id": "77.00-1-36",
+    "full_market_value": "284000",
+    "county_taxable": "284000",
+    "school_taxable": "197900",
+    "land_assessed_value": "71200"
+  },
+  {
+    "tax_id": "77.00-1-40",
+    "full_market_value": "263000",
+    "county_taxable": "263000",
+    "school_taxable": "263000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "77.00-1-44",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "293000",
+    "land_assessed_value": "24300"
+  },
+  {
+    "tax_id": "77.00-1-48.3",
+    "full_market_value": "312000",
+    "county_taxable": "312000",
+    "school_taxable": "282000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "77.00-1-48.112",
+    "full_market_value": "299000",
+    "county_taxable": "269000",
+    "school_taxable": "212900",
+    "land_assessed_value": "23500"
+  },
+  {
+    "tax_id": "77.00-1-51",
+    "full_market_value": "330000",
+    "county_taxable": "330000",
+    "school_taxable": "243900",
+    "land_assessed_value": "61000"
+  },
+  {
+    "tax_id": "77.00-1-55",
+    "full_market_value": "779000",
+    "county_taxable": "779000",
+    "school_taxable": "779000",
+    "land_assessed_value": "67300"
+  },
+  {
+    "tax_id": "77.00-1-58.1",
+    "full_market_value": "303000",
+    "county_taxable": "303000",
+    "school_taxable": "273000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "77.00-1-58.31",
+    "full_market_value": "350000",
+    "county_taxable": "350000",
+    "school_taxable": "350000",
+    "land_assessed_value": "38400"
+  },
+  {
+    "tax_id": "77.00-1-58.42",
+    "full_market_value": "414000",
+    "county_taxable": "414000",
+    "school_taxable": "327900",
+    "land_assessed_value": "39500"
+  },
+  {
+    "tax_id": "77.00-1-58.61",
+    "full_market_value": "26500",
+    "county_taxable": "26500",
+    "school_taxable": "26500",
+    "land_assessed_value": "26500"
+  },
+  {
+    "tax_id": "77.00-1-58.81",
+    "full_market_value": "412000",
+    "county_taxable": "412000",
+    "school_taxable": "412000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "77.00-1-58.92",
+    "full_market_value": "526000",
+    "county_taxable": "526000",
+    "school_taxable": "526000",
+    "land_assessed_value": "55000"
+  },
+  {
+    "tax_id": "77.00-1-61",
+    "full_market_value": "464000",
+    "county_taxable": "464000",
+    "school_taxable": "464000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "77.00-1-65",
+    "full_market_value": "310000",
+    "county_taxable": "310000",
+    "school_taxable": "280000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "77.00-2-1.111",
+    "full_market_value": "441000",
+    "county_taxable": "268700",
+    "school_taxable": "238700",
+    "land_assessed_value": "180500"
+  },
+  {
+    "tax_id": "77.00-2-3",
+    "full_market_value": "317000",
+    "county_taxable": "245900",
+    "school_taxable": "245900",
+    "land_assessed_value": "123400"
+  },
+  {
+    "tax_id": "77.00-2-5",
+    "full_market_value": "503700",
+    "county_taxable": "503700",
+    "school_taxable": "473700",
+    "land_assessed_value": "97800"
+  },
+  {
+    "tax_id": "77.00-2-9.2",
+    "full_market_value": "223000",
+    "county_taxable": "223000",
+    "school_taxable": "193000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "77.00-2-10",
+    "full_market_value": "830000",
+    "county_taxable": "793400",
+    "school_taxable": "763400",
+    "land_assessed_value": "104500"
+  },
+  {
+    "tax_id": "77.00-2-13",
+    "full_market_value": "207000",
+    "county_taxable": "157000",
+    "school_taxable": "207000",
+    "land_assessed_value": "27700"
+  },
+  {
+    "tax_id": "77.00-2-16",
+    "full_market_value": "304000",
+    "county_taxable": "304000",
+    "school_taxable": "304000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "77.00-2-19.2",
+    "full_market_value": "288000",
+    "county_taxable": "288000",
+    "school_taxable": "258000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "77.00-2-22",
+    "full_market_value": "265000",
+    "county_taxable": "265000",
+    "school_taxable": "265000",
+    "land_assessed_value": "22100"
+  },
+  {
+    "tax_id": "77.00-2-24.2",
+    "full_market_value": "552000",
+    "county_taxable": "552000",
+    "school_taxable": "522000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "77.00-2-26.2",
+    "full_market_value": "251000",
+    "county_taxable": "251000",
+    "school_taxable": "164900",
+    "land_assessed_value": "28400"
+  },
+  {
+    "tax_id": "77.00-2-26.112",
+    "full_market_value": "308000",
+    "county_taxable": "308000",
+    "school_taxable": "308000",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "77.00-2-28.2",
+    "full_market_value": "942900",
+    "county_taxable": "671300",
+    "school_taxable": "671300",
+    "land_assessed_value": "291600"
+  },
+  {
+    "tax_id": "77.00-2-30",
+    "full_market_value": "178000",
+    "county_taxable": "178000",
+    "school_taxable": "178000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "77.00-2-32.11",
+    "full_market_value": "4800",
+    "county_taxable": "1000",
+    "school_taxable": "1000",
+    "land_assessed_value": "4800"
+  },
+  {
+    "tax_id": "77.00-2-33.12",
+    "full_market_value": "276000",
+    "county_taxable": "276000",
+    "school_taxable": "189900",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "77.00-2-36",
+    "full_market_value": "271000",
+    "county_taxable": "271000",
+    "school_taxable": "241000",
+    "land_assessed_value": "22700"
+  },
+  {
+    "tax_id": "77.00-2-39",
+    "full_market_value": "269000",
+    "county_taxable": "269000",
+    "school_taxable": "182900",
+    "land_assessed_value": "23500"
+  },
+  {
+    "tax_id": "77.00-2-49",
+    "full_market_value": "218000",
+    "county_taxable": "218000",
+    "school_taxable": "218000",
+    "land_assessed_value": "30200"
+  },
+  {
+    "tax_id": "77.00-2-51.2",
+    "full_market_value": "364000",
+    "county_taxable": "364000",
+    "school_taxable": "364000",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "77.00-2-53.11",
+    "full_market_value": "256000",
+    "county_taxable": "256000",
+    "school_taxable": "169900",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "77.00-2-55",
+    "full_market_value": "168000",
+    "county_taxable": "126000",
+    "school_taxable": "81900",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "77.00-2-58.1",
+    "full_market_value": "327000",
+    "county_taxable": "195250",
+    "school_taxable": "240900",
+    "land_assessed_value": "44300"
+  },
+  {
+    "tax_id": "77.00-2-61.1",
+    "full_market_value": "430000",
+    "county_taxable": "430000",
+    "school_taxable": "430000",
+    "land_assessed_value": "286000"
+  },
+  {
+    "tax_id": "77.00-2-63.1",
+    "full_market_value": "274000",
+    "county_taxable": "244000",
+    "school_taxable": "244000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "77.00-2-65",
+    "full_market_value": "444100",
+    "county_taxable": "357700",
+    "school_taxable": "327700",
+    "land_assessed_value": "178100"
+  },
+  {
+    "tax_id": "77.00-2-68",
+    "full_market_value": "32500",
+    "county_taxable": "32500",
+    "school_taxable": "32500",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "77.00-2-72",
+    "full_market_value": "292000",
+    "county_taxable": "292000",
+    "school_taxable": "262000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "77.00-2-75",
+    "full_market_value": "29700",
+    "county_taxable": "29700",
+    "school_taxable": "29700",
+    "land_assessed_value": "29700"
+  },
+  {
+    "tax_id": "77.00-2-79",
+    "full_market_value": "455000",
+    "county_taxable": "305000",
+    "school_taxable": "455000",
+    "land_assessed_value": "28000"
+  },
+  {
+    "tax_id": "77.04-1-3",
+    "full_market_value": "320000",
+    "county_taxable": "320000",
+    "school_taxable": "290000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "77.04-1-6",
+    "full_market_value": "201000",
+    "county_taxable": "201000",
+    "school_taxable": "114900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "77.04-1-9",
+    "full_market_value": "204000",
+    "county_taxable": "204000",
+    "school_taxable": "204000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "78.00-1-1.1",
+    "full_market_value": "57900",
+    "county_taxable": "57900",
+    "school_taxable": "57900",
+    "land_assessed_value": "57900"
+  },
+  {
+    "tax_id": "78.00-1-3.1",
+    "full_market_value": "401000",
+    "county_taxable": "362400",
+    "school_taxable": "362400",
+    "land_assessed_value": "84600"
+  },
+  {
+    "tax_id": "78.00-1-5",
+    "full_market_value": "265000",
+    "county_taxable": "265000",
+    "school_taxable": "178900",
+    "land_assessed_value": "23300"
+  },
+  {
+    "tax_id": "78.00-1-7.2",
+    "full_market_value": "448000",
+    "county_taxable": "298000",
+    "school_taxable": "448000",
+    "land_assessed_value": "95000"
+  },
+  {
+    "tax_id": "78.00-1-10",
+    "full_market_value": "335000",
+    "county_taxable": "335000",
+    "school_taxable": "335000",
+    "land_assessed_value": "31200"
+  },
+  {
+    "tax_id": "78.00-1-13.1",
+    "full_market_value": "338000",
+    "county_taxable": "338000",
+    "school_taxable": "251900",
+    "land_assessed_value": "49000"
+  },
+  {
+    "tax_id": "78.00-1-15",
+    "full_market_value": "226200",
+    "county_taxable": "192600",
+    "school_taxable": "106500",
+    "land_assessed_value": "72800"
+  },
+  {
+    "tax_id": "78.00-1-17.121",
+    "full_market_value": "283000",
+    "county_taxable": "283000",
+    "school_taxable": "196900",
+    "land_assessed_value": "29500"
+  },
+  {
+    "tax_id": "78.00-1-20",
+    "full_market_value": "229000",
+    "county_taxable": "229000",
+    "school_taxable": "229000",
+    "land_assessed_value": "16500"
+  },
+  {
+    "tax_id": "78.00-1-24.1",
+    "full_market_value": "402000",
+    "county_taxable": "402000",
+    "school_taxable": "372000",
+    "land_assessed_value": "62000"
+  },
+  {
+    "tax_id": "78.00-1-25.1",
+    "full_market_value": "279000",
+    "county_taxable": "131350",
+    "school_taxable": "279000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "78.00-1-28",
+    "full_market_value": "259000",
+    "county_taxable": "259000",
+    "school_taxable": "229000",
+    "land_assessed_value": "108300"
+  },
+  {
+    "tax_id": "78.00-1-30.3",
+    "full_market_value": "61100",
+    "county_taxable": "7200",
+    "school_taxable": "7200",
+    "land_assessed_value": "61100"
+  },
+  {
+    "tax_id": "78.00-1-31.11",
+    "full_market_value": "50100",
+    "county_taxable": "11900",
+    "school_taxable": "11900",
+    "land_assessed_value": "50100"
+  },
+  {
+    "tax_id": "78.00-1-33",
+    "full_market_value": "452000",
+    "county_taxable": "422000",
+    "school_taxable": "365900",
+    "land_assessed_value": "27600"
+  },
+  {
+    "tax_id": "78.00-1-36",
+    "full_market_value": "223000",
+    "county_taxable": "73000",
+    "school_taxable": "136900",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "78.00-1-38",
+    "full_market_value": "240000",
+    "county_taxable": "240000",
+    "school_taxable": "210000",
+    "land_assessed_value": "26500"
+  },
+  {
+    "tax_id": "78.00-1-41",
+    "full_market_value": "316000",
+    "county_taxable": "316000",
+    "school_taxable": "316000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "78.00-1-44.21",
+    "full_market_value": "184000",
+    "county_taxable": "184000",
+    "school_taxable": "184000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "78.00-1-44.122",
+    "full_market_value": "33500",
+    "county_taxable": "33500",
+    "school_taxable": "33500",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "78.00-1-45.121",
+    "full_market_value": "562000",
+    "county_taxable": "562000",
+    "school_taxable": "562000",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "78.00-1-47",
+    "full_market_value": "280000",
+    "county_taxable": "280000",
+    "school_taxable": "193900",
+    "land_assessed_value": "27700"
+  },
+  {
+    "tax_id": "78.00-1-50",
+    "full_market_value": "288000",
+    "county_taxable": "8000",
+    "school_taxable": "288000",
+    "land_assessed_value": "58000"
+  },
+  {
+    "tax_id": "78.00-2-2.1",
+    "full_market_value": "354100",
+    "county_taxable": "302200",
+    "school_taxable": "302200",
+    "land_assessed_value": "134500"
+  },
+  {
+    "tax_id": "78.00-2-4",
+    "full_market_value": "305000",
+    "county_taxable": "305000",
+    "school_taxable": "275000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "78.00-2-7.11",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "282000",
+    "land_assessed_value": "28400"
+  },
+  {
+    "tax_id": "78.00-2-9.2",
+    "full_market_value": "353000",
+    "county_taxable": "353000",
+    "school_taxable": "323000",
+    "land_assessed_value": "72400"
+  },
+  {
+    "tax_id": "78.00-2-11",
+    "full_market_value": "299000",
+    "county_taxable": "299000",
+    "school_taxable": "212900",
+    "land_assessed_value": "30200"
+  },
+  {
+    "tax_id": "78.00-2-13.12",
+    "full_market_value": "453000",
+    "county_taxable": "453000",
+    "school_taxable": "453000",
+    "land_assessed_value": "38300"
+  },
+  {
+    "tax_id": "78.00-2-18.2",
+    "full_market_value": "213000",
+    "county_taxable": "213000",
+    "school_taxable": "183000",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "78.00-2-21",
+    "full_market_value": "215000",
+    "county_taxable": "215000",
+    "school_taxable": "215000",
+    "land_assessed_value": "23100"
+  },
+  {
+    "tax_id": "78.00-2-24.2",
+    "full_market_value": "250000",
+    "county_taxable": "250000",
+    "school_taxable": "250000",
+    "land_assessed_value": "43500"
+  },
+  {
+    "tax_id": "78.00-2-25",
+    "full_market_value": "306000",
+    "county_taxable": "306000",
+    "school_taxable": "219900",
+    "land_assessed_value": "58600"
+  },
+  {
+    "tax_id": "78.00-2-31",
+    "full_market_value": "397000",
+    "county_taxable": "397000",
+    "school_taxable": "397000",
+    "land_assessed_value": "44500"
+  },
+  {
+    "tax_id": "78.00-2-36",
+    "full_market_value": "471000",
+    "county_taxable": "471000",
+    "school_taxable": "384900",
+    "land_assessed_value": "131000"
+  },
+  {
+    "tax_id": "78.00-2-39",
+    "full_market_value": "173000",
+    "county_taxable": "173000",
+    "school_taxable": "173000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "78.00-2-42.1",
+    "full_market_value": "573000",
+    "county_taxable": "573000",
+    "school_taxable": "573000",
+    "land_assessed_value": "69000"
+  },
+  {
+    "tax_id": "78.00-2-44.1",
+    "full_market_value": "227000",
+    "county_taxable": "227000",
+    "school_taxable": "227000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "78.00-2-46",
+    "full_market_value": "283000",
+    "county_taxable": "247300",
+    "school_taxable": "247300",
+    "land_assessed_value": "84300"
+  },
+  {
+    "tax_id": "78.00-2-50",
+    "full_market_value": "305000",
+    "county_taxable": "305000",
+    "school_taxable": "218900",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "78.00-2-53.1",
+    "full_market_value": "312000",
+    "county_taxable": "312000",
+    "school_taxable": "312000",
+    "land_assessed_value": "43500"
+  },
+  {
+    "tax_id": "79.00-1-1",
+    "full_market_value": "335000",
+    "county_taxable": "291900",
+    "school_taxable": "205800",
+    "land_assessed_value": "104900"
+  },
+  {
+    "tax_id": "79.00-1-4",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "206900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "79.00-1-7",
+    "full_market_value": "313000",
+    "county_taxable": "313000",
+    "school_taxable": "283000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "79.00-1-10.1",
+    "full_market_value": "286000",
+    "county_taxable": "256000",
+    "school_taxable": "199900",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "79.00-1-10.222",
+    "full_market_value": "550000",
+    "county_taxable": "550000",
+    "school_taxable": "520000",
+    "land_assessed_value": "64200"
+  },
+  {
+    "tax_id": "79.00-1-12.2",
+    "full_market_value": "292000",
+    "county_taxable": "292000",
+    "school_taxable": "205900",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "79.00-1-13.12",
+    "full_market_value": "134000",
+    "county_taxable": "134000",
+    "school_taxable": "134000",
+    "land_assessed_value": "134000"
+  },
+  {
+    "tax_id": "79.00-1-15.111",
+    "full_market_value": "149600",
+    "county_taxable": "149600",
+    "school_taxable": "149600",
+    "land_assessed_value": "149600"
+  },
+  {
+    "tax_id": "79.00-1-16.12",
+    "full_market_value": "245000",
+    "county_taxable": "245000",
+    "school_taxable": "215000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "79.00-1-20.1",
+    "full_market_value": "846000",
+    "county_taxable": "465300",
+    "school_taxable": "435300",
+    "land_assessed_value": "541200"
+  },
+  {
+    "tax_id": "79.00-1-21.11",
+    "full_market_value": "728000",
+    "county_taxable": "556900",
+    "school_taxable": "556900",
+    "land_assessed_value": "169000"
+  },
+  {
+    "tax_id": "79.00-1-22.11",
+    "full_market_value": "214000",
+    "county_taxable": "214000",
+    "school_taxable": "214000",
+    "land_assessed_value": "214000"
+  },
+  {
+    "tax_id": "79.00-1-24",
+    "full_market_value": "268000",
+    "county_taxable": "238000",
+    "school_taxable": "181900",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "79.00-1-26",
+    "full_market_value": "337000",
+    "county_taxable": "337000",
+    "school_taxable": "307000",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "79.00-1-28.11",
+    "full_market_value": "274000",
+    "county_taxable": "274000",
+    "school_taxable": "274000",
+    "land_assessed_value": "55000"
+  },
+  {
+    "tax_id": "79.00-1-32.12",
+    "full_market_value": "261000",
+    "county_taxable": "261000",
+    "school_taxable": "231000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "79.00-1-33.112",
+    "full_market_value": "405000",
+    "county_taxable": "405000",
+    "school_taxable": "405000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "79.00-1-34.1",
+    "full_market_value": "245000",
+    "county_taxable": "245000",
+    "school_taxable": "215000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "79.00-1-37",
+    "full_market_value": "323000",
+    "county_taxable": "323000",
+    "school_taxable": "293000",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "79.00-1-40",
+    "full_market_value": "189000",
+    "county_taxable": "189000",
+    "school_taxable": "189000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "79.00-1-43",
+    "full_market_value": "379000",
+    "county_taxable": "286280",
+    "school_taxable": "250700",
+    "land_assessed_value": "119500"
+  },
+  {
+    "tax_id": "79.00-1-46",
+    "full_market_value": "226000",
+    "county_taxable": "226000",
+    "school_taxable": "226000",
+    "land_assessed_value": "43000"
+  },
+  {
+    "tax_id": "79.00-1-50.2",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "224000",
+    "land_assessed_value": "31200"
+  },
+  {
+    "tax_id": "79.00-1-52.111",
+    "full_market_value": "294000",
+    "county_taxable": "294000",
+    "school_taxable": "294000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "79.00-1-55",
+    "full_market_value": "24800",
+    "county_taxable": "24800",
+    "school_taxable": "24800",
+    "land_assessed_value": "24800"
+  },
+  {
+    "tax_id": "79.00-1-58",
+    "full_market_value": "354000",
+    "county_taxable": "354000",
+    "school_taxable": "324000",
+    "land_assessed_value": "26600"
+  },
+  {
+    "tax_id": "79.00-1-61",
+    "full_market_value": "229000",
+    "county_taxable": "179000",
+    "school_taxable": "142900",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "79.00-1-64",
+    "full_market_value": "373000",
+    "county_taxable": "373000",
+    "school_taxable": "373000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "79.00-1-68",
+    "full_market_value": "509000",
+    "county_taxable": "509000",
+    "school_taxable": "509000",
+    "land_assessed_value": "96600"
+  },
+  {
+    "tax_id": "79.00-1-71",
+    "full_market_value": "353000",
+    "county_taxable": "353000",
+    "school_taxable": "353000",
+    "land_assessed_value": "37000"
+  },
+  {
+    "tax_id": "79.00-1-74",
+    "full_market_value": "536000",
+    "county_taxable": "536000",
+    "school_taxable": "536000",
+    "land_assessed_value": "39500"
+  },
+  {
+    "tax_id": "79.00-1-77",
+    "full_market_value": "140000",
+    "county_taxable": "140000",
+    "school_taxable": "140000",
+    "land_assessed_value": "28100"
+  },
+  {
+    "tax_id": "79.00-1-80",
+    "full_market_value": "496000",
+    "county_taxable": "496000",
+    "school_taxable": "466000",
+    "land_assessed_value": "113000"
+  },
+  {
+    "tax_id": "79.00-1-83",
+    "full_market_value": "494000",
+    "county_taxable": "494000",
+    "school_taxable": "407900",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "79.00-2-2.11",
+    "full_market_value": "553000",
+    "county_taxable": "553000",
+    "school_taxable": "523000",
+    "land_assessed_value": "55300"
+  },
+  {
+    "tax_id": "79.00-2-5",
+    "full_market_value": "443000",
+    "county_taxable": "443000",
+    "school_taxable": "443000",
+    "land_assessed_value": "77500"
+  },
+  {
+    "tax_id": "79.00-2-8.1",
+    "full_market_value": "214000",
+    "county_taxable": "214000",
+    "school_taxable": "127900",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "79.00-2-10",
+    "full_market_value": "120000",
+    "county_taxable": "120000",
+    "school_taxable": "90000",
+    "land_assessed_value": "19500"
+  },
+  {
+    "tax_id": "79.00-2-13.1",
+    "full_market_value": "49300",
+    "county_taxable": "13600",
+    "school_taxable": "13600",
+    "land_assessed_value": "49300"
+  },
+  {
+    "tax_id": "79.00-2-14",
+    "full_market_value": "396800",
+    "county_taxable": "396800",
+    "school_taxable": "396800",
+    "land_assessed_value": "104300"
+  },
+  {
+    "tax_id": "79.00-2-18.1",
+    "full_market_value": "40500",
+    "county_taxable": "40500",
+    "school_taxable": "40500",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "79.00-2-18.5",
+    "full_market_value": "341000",
+    "county_taxable": "341000",
+    "school_taxable": "311000",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "79.00-2-19.2",
+    "full_market_value": "336000",
+    "county_taxable": "306000",
+    "school_taxable": "249900",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "79.00-2-19.111",
+    "full_market_value": "101100",
+    "county_taxable": "22600",
+    "school_taxable": "22600",
+    "land_assessed_value": "101100"
+  },
+  {
+    "tax_id": "79.00-2-19.312",
+    "full_market_value": "35500",
+    "county_taxable": "35500",
+    "school_taxable": "35500",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "79.00-2-20.12",
+    "full_market_value": "704000",
+    "county_taxable": "654000",
+    "school_taxable": "704000",
+    "land_assessed_value": "48000"
+  },
+  {
+    "tax_id": "79.00-2-23",
+    "full_market_value": "213000",
+    "county_taxable": "213000",
+    "school_taxable": "213000",
+    "land_assessed_value": "22900"
+  },
+  {
+    "tax_id": "79.00-2-26.1",
+    "full_market_value": "785000",
+    "county_taxable": "785000",
+    "school_taxable": "785000",
+    "land_assessed_value": "117400"
+  },
+  {
+    "tax_id": "79.00-2-30.2",
+    "full_market_value": "350000",
+    "county_taxable": "350000",
+    "school_taxable": "320000",
+    "land_assessed_value": "59500"
+  },
+  {
+    "tax_id": "79.00-2-30.113",
+    "full_market_value": "67600",
+    "county_taxable": "67600",
+    "school_taxable": "67600",
+    "land_assessed_value": "67600"
+  },
+  {
+    "tax_id": "79.00-2-32.1",
+    "full_market_value": "575000",
+    "county_taxable": "575000",
+    "school_taxable": "575000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "79.00-2-32.32",
+    "full_market_value": "348000",
+    "county_taxable": "348000",
+    "school_taxable": "318000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "79.00-2-35",
+    "full_market_value": "110300",
+    "county_taxable": "26400",
+    "school_taxable": "26400",
+    "land_assessed_value": "110300"
+  },
+  {
+    "tax_id": "79.00-2-36.111",
+    "full_market_value": "357000",
+    "county_taxable": "357000",
+    "school_taxable": "270900",
+    "land_assessed_value": "78400"
+  },
+  {
+    "tax_id": "79.00-2-38",
+    "full_market_value": "313000",
+    "county_taxable": "313000",
+    "school_taxable": "226900",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "79.00-2-41",
+    "full_market_value": "225000",
+    "county_taxable": "225000",
+    "school_taxable": "138900",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "79.00-2-45",
+    "full_market_value": "387000",
+    "county_taxable": "387000",
+    "school_taxable": "387000",
+    "land_assessed_value": "113600"
+  },
+  {
+    "tax_id": "79.00-2-48",
+    "full_market_value": "229000",
+    "county_taxable": "229000",
+    "school_taxable": "199000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "79.00-2-50.21",
+    "full_market_value": "537900",
+    "county_taxable": "135700",
+    "school_taxable": "135700",
+    "land_assessed_value": "529600"
+  },
+  {
+    "tax_id": "79.00-2-51.2",
+    "full_market_value": "334000",
+    "county_taxable": "334000",
+    "school_taxable": "334000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "79.00-2-54",
+    "full_market_value": "312000",
+    "county_taxable": "262000",
+    "school_taxable": "225900",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "79.00-2-56",
+    "full_market_value": "124800",
+    "county_taxable": "75200",
+    "school_taxable": "75200",
+    "land_assessed_value": "124800"
+  },
+  {
+    "tax_id": "91.00-1-1.12",
+    "full_market_value": "362000",
+    "county_taxable": "362000",
+    "school_taxable": "362000",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "91.00-1-3.11",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "202000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "91.00-1-5",
+    "full_market_value": "288000",
+    "county_taxable": "288000",
+    "school_taxable": "258000",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "91.00-1-7",
+    "full_market_value": "256000",
+    "county_taxable": "256000",
+    "school_taxable": "256000",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "91.00-1-9",
+    "full_market_value": "91100",
+    "county_taxable": "91100",
+    "school_taxable": "91100",
+    "land_assessed_value": "91100"
+  },
+  {
+    "tax_id": "91.00-1-12",
+    "full_market_value": "270500",
+    "county_taxable": "258200",
+    "school_taxable": "228200",
+    "land_assessed_value": "28200"
+  },
+  {
+    "tax_id": "91.00-1-16",
+    "full_market_value": "10200",
+    "county_taxable": "10200",
+    "school_taxable": "10200",
+    "land_assessed_value": "10200"
+  },
+  {
+    "tax_id": "91.00-1-18.1",
+    "full_market_value": "276000",
+    "county_taxable": "276000",
+    "school_taxable": "276000",
+    "land_assessed_value": "30200"
+  },
+  {
+    "tax_id": "91.00-1-19.2",
+    "full_market_value": "483000",
+    "county_taxable": "483000",
+    "school_taxable": "483000",
+    "land_assessed_value": "49000"
+  },
+  {
+    "tax_id": "91.00-1-19.111",
+    "full_market_value": "53700",
+    "county_taxable": "53700",
+    "school_taxable": "53700",
+    "land_assessed_value": "53700"
+  },
+  {
+    "tax_id": "91.00-1-20.3",
+    "full_market_value": "314000",
+    "county_taxable": "314000",
+    "school_taxable": "314000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "91.00-1-23",
+    "full_market_value": "275000",
+    "county_taxable": "275000",
+    "school_taxable": "275000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "91.00-1-25.12",
+    "full_market_value": "268000",
+    "county_taxable": "268000",
+    "school_taxable": "268000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "91.00-1-27",
+    "full_market_value": "93200",
+    "county_taxable": "93200",
+    "school_taxable": "93200",
+    "land_assessed_value": "80600"
+  },
+  {
+    "tax_id": "91.00-1-29.2",
+    "full_market_value": "5000",
+    "county_taxable": "5000",
+    "school_taxable": "5000",
+    "land_assessed_value": "5000"
+  },
+  {
+    "tax_id": "91.00-1-32.3",
+    "full_market_value": "288000",
+    "county_taxable": "288000",
+    "school_taxable": "258000",
+    "land_assessed_value": "24800"
+  },
+  {
+    "tax_id": "91.00-1-35.1",
+    "full_market_value": "376000",
+    "county_taxable": "376000",
+    "school_taxable": "376000",
+    "land_assessed_value": "144600"
+  },
+  {
+    "tax_id": "91.00-1-36",
+    "full_market_value": "436600",
+    "county_taxable": "231300",
+    "school_taxable": "231300",
+    "land_assessed_value": "331200"
+  },
+  {
+    "tax_id": "91.00-1-39.21",
+    "full_market_value": "306800",
+    "county_taxable": "287500",
+    "school_taxable": "201400",
+    "land_assessed_value": "57000"
+  },
+  {
+    "tax_id": "91.00-1-40.11",
+    "full_market_value": "421000",
+    "county_taxable": "365617",
+    "school_taxable": "365617",
+    "land_assessed_value": "61800"
+  },
+  {
+    "tax_id": "91.00-1-41.111",
+    "full_market_value": "489000",
+    "county_taxable": "489000",
+    "school_taxable": "489000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "91.00-1-44",
+    "full_market_value": "858100",
+    "county_taxable": "841300",
+    "school_taxable": "811300",
+    "land_assessed_value": "170000"
+  },
+  {
+    "tax_id": "91.00-1-47.1",
+    "full_market_value": "445000",
+    "county_taxable": "445000",
+    "school_taxable": "415000",
+    "land_assessed_value": "50500"
+  },
+  {
+    "tax_id": "91.00-1-50",
+    "full_market_value": "348000",
+    "county_taxable": "348000",
+    "school_taxable": "348000",
+    "land_assessed_value": "56400"
+  },
+  {
+    "tax_id": "91.00-1-54",
+    "full_market_value": "83200",
+    "county_taxable": "83200",
+    "school_taxable": "83200",
+    "land_assessed_value": "67500"
+  },
+  {
+    "tax_id": "91.00-1-57",
+    "full_market_value": "459000",
+    "county_taxable": "459000",
+    "school_taxable": "459000",
+    "land_assessed_value": "39300"
+  },
+  {
+    "tax_id": "91.00-1-61",
+    "full_market_value": "34400",
+    "county_taxable": "34400",
+    "school_taxable": "34400",
+    "land_assessed_value": "34400"
+  },
+  {
+    "tax_id": "92.00-1-3.1",
+    "full_market_value": "1200000",
+    "county_taxable": "1183400",
+    "school_taxable": "1183400",
+    "land_assessed_value": "82000"
+  },
+  {
+    "tax_id": "92.00-1-5.2",
+    "full_market_value": "230000",
+    "county_taxable": "230000",
+    "school_taxable": "200000",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "92.00-1-5.123",
+    "full_market_value": "5000",
+    "county_taxable": "5000",
+    "school_taxable": "5000",
+    "land_assessed_value": "5000"
+  },
+  {
+    "tax_id": "92.00-1-9.11",
+    "full_market_value": "468000",
+    "county_taxable": "338000",
+    "school_taxable": "468000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "92.00-1-9.211",
+    "full_market_value": "199900",
+    "county_taxable": "45100",
+    "school_taxable": "45100",
+    "land_assessed_value": "199900"
+  },
+  {
+    "tax_id": "92.00-1-11",
+    "full_market_value": "268500",
+    "county_taxable": "59000",
+    "school_taxable": "59000",
+    "land_assessed_value": "267700"
+  },
+  {
+    "tax_id": "92.00-1-14.2",
+    "full_market_value": "294000",
+    "county_taxable": "294000",
+    "school_taxable": "294000",
+    "land_assessed_value": "29600"
+  },
+  {
+    "tax_id": "92.00-1-18.2",
+    "full_market_value": "536000",
+    "county_taxable": "536000",
+    "school_taxable": "536000",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "92.00-1-18.12",
+    "full_market_value": "451000",
+    "county_taxable": "451000",
+    "school_taxable": "451000",
+    "land_assessed_value": "93800"
+  },
+  {
+    "tax_id": "92.00-1-19.2",
+    "full_market_value": "290000",
+    "county_taxable": "290000",
+    "school_taxable": "203900",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "92.00-1-20.21",
+    "full_market_value": "483000",
+    "county_taxable": "483000",
+    "school_taxable": "453000",
+    "land_assessed_value": "103800"
+  },
+  {
+    "tax_id": "92.00-1-21.2",
+    "full_market_value": "437000",
+    "county_taxable": "437000",
+    "school_taxable": "407000",
+    "land_assessed_value": "47500"
+  },
+  {
+    "tax_id": "92.00-1-23.12",
+    "full_market_value": "170000",
+    "county_taxable": "170000",
+    "school_taxable": "170000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "92.00-1-28.1",
+    "full_market_value": "251000",
+    "county_taxable": "251000",
+    "school_taxable": "251000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "92.00-1-30.11",
+    "full_market_value": "29000",
+    "county_taxable": "6900",
+    "school_taxable": "6900",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "92.00-1-34.11",
+    "full_market_value": "83000",
+    "county_taxable": "83000",
+    "school_taxable": "83000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "92.00-1-35.3",
+    "full_market_value": "436000",
+    "county_taxable": "436000",
+    "school_taxable": "436000",
+    "land_assessed_value": "56200"
+  },
+  {
+    "tax_id": "92.00-1-35.43",
+    "full_market_value": "103600",
+    "county_taxable": "20900",
+    "school_taxable": "20900",
+    "land_assessed_value": "103600"
+  },
+  {
+    "tax_id": "92.00-1-40",
+    "full_market_value": "266300",
+    "county_taxable": "73900",
+    "school_taxable": "73900",
+    "land_assessed_value": "242700"
+  },
+  {
+    "tax_id": "92.00-1-43",
+    "full_market_value": "295000",
+    "county_taxable": "295000",
+    "school_taxable": "295000",
+    "land_assessed_value": "53500"
+  },
+  {
+    "tax_id": "92.00-1-47",
+    "full_market_value": "267000",
+    "county_taxable": "267000",
+    "school_taxable": "180900",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "92.00-1-52",
+    "full_market_value": "446000",
+    "county_taxable": "446000",
+    "school_taxable": "416000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "92.00-1-55",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "182000",
+    "land_assessed_value": "46500"
+  },
+  {
+    "tax_id": "92.00-1-59",
+    "full_market_value": "307000",
+    "county_taxable": "307000",
+    "school_taxable": "220900",
+    "land_assessed_value": "46500"
+  },
+  {
+    "tax_id": "92.00-1-62.12",
+    "full_market_value": "32000",
+    "county_taxable": "32000",
+    "school_taxable": "32000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "92.00-1-66.1",
+    "full_market_value": "49100",
+    "county_taxable": "49100",
+    "school_taxable": "49100",
+    "land_assessed_value": "17800"
+  },
+  {
+    "tax_id": "92.00-1-68",
+    "full_market_value": "285000",
+    "county_taxable": "285000",
+    "school_taxable": "255000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "92.00-1-74",
+    "full_market_value": "32500",
+    "county_taxable": "32500",
+    "school_taxable": "32500",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "92.00-1-75.111",
+    "full_market_value": "37600",
+    "county_taxable": "37600",
+    "school_taxable": "37600",
+    "land_assessed_value": "37600"
+  },
+  {
+    "tax_id": "92.00-1-77.2",
+    "full_market_value": "469000",
+    "county_taxable": "469000",
+    "school_taxable": "469000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "92.00-1-77.12",
+    "full_market_value": "639000",
+    "county_taxable": "639000",
+    "school_taxable": "639000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "92.00-1-80.2",
+    "full_market_value": "618000",
+    "county_taxable": "618000",
+    "school_taxable": "588000",
+    "land_assessed_value": "45000"
+  },
+  {
+    "tax_id": "92.00-1-80.112",
+    "full_market_value": "524000",
+    "county_taxable": "524000",
+    "school_taxable": "524000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "92.00-1-82.112",
+    "full_market_value": "548000",
+    "county_taxable": "548000",
+    "school_taxable": "548000",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "92.00-1-84",
+    "full_market_value": "455000",
+    "county_taxable": "455000",
+    "school_taxable": "425000",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "93.00-1-1.1",
+    "full_market_value": "718000",
+    "county_taxable": "718000",
+    "school_taxable": "688000",
+    "land_assessed_value": "135100"
+  },
+  {
+    "tax_id": "93.00-1-2",
+    "full_market_value": "1579000",
+    "county_taxable": "806900",
+    "school_taxable": "847100",
+    "land_assessed_value": "826100"
+  },
+  {
+    "tax_id": "93.00-1-4.12",
+    "full_market_value": "320000",
+    "county_taxable": "318500",
+    "school_taxable": "232400",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "93.00-1-5.121",
+    "full_market_value": "353000",
+    "county_taxable": "326600",
+    "school_taxable": "326600",
+    "land_assessed_value": "106000"
+  },
+  {
+    "tax_id": "93.00-1-8.2",
+    "full_market_value": "405000",
+    "county_taxable": "405000",
+    "school_taxable": "375000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "93.00-1-8.11",
+    "full_market_value": "250000",
+    "county_taxable": "250000",
+    "school_taxable": "220000",
+    "land_assessed_value": "47000"
+  },
+  {
+    "tax_id": "93.00-1-10.11",
+    "full_market_value": "94100",
+    "county_taxable": "94100",
+    "school_taxable": "94100",
+    "land_assessed_value": "94100"
+  },
+  {
+    "tax_id": "93.00-1-11.21",
+    "full_market_value": "478000",
+    "county_taxable": "478000",
+    "school_taxable": "391900",
+    "land_assessed_value": "95100"
+  },
+  {
+    "tax_id": "93.00-1-14.12",
+    "full_market_value": "53500",
+    "county_taxable": "53500",
+    "school_taxable": "53500",
+    "land_assessed_value": "53500"
+  },
+  {
+    "tax_id": "93.00-1-14.23",
+    "full_market_value": "488000",
+    "county_taxable": "488000",
+    "school_taxable": "488000",
+    "land_assessed_value": "43500"
+  },
+  {
+    "tax_id": "93.00-1-19",
+    "full_market_value": "54800",
+    "county_taxable": "12200",
+    "school_taxable": "12200",
+    "land_assessed_value": "54800"
+  },
+  {
+    "tax_id": "93.00-1-21.2",
+    "full_market_value": "210000",
+    "county_taxable": "210000",
+    "school_taxable": "210000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "93.00-1-23.2",
+    "full_market_value": "410000",
+    "county_taxable": "410000",
+    "school_taxable": "323900",
+    "land_assessed_value": "98000"
+  },
+  {
+    "tax_id": "93.00-1-24",
+    "full_market_value": "256000",
+    "county_taxable": "226000",
+    "school_taxable": "163900",
+    "land_assessed_value": "56500"
+  },
+  {
+    "tax_id": "93.00-1-26",
+    "full_market_value": "295000",
+    "county_taxable": "147500",
+    "school_taxable": "147500",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "93.00-1-30.11",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "282000",
+    "land_assessed_value": "58000"
+  },
+  {
+    "tax_id": "93.00-1-32",
+    "full_market_value": "481000",
+    "county_taxable": "481000",
+    "school_taxable": "481000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "93.00-1-33.3",
+    "full_market_value": "424000",
+    "county_taxable": "424000",
+    "school_taxable": "424000",
+    "land_assessed_value": "41700"
+  },
+  {
+    "tax_id": "93.00-1-33.61",
+    "full_market_value": "228500",
+    "county_taxable": "109500",
+    "school_taxable": "109500",
+    "land_assessed_value": "225300"
+  },
+  {
+    "tax_id": "93.00-1-33.64",
+    "full_market_value": "632000",
+    "county_taxable": "632000",
+    "school_taxable": "632000",
+    "land_assessed_value": "37000"
+  },
+  {
+    "tax_id": "93.00-1-34.2",
+    "full_market_value": "217000",
+    "county_taxable": "217000",
+    "school_taxable": "187000",
+    "land_assessed_value": "48500"
+  },
+  {
+    "tax_id": "93.00-1-35.21",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "332000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "93.00-1-37.2",
+    "full_market_value": "291000",
+    "county_taxable": "291000",
+    "school_taxable": "291000",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "93.00-1-39",
+    "full_market_value": "271000",
+    "county_taxable": "271000",
+    "school_taxable": "271000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "93.00-1-42.2",
+    "full_market_value": "271000",
+    "county_taxable": "271000",
+    "school_taxable": "241000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "93.00-1-44",
+    "full_market_value": "284000",
+    "county_taxable": "284000",
+    "school_taxable": "254000",
+    "land_assessed_value": "66400"
+  },
+  {
+    "tax_id": "93.00-1-49",
+    "full_market_value": "245000",
+    "county_taxable": "245000",
+    "school_taxable": "158900",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "93.00-1-51",
+    "full_market_value": "264000",
+    "county_taxable": "264000",
+    "school_taxable": "234000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "93.00-1-52.111",
+    "full_market_value": "879000",
+    "county_taxable": "879000",
+    "school_taxable": "879000",
+    "land_assessed_value": "61600"
+  },
+  {
+    "tax_id": "93.00-1-56",
+    "full_market_value": "347000",
+    "county_taxable": "347000",
+    "school_taxable": "347000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "93.00-1-60",
+    "full_market_value": "444000",
+    "county_taxable": "444000",
+    "school_taxable": "357900",
+    "land_assessed_value": "41500"
+  },
+  {
+    "tax_id": "93.00-1-65",
+    "full_market_value": "402900",
+    "county_taxable": "402900",
+    "school_taxable": "402900",
+    "land_assessed_value": "70000"
+  },
+  {
+    "tax_id": "93.00-1-68",
+    "full_market_value": "401000",
+    "county_taxable": "401000",
+    "school_taxable": "401000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "93.00-1-72",
+    "full_market_value": "22500",
+    "county_taxable": "22500",
+    "school_taxable": "22500",
+    "land_assessed_value": "22500"
+  },
+  {
+    "tax_id": "93.00-2-1.2",
+    "full_market_value": "145300",
+    "county_taxable": "145300",
+    "school_taxable": "145300",
+    "land_assessed_value": "145300"
+  },
+  {
+    "tax_id": "93.00-2-3.3",
+    "full_market_value": "444000",
+    "county_taxable": "444000",
+    "school_taxable": "357900",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "93.00-2-3.12",
+    "full_market_value": "488000",
+    "county_taxable": "488000",
+    "school_taxable": "458000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "93.00-2-5.1",
+    "full_market_value": "269000",
+    "county_taxable": "269000",
+    "school_taxable": "182900",
+    "land_assessed_value": "65000"
+  },
+  {
+    "tax_id": "93.00-2-8.1",
+    "full_market_value": "353700",
+    "county_taxable": "52300",
+    "school_taxable": "52300",
+    "land_assessed_value": "353700"
+  },
+  {
+    "tax_id": "93.00-2-8.5",
+    "full_market_value": "277000",
+    "county_taxable": "277000",
+    "school_taxable": "190900",
+    "land_assessed_value": "48500"
+  },
+  {
+    "tax_id": "93.00-2-11.1",
+    "full_market_value": "448300",
+    "county_taxable": "104800",
+    "school_taxable": "104800",
+    "land_assessed_value": "394000"
+  },
+  {
+    "tax_id": "93.00-2-13.2",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "224000",
+    "land_assessed_value": "48000"
+  },
+  {
+    "tax_id": "93.00-2-13.121",
+    "full_market_value": "256800",
+    "county_taxable": "91600",
+    "school_taxable": "91600",
+    "land_assessed_value": "256800"
+  },
+  {
+    "tax_id": "93.00-2-15",
+    "full_market_value": "413000",
+    "county_taxable": "413000",
+    "school_taxable": "383000",
+    "land_assessed_value": "84200"
+  },
+  {
+    "tax_id": "93.00-2-18.12",
+    "full_market_value": "405000",
+    "county_taxable": "405000",
+    "school_taxable": "318900",
+    "land_assessed_value": "53500"
+  },
+  {
+    "tax_id": "93.00-2-19",
+    "full_market_value": "295000",
+    "county_taxable": "295000",
+    "school_taxable": "265000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "93.00-2-22",
+    "full_market_value": "269000",
+    "county_taxable": "269000",
+    "school_taxable": "239000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "93.00-2-24",
+    "full_market_value": "366000",
+    "county_taxable": "366000",
+    "school_taxable": "366000",
+    "land_assessed_value": "92000"
+  },
+  {
+    "tax_id": "93.00-2-28.2",
+    "full_market_value": "459000",
+    "county_taxable": "459000",
+    "school_taxable": "459000",
+    "land_assessed_value": "60900"
+  },
+  {
+    "tax_id": "93.00-2-29.2",
+    "full_market_value": "305000",
+    "county_taxable": "305000",
+    "school_taxable": "218900",
+    "land_assessed_value": "27700"
+  },
+  {
+    "tax_id": "93.00-2-29.112",
+    "full_market_value": "285000",
+    "county_taxable": "285000",
+    "school_taxable": "285000",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "93.00-2-33.11",
+    "full_market_value": "589000",
+    "county_taxable": "589000",
+    "school_taxable": "589000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "93.00-2-34.2",
+    "full_market_value": "285000",
+    "county_taxable": "135250",
+    "school_taxable": "168900",
+    "land_assessed_value": "30300"
+  },
+  {
+    "tax_id": "93.00-2-37",
+    "full_market_value": "317000",
+    "county_taxable": "317000",
+    "school_taxable": "287000",
+    "land_assessed_value": "65800"
+  },
+  {
+    "tax_id": "93.00-2-38.121",
+    "full_market_value": "285000",
+    "county_taxable": "285000",
+    "school_taxable": "285000",
+    "land_assessed_value": "64200"
+  },
+  {
+    "tax_id": "93.00-2-39.321",
+    "full_market_value": "461000",
+    "county_taxable": "461000",
+    "school_taxable": "431000",
+    "land_assessed_value": "75800"
+  },
+  {
+    "tax_id": "93.00-2-43.2",
+    "full_market_value": "389000",
+    "county_taxable": "389000",
+    "school_taxable": "389000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "93.00-2-44.12",
+    "full_market_value": "416000",
+    "county_taxable": "416000",
+    "school_taxable": "386000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "93.00-2-45.211",
+    "full_market_value": "109300",
+    "county_taxable": "22600",
+    "school_taxable": "22600",
+    "land_assessed_value": "109300"
+  },
+  {
+    "tax_id": "93.00-2-47.1",
+    "full_market_value": "329000",
+    "county_taxable": "329000",
+    "school_taxable": "242900",
+    "land_assessed_value": "48500"
+  },
+  {
+    "tax_id": "93.00-2-47.212",
+    "full_market_value": "246000",
+    "county_taxable": "246000",
+    "school_taxable": "159900",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "93.00-2-50",
+    "full_market_value": "289000",
+    "county_taxable": "289000",
+    "school_taxable": "289000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "93.03-1-1",
+    "full_market_value": "420000",
+    "county_taxable": "420000",
+    "school_taxable": "390000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "93.03-1-5",
+    "full_market_value": "320000",
+    "county_taxable": "320000",
+    "school_taxable": "290000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "93.03-1-8",
+    "full_market_value": "298000",
+    "county_taxable": "248000",
+    "school_taxable": "201900",
+    "land_assessed_value": "25700"
+  },
+  {
+    "tax_id": "93.03-1-11.2",
+    "full_market_value": "512000",
+    "county_taxable": "362000",
+    "school_taxable": "482000",
+    "land_assessed_value": "51500"
+  },
+  {
+    "tax_id": "93.03-1-13.1",
+    "full_market_value": "750000",
+    "county_taxable": "720000",
+    "school_taxable": "720000",
+    "land_assessed_value": "66500"
+  },
+  {
+    "tax_id": "93.03-1-16",
+    "full_market_value": "309000",
+    "county_taxable": "309000",
+    "school_taxable": "309000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "93.03-1-19",
+    "full_market_value": "955000",
+    "county_taxable": "955000",
+    "school_taxable": "955000",
+    "land_assessed_value": "42500"
+  },
+  {
+    "tax_id": "93.03-1-25",
+    "full_market_value": "214000",
+    "county_taxable": "214000",
+    "school_taxable": "214000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "93.03-1-29.1",
+    "full_market_value": "30000",
+    "county_taxable": "30000",
+    "school_taxable": "30000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "93.03-1-36",
+    "full_market_value": "331000",
+    "county_taxable": "331000",
+    "school_taxable": "331000",
+    "land_assessed_value": "25100"
+  },
+  {
+    "tax_id": "93.03-1-42",
+    "full_market_value": "23700",
+    "county_taxable": "23700",
+    "school_taxable": "23700",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "93.03-1-46",
+    "full_market_value": "23700",
+    "county_taxable": "23700",
+    "school_taxable": "23700",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "93.03-1-50",
+    "full_market_value": "24500",
+    "county_taxable": "24500",
+    "school_taxable": "24500",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "93.03-1-55",
+    "full_market_value": "26000",
+    "county_taxable": "26000",
+    "school_taxable": "26000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "05.00-1-3",
+    "full_market_value": "293000",
+    "county_taxable": "278000",
+    "school_taxable": "206900",
+    "land_assessed_value": "28500"
+  },
+  {
+    "tax_id": "05.00-1-5.12",
+    "full_market_value": "70700",
+    "county_taxable": "400",
+    "school_taxable": "400",
+    "land_assessed_value": "10000"
+  },
+  {
+    "tax_id": "05.00-1-6.2",
+    "full_market_value": "54200",
+    "county_taxable": "200",
+    "school_taxable": "200",
+    "land_assessed_value": "10000"
+  },
+  {
+    "tax_id": "05.00-1-7",
+    "full_market_value": "360000",
+    "county_taxable": "247700",
+    "school_taxable": "247700",
+    "land_assessed_value": "59300"
+  },
+  {
+    "tax_id": "05.00-1-9",
+    "full_market_value": "347000",
+    "county_taxable": "347000",
+    "school_taxable": "347000",
+    "land_assessed_value": "67000"
+  },
+  {
+    "tax_id": "05.00-1-11.12",
+    "full_market_value": "427000",
+    "county_taxable": "427000",
+    "school_taxable": "427000",
+    "land_assessed_value": "57500"
+  },
+  {
+    "tax_id": "05.00-1-11.112",
+    "full_market_value": "147400",
+    "county_taxable": "33800",
+    "school_taxable": "33800",
+    "land_assessed_value": "147400"
+  },
+  {
+    "tax_id": "05.00-1-13.21",
+    "full_market_value": "292800",
+    "county_taxable": "282600",
+    "school_taxable": "252600",
+    "land_assessed_value": "86800"
+  },
+  {
+    "tax_id": "05.00-1-13.122",
+    "full_market_value": "58800",
+    "county_taxable": "400",
+    "school_taxable": "400",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "05.00-1-15.12",
+    "full_market_value": "290100",
+    "county_taxable": "30200",
+    "school_taxable": "30200",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "05.00-1-16.12",
+    "full_market_value": "59700",
+    "county_taxable": "59700",
+    "school_taxable": "59700",
+    "land_assessed_value": "59700"
+  },
+  {
+    "tax_id": "05.00-1-19",
+    "full_market_value": "343000",
+    "county_taxable": "343000",
+    "school_taxable": "313000",
+    "land_assessed_value": "68700"
+  },
+  {
+    "tax_id": "05.00-1-23",
+    "full_market_value": "553000",
+    "county_taxable": "553000",
+    "school_taxable": "553000",
+    "land_assessed_value": "64700"
+  },
+  {
+    "tax_id": "05.00-1-27",
+    "full_market_value": "273000",
+    "county_taxable": "273000",
+    "school_taxable": "243000",
+    "land_assessed_value": "64700"
+  },
+  {
+    "tax_id": "05.00-1-30.12",
+    "full_market_value": "21100",
+    "county_taxable": "21100",
+    "school_taxable": "21100",
+    "land_assessed_value": "21100"
+  },
+  {
+    "tax_id": "05.00-1-31.2",
+    "full_market_value": "354000",
+    "county_taxable": "354000",
+    "school_taxable": "267900",
+    "land_assessed_value": "70300"
+  },
+  {
+    "tax_id": "05.00-1-32.2",
+    "full_market_value": "458000",
+    "county_taxable": "458000",
+    "school_taxable": "428000",
+    "land_assessed_value": "34500"
+  },
+  {
+    "tax_id": "05.00-1-34",
+    "full_market_value": "429000",
+    "county_taxable": "429000",
+    "school_taxable": "429000",
+    "land_assessed_value": "67300"
+  },
+  {
+    "tax_id": "05.00-1-36",
+    "full_market_value": "272000",
+    "county_taxable": "272000",
+    "school_taxable": "242000",
+    "land_assessed_value": "68200"
+  },
+  {
+    "tax_id": "05.00-1-38",
+    "full_market_value": "228000",
+    "county_taxable": "228000",
+    "school_taxable": "228000",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "05.00-1-40",
+    "full_market_value": "381000",
+    "county_taxable": "351000",
+    "school_taxable": "375000",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "05.00-1-41.112",
+    "full_market_value": "194000",
+    "county_taxable": "194000",
+    "school_taxable": "107900",
+    "land_assessed_value": "52300"
+  },
+  {
+    "tax_id": "05.00-1-41.211",
+    "full_market_value": "322000",
+    "county_taxable": "322000",
+    "school_taxable": "235900",
+    "land_assessed_value": "66700"
+  },
+  {
+    "tax_id": "05.00-1-43",
+    "full_market_value": "193000",
+    "county_taxable": "164050",
+    "school_taxable": "157000",
+    "land_assessed_value": "51300"
+  },
+  {
+    "tax_id": "05.00-1-49",
+    "full_market_value": "170000",
+    "county_taxable": "170000",
+    "school_taxable": "170000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "05.00-1-51.2",
+    "full_market_value": "356100",
+    "county_taxable": "276400",
+    "school_taxable": "276400",
+    "land_assessed_value": "164300"
+  },
+  {
+    "tax_id": "05.00-1-52",
+    "full_market_value": "249000",
+    "county_taxable": "161850",
+    "school_taxable": "75750",
+    "land_assessed_value": "64700"
+  },
+  {
+    "tax_id": "05.00-1-54.1",
+    "full_market_value": "400000",
+    "county_taxable": "400000",
+    "school_taxable": "370000",
+    "land_assessed_value": "87300"
+  },
+  {
+    "tax_id": "05.00-1-55",
+    "full_market_value": "276000",
+    "county_taxable": "226000",
+    "school_taxable": "179900",
+    "land_assessed_value": "66200"
+  },
+  {
+    "tax_id": "05.00-1-57",
+    "full_market_value": "102700",
+    "county_taxable": "102700",
+    "school_taxable": "102700",
+    "land_assessed_value": "102700"
+  },
+  {
+    "tax_id": "05.00-1-59",
+    "full_market_value": "160000",
+    "county_taxable": "160000",
+    "school_taxable": "160000",
+    "land_assessed_value": "69500"
+  },
+  {
+    "tax_id": "05.00-1-61",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "232000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "05.00-1-63",
+    "full_market_value": "237000",
+    "county_taxable": "237000",
+    "school_taxable": "207000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "05.00-1-64.111",
+    "full_market_value": "339000",
+    "county_taxable": "237300",
+    "school_taxable": "151200",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "05.00-1-65",
+    "full_market_value": "278000",
+    "county_taxable": "278000",
+    "school_taxable": "248000",
+    "land_assessed_value": "56500"
+  },
+  {
+    "tax_id": "05.00-1-67.1",
+    "full_market_value": "236000",
+    "county_taxable": "236000",
+    "school_taxable": "236000",
+    "land_assessed_value": "57700"
+  },
+  {
+    "tax_id": "05.00-1-69.1",
+    "full_market_value": "284000",
+    "county_taxable": "259387",
+    "school_taxable": "259387",
+    "land_assessed_value": "100500"
+  },
+  {
+    "tax_id": "05.00-1-71.2",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "302000",
+    "land_assessed_value": "87300"
+  },
+  {
+    "tax_id": "05.00-1-74",
+    "full_market_value": "186000",
+    "county_taxable": "186000",
+    "school_taxable": "156000",
+    "land_assessed_value": "44200"
+  },
+  {
+    "tax_id": "05.00-1-76.2",
+    "full_market_value": "309000",
+    "county_taxable": "309000",
+    "school_taxable": "279000",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "05.00-1-78.3",
+    "full_market_value": "395000",
+    "county_taxable": "395000",
+    "school_taxable": "365000",
+    "land_assessed_value": "82700"
+  },
+  {
+    "tax_id": "05.00-1-78.7",
+    "full_market_value": "273000",
+    "county_taxable": "273000",
+    "school_taxable": "273000",
+    "land_assessed_value": "63300"
+  },
+  {
+    "tax_id": "05.00-1-79",
+    "full_market_value": "410000",
+    "county_taxable": "410000",
+    "school_taxable": "380000",
+    "land_assessed_value": "49900"
+  },
+  {
+    "tax_id": "05.00-1-80.2",
+    "full_market_value": "296000",
+    "county_taxable": "278045",
+    "school_taxable": "248045",
+    "land_assessed_value": "80800"
+  },
+  {
+    "tax_id": "05.00-1-84",
+    "full_market_value": "250000",
+    "county_taxable": "250000",
+    "school_taxable": "163900",
+    "land_assessed_value": "48200"
+  },
+  {
+    "tax_id": "05.00-1-87",
+    "full_market_value": "711000",
+    "county_taxable": "711000",
+    "school_taxable": "711000",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "05.00-1-90.11",
+    "full_market_value": "517000",
+    "county_taxable": "517000",
+    "school_taxable": "517000",
+    "land_assessed_value": "66000"
+  },
+  {
+    "tax_id": "05.00-1-93",
+    "full_market_value": "360000",
+    "county_taxable": "360000",
+    "school_taxable": "330000",
+    "land_assessed_value": "42500"
+  },
+  {
+    "tax_id": "05.00-1-98",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "222000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "05.00-1-101",
+    "full_market_value": "268000",
+    "county_taxable": "268000",
+    "school_taxable": "238000",
+    "land_assessed_value": "37700"
+  },
+  {
+    "tax_id": "05.00-1-104",
+    "full_market_value": "341000",
+    "county_taxable": "341000",
+    "school_taxable": "341000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "05.00-1-109",
+    "full_market_value": "363000",
+    "county_taxable": "363000",
+    "school_taxable": "363000",
+    "land_assessed_value": "23600"
+  },
+  {
+    "tax_id": "05.00-1-113",
+    "full_market_value": "458000",
+    "county_taxable": "458000",
+    "school_taxable": "458000",
+    "land_assessed_value": "62200"
+  },
+  {
+    "tax_id": "05.00-2-2.1",
+    "full_market_value": "369000",
+    "county_taxable": "369000",
+    "school_taxable": "339000",
+    "land_assessed_value": "33100"
+  },
+  {
+    "tax_id": "05.00-2-4.2",
+    "full_market_value": "36100",
+    "county_taxable": "36100",
+    "school_taxable": "36100",
+    "land_assessed_value": "36100"
+  },
+  {
+    "tax_id": "05.00-2-4.112",
+    "full_market_value": "275500",
+    "county_taxable": "61800",
+    "school_taxable": "61800",
+    "land_assessed_value": "275500"
+  },
+  {
+    "tax_id": "05.00-2-7.2",
+    "full_market_value": "251000",
+    "county_taxable": "251000",
+    "school_taxable": "221000",
+    "land_assessed_value": "29600"
+  },
+  {
+    "tax_id": "05.00-2-7.112",
+    "full_market_value": "325900",
+    "county_taxable": "72400",
+    "school_taxable": "72400",
+    "land_assessed_value": "325900"
+  },
+  {
+    "tax_id": "05.00-2-10",
+    "full_market_value": "321000",
+    "county_taxable": "321000",
+    "school_taxable": "291000",
+    "land_assessed_value": "32700"
+  },
+  {
+    "tax_id": "05.00-2-11.4",
+    "full_market_value": "723000",
+    "county_taxable": "723000",
+    "school_taxable": "723000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "05.00-2-11.112",
+    "full_market_value": "35500",
+    "county_taxable": "35500",
+    "school_taxable": "35500",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "05.00-2-12",
+    "full_market_value": "253000",
+    "county_taxable": "223000",
+    "school_taxable": "160900",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "05.00-2-15",
+    "full_market_value": "400000",
+    "county_taxable": "400000",
+    "school_taxable": "370000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "05.00-2-19.1",
+    "full_market_value": "202500",
+    "county_taxable": "41200",
+    "school_taxable": "41200",
+    "land_assessed_value": "202500"
+  },
+  {
+    "tax_id": "05.00-2-20.112",
+    "full_market_value": "556000",
+    "county_taxable": "556000",
+    "school_taxable": "526000",
+    "land_assessed_value": "177700"
+  },
+  {
+    "tax_id": "05.00-2-22.2",
+    "full_market_value": "419000",
+    "county_taxable": "419000",
+    "school_taxable": "419000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "05.00-2-25",
+    "full_market_value": "745900",
+    "county_taxable": "661400",
+    "school_taxable": "661400",
+    "land_assessed_value": "173000"
+  },
+  {
+    "tax_id": "05.00-2-27",
+    "full_market_value": "148700",
+    "county_taxable": "49500",
+    "school_taxable": "49500",
+    "land_assessed_value": "148400"
+  },
+  {
+    "tax_id": "05.00-2-28.12",
+    "full_market_value": "333000",
+    "county_taxable": "333000",
+    "school_taxable": "246900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "05.00-2-31.2",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "216000",
+    "land_assessed_value": "25400"
+  },
+  {
+    "tax_id": "05.00-2-31.122",
+    "full_market_value": "32300",
+    "county_taxable": "8100",
+    "school_taxable": "8100",
+    "land_assessed_value": "32300"
+  },
+  {
+    "tax_id": "05.00-2-33.12",
+    "full_market_value": "371000",
+    "county_taxable": "371000",
+    "school_taxable": "341000",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "05.00-2-34",
+    "full_market_value": "357000",
+    "county_taxable": "357000",
+    "school_taxable": "270900",
+    "land_assessed_value": "101000"
+  },
+  {
+    "tax_id": "05.00-2-35.2",
+    "full_market_value": "411000",
+    "county_taxable": "411000",
+    "school_taxable": "381000",
+    "land_assessed_value": "80000"
+  },
+  {
+    "tax_id": "05.00-2-39",
+    "full_market_value": "272000",
+    "county_taxable": "272000",
+    "school_taxable": "272000",
+    "land_assessed_value": "52800"
+  },
+  {
+    "tax_id": "05.00-2-41.2",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "245900",
+    "land_assessed_value": "31300"
+  },
+  {
+    "tax_id": "05.00-2-42.2",
+    "full_market_value": "360000",
+    "county_taxable": "360000",
+    "school_taxable": "360000",
+    "land_assessed_value": "61800"
+  },
+  {
+    "tax_id": "05.00-2-45",
+    "full_market_value": "326000",
+    "county_taxable": "326000",
+    "school_taxable": "239900",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "05.00-2-48",
+    "full_market_value": "34500",
+    "county_taxable": "34500",
+    "school_taxable": "34500",
+    "land_assessed_value": "34500"
+  },
+  {
+    "tax_id": "05.00-2-51",
+    "full_market_value": "272000",
+    "county_taxable": "272000",
+    "school_taxable": "272000",
+    "land_assessed_value": "38500"
+  },
+  {
+    "tax_id": "05.00-2-54",
+    "full_market_value": "276000",
+    "county_taxable": "276000",
+    "school_taxable": "246000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "05.00-2-58",
+    "full_market_value": "574000",
+    "county_taxable": "574000",
+    "school_taxable": "574000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "05.00-2-60.2",
+    "full_market_value": "409800",
+    "county_taxable": "347400",
+    "school_taxable": "347400",
+    "land_assessed_value": "185500"
+  },
+  {
+    "tax_id": "05.00-2-61.12",
+    "full_market_value": "714000",
+    "county_taxable": "714000",
+    "school_taxable": "714000",
+    "land_assessed_value": "70200"
+  },
+  {
+    "tax_id": "05.00-2-66.1",
+    "full_market_value": "362000",
+    "county_taxable": "362000",
+    "school_taxable": "362000",
+    "land_assessed_value": "28100"
+  },
+  {
+    "tax_id": "05.00-2-66.4",
+    "full_market_value": "492000",
+    "county_taxable": "492000",
+    "school_taxable": "462000",
+    "land_assessed_value": "42200"
+  },
+  {
+    "tax_id": "05.00-2-68",
+    "full_market_value": "256000",
+    "county_taxable": "226000",
+    "school_taxable": "250000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "05.00-2-71",
+    "full_market_value": "512000",
+    "county_taxable": "512000",
+    "school_taxable": "512000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "05.13-1-1",
+    "full_market_value": "278000",
+    "county_taxable": "278000",
+    "school_taxable": "191900",
+    "land_assessed_value": "67300"
+  },
+  {
+    "tax_id": "05.13-1-4",
+    "full_market_value": "191000",
+    "county_taxable": "191000",
+    "school_taxable": "191000",
+    "land_assessed_value": "43600"
+  },
+  {
+    "tax_id": "05.13-1-6",
+    "full_market_value": "307000",
+    "county_taxable": "307000",
+    "school_taxable": "307000",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "05.13-1-8",
+    "full_market_value": "291000",
+    "county_taxable": "241000",
+    "school_taxable": "251000",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "05.13-1-10",
+    "full_market_value": "116000",
+    "county_taxable": "116000",
+    "school_taxable": "116000",
+    "land_assessed_value": "62200"
+  },
+  {
+    "tax_id": "05.13-1-12",
+    "full_market_value": "182000",
+    "county_taxable": "136500",
+    "school_taxable": "172000",
+    "land_assessed_value": "31800"
+  },
+  {
+    "tax_id": "05.13-1-14.2",
+    "full_market_value": "285000",
+    "county_taxable": "285000",
+    "school_taxable": "285000",
+    "land_assessed_value": "49900"
+  },
+  {
+    "tax_id": "05.13-1-16",
+    "full_market_value": "338000",
+    "county_taxable": "338000",
+    "school_taxable": "338000",
+    "land_assessed_value": "74000"
+  },
+  {
+    "tax_id": "05.13-1-18",
+    "full_market_value": "391000",
+    "county_taxable": "391000",
+    "school_taxable": "361000",
+    "land_assessed_value": "31100"
+  },
+  {
+    "tax_id": "05.13-1-20",
+    "full_market_value": "384000",
+    "county_taxable": "384000",
+    "school_taxable": "384000",
+    "land_assessed_value": "50500"
+  },
+  {
+    "tax_id": "05.13-1-22.1",
+    "full_market_value": "264000",
+    "county_taxable": "234000",
+    "school_taxable": "171900",
+    "land_assessed_value": "28900"
+  },
+  {
+    "tax_id": "05.13-1-23",
+    "full_market_value": "266000",
+    "county_taxable": "266000",
+    "school_taxable": "266000",
+    "land_assessed_value": "29100"
+  },
+  {
+    "tax_id": "05.13-1-25",
+    "full_market_value": "284000",
+    "county_taxable": "254000",
+    "school_taxable": "248000",
+    "land_assessed_value": "28900"
+  },
+  {
+    "tax_id": "05.13-1-27",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "202000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "05.13-1-31",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "129900",
+    "land_assessed_value": "28100"
+  },
+  {
+    "tax_id": "05.13-1-33",
+    "full_market_value": "228000",
+    "county_taxable": "228000",
+    "school_taxable": "141900",
+    "land_assessed_value": "28500"
+  },
+  {
+    "tax_id": "05.13-1-35",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "252000",
+    "land_assessed_value": "27200"
+  },
+  {
+    "tax_id": "05.13-1-37",
+    "full_market_value": "235000",
+    "county_taxable": "235000",
+    "school_taxable": "205000",
+    "land_assessed_value": "21900"
+  },
+  {
+    "tax_id": "05.13-1-39",
+    "full_market_value": "199000",
+    "county_taxable": "199000",
+    "school_taxable": "199000",
+    "land_assessed_value": "22700"
+  },
+  {
+    "tax_id": "05.13-1-41",
+    "full_market_value": "273000",
+    "county_taxable": "273000",
+    "school_taxable": "243000",
+    "land_assessed_value": "30300"
+  },
+  {
+    "tax_id": "05.13-1-43",
+    "full_market_value": "198000",
+    "county_taxable": "84150",
+    "school_taxable": "9900",
+    "land_assessed_value": "22100"
+  },
+  {
+    "tax_id": "05.13-1-45",
+    "full_market_value": "251000",
+    "county_taxable": "251000",
+    "school_taxable": "164900",
+    "land_assessed_value": "19500"
+  },
+  {
+    "tax_id": "05.13-1-48",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "202000",
+    "land_assessed_value": "25100"
+  },
+  {
+    "tax_id": "05.13-1-50",
+    "full_market_value": "213000",
+    "county_taxable": "213000",
+    "school_taxable": "183000",
+    "land_assessed_value": "35600"
+  },
+  {
+    "tax_id": "05.13-1-53",
+    "full_market_value": "142000",
+    "county_taxable": "142000",
+    "school_taxable": "112000",
+    "land_assessed_value": "34900"
+  },
+  {
+    "tax_id": "05.13-1-55",
+    "full_market_value": "223000",
+    "county_taxable": "223000",
+    "school_taxable": "193000",
+    "land_assessed_value": "32900"
+  },
+  {
+    "tax_id": "05.13-1-57",
+    "full_market_value": "123000",
+    "county_taxable": "92250",
+    "school_taxable": "83000",
+    "land_assessed_value": "19500"
+  },
+  {
+    "tax_id": "05.13-1-59",
+    "full_market_value": "328000",
+    "county_taxable": "328000",
+    "school_taxable": "328000",
+    "land_assessed_value": "16300"
+  },
+  {
+    "tax_id": "05.13-1-61",
+    "full_market_value": "286000",
+    "county_taxable": "286000",
+    "school_taxable": "286000",
+    "land_assessed_value": "67700"
+  },
+  {
+    "tax_id": "06.00-1-1",
+    "full_market_value": "833100",
+    "county_taxable": "664100",
+    "school_taxable": "664100",
+    "land_assessed_value": "304900"
+  },
+  {
+    "tax_id": "06.00-1-3.2",
+    "full_market_value": "359000",
+    "county_taxable": "309000",
+    "school_taxable": "319000",
+    "land_assessed_value": "51000"
+  },
+  {
+    "tax_id": "06.00-1-6.2",
+    "full_market_value": "348000",
+    "county_taxable": "348000",
+    "school_taxable": "261900",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "06.00-1-7.1",
+    "full_market_value": "48800",
+    "county_taxable": "48800",
+    "school_taxable": "48800",
+    "land_assessed_value": "34700"
+  },
+  {
+    "tax_id": "06.00-1-9.12",
+    "full_market_value": "459000",
+    "county_taxable": "459000",
+    "school_taxable": "459000",
+    "land_assessed_value": "49000"
+  },
+  {
+    "tax_id": "06.00-1-12.1",
+    "full_market_value": "26200",
+    "county_taxable": "26200",
+    "school_taxable": "26200",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "06.00-1-15.1",
+    "full_market_value": "318000",
+    "county_taxable": "271500",
+    "school_taxable": "200400",
+    "land_assessed_value": "79700"
+  },
+  {
+    "tax_id": "06.00-1-17.12",
+    "full_market_value": "382000",
+    "county_taxable": "382000",
+    "school_taxable": "352000",
+    "land_assessed_value": "56300"
+  },
+  {
+    "tax_id": "06.00-1-18.2",
+    "full_market_value": "319000",
+    "county_taxable": "319000",
+    "school_taxable": "289000",
+    "land_assessed_value": "37000"
+  },
+  {
+    "tax_id": "06.00-1-20",
+    "full_market_value": "335000",
+    "county_taxable": "335000",
+    "school_taxable": "335000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "06.00-1-21.3",
+    "full_market_value": "263000",
+    "county_taxable": "263000",
+    "school_taxable": "263000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "06.00-1-22.111",
+    "full_market_value": "1129000",
+    "county_taxable": "1129000",
+    "school_taxable": "1129000",
+    "land_assessed_value": "143900"
+  },
+  {
+    "tax_id": "06.00-1-25.2",
+    "full_market_value": "241000",
+    "county_taxable": "241000",
+    "school_taxable": "211000",
+    "land_assessed_value": "31700"
+  },
+  {
+    "tax_id": "06.00-1-27.12",
+    "full_market_value": "391000",
+    "county_taxable": "391000",
+    "school_taxable": "391000",
+    "land_assessed_value": "29100"
+  },
+  {
+    "tax_id": "06.00-1-27.112",
+    "full_market_value": "436000",
+    "county_taxable": "436000",
+    "school_taxable": "349900",
+    "land_assessed_value": "41500"
+  },
+  {
+    "tax_id": "06.00-1-29",
+    "full_market_value": "272000",
+    "county_taxable": "272000",
+    "school_taxable": "242000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "06.00-1-30.3",
+    "full_market_value": "487000",
+    "county_taxable": "487000",
+    "school_taxable": "487000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-1-30.5",
+    "full_market_value": "452000",
+    "county_taxable": "452000",
+    "school_taxable": "422000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "06.00-1-30.7",
+    "full_market_value": "309000",
+    "county_taxable": "309000",
+    "school_taxable": "309000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "06.00-1-30.112",
+    "full_market_value": "402000",
+    "county_taxable": "402000",
+    "school_taxable": "372000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-1-31.3",
+    "full_market_value": "363700",
+    "county_taxable": "336300",
+    "school_taxable": "306300",
+    "land_assessed_value": "65600"
+  },
+  {
+    "tax_id": "06.00-1-31.12",
+    "full_market_value": "331000",
+    "county_taxable": "304600",
+    "school_taxable": "274600",
+    "land_assessed_value": "66000"
+  },
+  {
+    "tax_id": "06.00-1-33",
+    "full_market_value": "443000",
+    "county_taxable": "443000",
+    "school_taxable": "413000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "06.00-1-35",
+    "full_market_value": "320000",
+    "county_taxable": "320000",
+    "school_taxable": "233900",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "06.00-1-36.2",
+    "full_market_value": "340000",
+    "county_taxable": "340000",
+    "school_taxable": "310000",
+    "land_assessed_value": "50600"
+  },
+  {
+    "tax_id": "06.00-1-39.2",
+    "full_market_value": "244000",
+    "county_taxable": "214000",
+    "school_taxable": "208000",
+    "land_assessed_value": "29900"
+  },
+  {
+    "tax_id": "06.00-1-39.12",
+    "full_market_value": "329000",
+    "county_taxable": "329000",
+    "school_taxable": "299000",
+    "land_assessed_value": "22700"
+  },
+  {
+    "tax_id": "06.00-1-39.112",
+    "full_market_value": "321000",
+    "county_taxable": "321000",
+    "school_taxable": "291000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-1-41.12",
+    "full_market_value": "345000",
+    "county_taxable": "345000",
+    "school_taxable": "258900",
+    "land_assessed_value": "31900"
+  },
+  {
+    "tax_id": "06.00-1-41.22",
+    "full_market_value": "550000",
+    "county_taxable": "550000",
+    "school_taxable": "550000",
+    "land_assessed_value": "119800"
+  },
+  {
+    "tax_id": "06.00-1-43",
+    "full_market_value": "250000",
+    "county_taxable": "250000",
+    "school_taxable": "163900",
+    "land_assessed_value": "53800"
+  },
+  {
+    "tax_id": "06.00-1-44.4",
+    "full_market_value": "349000",
+    "county_taxable": "349000",
+    "school_taxable": "319000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "06.00-1-46.1",
+    "full_market_value": "283000",
+    "county_taxable": "283000",
+    "school_taxable": "283000",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "06.00-1-49",
+    "full_market_value": "284000",
+    "county_taxable": "284000",
+    "school_taxable": "197900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-1-52",
+    "full_market_value": "325000",
+    "county_taxable": "325000",
+    "school_taxable": "325000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "06.00-1-55.21",
+    "full_market_value": "569000",
+    "county_taxable": "569000",
+    "school_taxable": "539000",
+    "land_assessed_value": "92400"
+  },
+  {
+    "tax_id": "06.00-1-58.2",
+    "full_market_value": "336000",
+    "county_taxable": "336000",
+    "school_taxable": "336000",
+    "land_assessed_value": "77700"
+  },
+  {
+    "tax_id": "06.00-1-60.11",
+    "full_market_value": "437000",
+    "county_taxable": "437000",
+    "school_taxable": "407000",
+    "land_assessed_value": "102700"
+  },
+  {
+    "tax_id": "06.00-1-62",
+    "full_market_value": "547000",
+    "county_taxable": "547000",
+    "school_taxable": "517000",
+    "land_assessed_value": "73000"
+  },
+  {
+    "tax_id": "06.00-1-64.2",
+    "full_market_value": "447000",
+    "county_taxable": "447000",
+    "school_taxable": "360900",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "06.00-1-67",
+    "full_market_value": "590000",
+    "county_taxable": "590000",
+    "school_taxable": "590000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "06.00-1-71",
+    "full_market_value": "419000",
+    "county_taxable": "419000",
+    "school_taxable": "389000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "06.00-1-74",
+    "full_market_value": "571000",
+    "county_taxable": "571000",
+    "school_taxable": "541000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "06.00-1-77",
+    "full_market_value": "364000",
+    "county_taxable": "364000",
+    "school_taxable": "277900",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "06.00-1-79",
+    "full_market_value": "369000",
+    "county_taxable": "319000",
+    "school_taxable": "272900",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "06.00-1-81",
+    "full_market_value": "395000",
+    "county_taxable": "395000",
+    "school_taxable": "308900",
+    "land_assessed_value": "28800"
+  },
+  {
+    "tax_id": "06.00-1-83",
+    "full_market_value": "559000",
+    "county_taxable": "559000",
+    "school_taxable": "559000",
+    "land_assessed_value": "30200"
+  },
+  {
+    "tax_id": "06.00-1-86",
+    "full_market_value": "481000",
+    "county_taxable": "351000",
+    "school_taxable": "455000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "06.00-1-89",
+    "full_market_value": "32000",
+    "county_taxable": "32000",
+    "school_taxable": "32000",
+    "land_assessed_value": "31800"
+  },
+  {
+    "tax_id": "06.00-1-92",
+    "full_market_value": "86500",
+    "county_taxable": "86500",
+    "school_taxable": "86500",
+    "land_assessed_value": "52600"
+  },
+  {
+    "tax_id": "06.00-2-1.1",
+    "full_market_value": "369000",
+    "county_taxable": "369000",
+    "school_taxable": "369000",
+    "land_assessed_value": "78700"
+  },
+  {
+    "tax_id": "06.00-2-2.2",
+    "full_market_value": "162700",
+    "county_taxable": "114000",
+    "school_taxable": "114000",
+    "land_assessed_value": "162700"
+  },
+  {
+    "tax_id": "06.00-2-6.2",
+    "full_market_value": "310000",
+    "county_taxable": "310000",
+    "school_taxable": "280000",
+    "land_assessed_value": "71000"
+  },
+  {
+    "tax_id": "06.00-2-7.12",
+    "full_market_value": "336000",
+    "county_taxable": "336000",
+    "school_taxable": "336000",
+    "land_assessed_value": "70300"
+  },
+  {
+    "tax_id": "06.00-2-8.2",
+    "full_market_value": "335000",
+    "county_taxable": "335000",
+    "school_taxable": "335000",
+    "land_assessed_value": "66400"
+  },
+  {
+    "tax_id": "06.00-2-9.6",
+    "full_market_value": "503000",
+    "county_taxable": "503000",
+    "school_taxable": "473000",
+    "land_assessed_value": "28400"
+  },
+  {
+    "tax_id": "06.00-2-9.81",
+    "full_market_value": "603000",
+    "county_taxable": "603000",
+    "school_taxable": "573000",
+    "land_assessed_value": "149700"
+  },
+  {
+    "tax_id": "06.00-2-10.3",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "252000",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "06.00-2-10.12",
+    "full_market_value": "112500",
+    "county_taxable": "39100",
+    "school_taxable": "39100",
+    "land_assessed_value": "108300"
+  },
+  {
+    "tax_id": "06.00-2-10.42",
+    "full_market_value": "488000",
+    "county_taxable": "438000",
+    "school_taxable": "478000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-2-10.51",
+    "full_market_value": "30000",
+    "county_taxable": "30000",
+    "school_taxable": "30000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-2-10.53",
+    "full_market_value": "444000",
+    "county_taxable": "444000",
+    "school_taxable": "414000",
+    "land_assessed_value": "30200"
+  },
+  {
+    "tax_id": "06.00-2-10.62",
+    "full_market_value": "361000",
+    "county_taxable": "361000",
+    "school_taxable": "361000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-2-13.12",
+    "full_market_value": "593000",
+    "county_taxable": "593000",
+    "school_taxable": "593000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "06.00-2-14",
+    "full_market_value": "305000",
+    "county_taxable": "305000",
+    "school_taxable": "305000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "06.00-2-16.1",
+    "full_market_value": "119000",
+    "county_taxable": "29100",
+    "school_taxable": "29100",
+    "land_assessed_value": "119000"
+  },
+  {
+    "tax_id": "06.00-2-17",
+    "full_market_value": "321000",
+    "county_taxable": "321000",
+    "school_taxable": "291000",
+    "land_assessed_value": "23300"
+  },
+  {
+    "tax_id": "06.00-2-19",
+    "full_market_value": "240000",
+    "county_taxable": "240000",
+    "school_taxable": "210000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "06.00-2-21.1",
+    "full_market_value": "287000",
+    "county_taxable": "257000",
+    "school_taxable": "194900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "06.00-2-22",
+    "full_market_value": "334000",
+    "county_taxable": "334000",
+    "school_taxable": "304000",
+    "land_assessed_value": "31400"
+  },
+  {
+    "tax_id": "06.00-2-23.2",
+    "full_market_value": "380000",
+    "county_taxable": "380000",
+    "school_taxable": "380000",
+    "land_assessed_value": "28500"
+  },
+  {
+    "tax_id": "06.00-2-24.21",
+    "full_market_value": "270000",
+    "county_taxable": "175500",
+    "school_taxable": "145500",
+    "land_assessed_value": "29700"
+  },
+  {
+    "tax_id": "06.00-2-25",
+    "full_market_value": "306000",
+    "county_taxable": "306000",
+    "school_taxable": "276000",
+    "land_assessed_value": "41500"
+  },
+  {
+    "tax_id": "06.00-2-27",
+    "full_market_value": "323000",
+    "county_taxable": "293000",
+    "school_taxable": "230900",
+    "land_assessed_value": "49000"
+  },
+  {
+    "tax_id": "06.00-2-29",
+    "full_market_value": "371000",
+    "county_taxable": "371000",
+    "school_taxable": "284900",
+    "land_assessed_value": "72100"
+  },
+  {
+    "tax_id": "06.00-2-31.111",
+    "full_market_value": "398000",
+    "county_taxable": "398000",
+    "school_taxable": "398000",
+    "land_assessed_value": "56600"
+  },
+  {
+    "tax_id": "06.00-2-46",
+    "full_market_value": "304000",
+    "county_taxable": "304000",
+    "school_taxable": "217900",
+    "land_assessed_value": "30300"
+  },
+  {
+    "tax_id": "06.00-2-49",
+    "full_market_value": "292000",
+    "county_taxable": "262000",
+    "school_taxable": "286000",
+    "land_assessed_value": "51300"
+  },
+  {
+    "tax_id": "06.00-2-52.1",
+    "full_market_value": "369100",
+    "county_taxable": "345700",
+    "school_taxable": "315700",
+    "land_assessed_value": "147300"
+  },
+  {
+    "tax_id": "06.00-2-57",
+    "full_market_value": "372000",
+    "county_taxable": "372000",
+    "school_taxable": "342000",
+    "land_assessed_value": "62400"
+  },
+  {
+    "tax_id": "06.00-2-60",
+    "full_market_value": "307000",
+    "county_taxable": "307000",
+    "school_taxable": "277000",
+    "land_assessed_value": "62400"
+  },
+  {
+    "tax_id": "06.00-2-64",
+    "full_market_value": "34500",
+    "county_taxable": "34500",
+    "school_taxable": "34500",
+    "land_assessed_value": "34500"
+  },
+  {
+    "tax_id": "06.00-2-67",
+    "full_market_value": "308000",
+    "county_taxable": "308000",
+    "school_taxable": "308000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "07.00-1-1",
+    "full_market_value": "220000",
+    "county_taxable": "207600",
+    "school_taxable": "207600",
+    "land_assessed_value": "36900"
+  },
+  {
+    "tax_id": "07.00-1-3.4",
+    "full_market_value": "198100",
+    "county_taxable": "51700",
+    "school_taxable": "51700",
+    "land_assessed_value": "198100"
+  },
+  {
+    "tax_id": "07.00-1-3.112",
+    "full_market_value": "549000",
+    "county_taxable": "549000",
+    "school_taxable": "549000",
+    "land_assessed_value": "72000"
+  },
+  {
+    "tax_id": "07.00-1-4.12",
+    "full_market_value": "530000",
+    "county_taxable": "530000",
+    "school_taxable": "500000",
+    "land_assessed_value": "80700"
+  },
+  {
+    "tax_id": "07.00-1-6",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "263000",
+    "land_assessed_value": "72400"
+  },
+  {
+    "tax_id": "07.00-1-7.21",
+    "full_market_value": "290000",
+    "county_taxable": "290000",
+    "school_taxable": "203900",
+    "land_assessed_value": "47600"
+  },
+  {
+    "tax_id": "07.00-1-7.112",
+    "full_market_value": "433000",
+    "county_taxable": "433000",
+    "school_taxable": "403000",
+    "land_assessed_value": "47000"
+  },
+  {
+    "tax_id": "07.00-1-10",
+    "full_market_value": "222000",
+    "county_taxable": "222000",
+    "school_taxable": "222000",
+    "land_assessed_value": "62700"
+  },
+  {
+    "tax_id": "07.00-1-12",
+    "full_market_value": "328000",
+    "county_taxable": "328000",
+    "school_taxable": "298000",
+    "land_assessed_value": "82000"
+  },
+  {
+    "tax_id": "07.00-1-15.21",
+    "full_market_value": "333000",
+    "county_taxable": "283000",
+    "school_taxable": "293000",
+    "land_assessed_value": "68000"
+  },
+  {
+    "tax_id": "07.00-1-16.11",
+    "full_market_value": "597500",
+    "county_taxable": "474300",
+    "school_taxable": "514300",
+    "land_assessed_value": "186000"
+  },
+  {
+    "tax_id": "07.00-1-18.2",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "201000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.00-1-23",
+    "full_market_value": "490000",
+    "county_taxable": "490000",
+    "school_taxable": "490000",
+    "land_assessed_value": "75900"
+  },
+  {
+    "tax_id": "07.00-1-26",
+    "full_market_value": "408000",
+    "county_taxable": "408000",
+    "school_taxable": "408000",
+    "land_assessed_value": "55600"
+  },
+  {
+    "tax_id": "07.00-1-29.1",
+    "full_market_value": "331000",
+    "county_taxable": "331000",
+    "school_taxable": "244900",
+    "land_assessed_value": "53500"
+  },
+  {
+    "tax_id": "07.00-1-30.1",
+    "full_market_value": "699000",
+    "county_taxable": "699000",
+    "school_taxable": "699000",
+    "land_assessed_value": "79000"
+  },
+  {
+    "tax_id": "07.00-1-31",
+    "full_market_value": "257000",
+    "county_taxable": "257000",
+    "school_taxable": "257000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "07.00-1-33",
+    "full_market_value": "521800",
+    "county_taxable": "364000",
+    "school_taxable": "364000",
+    "land_assessed_value": "252700"
+  },
+  {
+    "tax_id": "07.00-1-34.2",
+    "full_market_value": "19900",
+    "county_taxable": "19900",
+    "school_taxable": "19900",
+    "land_assessed_value": "19900"
+  },
+  {
+    "tax_id": "07.00-1-36",
+    "full_market_value": "246000",
+    "county_taxable": "246000",
+    "school_taxable": "246000",
+    "land_assessed_value": "26500"
+  },
+  {
+    "tax_id": "07.00-1-38.1",
+    "full_market_value": "314000",
+    "county_taxable": "277500",
+    "school_taxable": "221900",
+    "land_assessed_value": "31600"
+  },
+  {
+    "tax_id": "07.00-1-40.11",
+    "full_market_value": "144200",
+    "county_taxable": "59900",
+    "school_taxable": "59900",
+    "land_assessed_value": "107000"
+  },
+  {
+    "tax_id": "07.00-1-42",
+    "full_market_value": "257000",
+    "county_taxable": "224600",
+    "school_taxable": "194600",
+    "land_assessed_value": "89800"
+  },
+  {
+    "tax_id": "07.00-1-43.12",
+    "full_market_value": "183000",
+    "county_taxable": "183000",
+    "school_taxable": "183000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "07.00-1-43.112",
+    "full_market_value": "235000",
+    "county_taxable": "185000",
+    "school_taxable": "138900",
+    "land_assessed_value": "42200"
+  },
+  {
+    "tax_id": "07.00-1-44.21",
+    "full_market_value": "139400",
+    "county_taxable": "36800",
+    "school_taxable": "36800",
+    "land_assessed_value": "139400"
+  },
+  {
+    "tax_id": "07.00-1-45.12",
+    "full_market_value": "222000",
+    "county_taxable": "222000",
+    "school_taxable": "135900",
+    "land_assessed_value": "25600"
+  },
+  {
+    "tax_id": "07.00-1-45.112",
+    "full_market_value": "255000",
+    "county_taxable": "255000",
+    "school_taxable": "225000",
+    "land_assessed_value": "25600"
+  },
+  {
+    "tax_id": "07.00-1-47",
+    "full_market_value": "193000",
+    "county_taxable": "193000",
+    "school_taxable": "193000",
+    "land_assessed_value": "25300"
+  },
+  {
+    "tax_id": "07.00-1-49",
+    "full_market_value": "38000",
+    "county_taxable": "38000",
+    "school_taxable": "38000",
+    "land_assessed_value": "22500"
+  },
+  {
+    "tax_id": "07.00-1-50.3",
+    "full_market_value": "95400",
+    "county_taxable": "95400",
+    "school_taxable": "95400",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "07.00-1-50.5",
+    "full_market_value": "426000",
+    "county_taxable": "426000",
+    "school_taxable": "396000",
+    "land_assessed_value": "44500"
+  },
+  {
+    "tax_id": "07.00-1-51.3",
+    "full_market_value": "330000",
+    "county_taxable": "330000",
+    "school_taxable": "330000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.00-1-51.111",
+    "full_market_value": "291900",
+    "county_taxable": "98250",
+    "school_taxable": "24150",
+    "land_assessed_value": "129800"
+  },
+  {
+    "tax_id": "07.00-1-53",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "186000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.00-1-54.3",
+    "full_market_value": "241000",
+    "county_taxable": "241000",
+    "school_taxable": "241000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "07.00-1-54.12",
+    "full_market_value": "284000",
+    "county_taxable": "284000",
+    "school_taxable": "254000",
+    "land_assessed_value": "39000"
+  },
+  {
+    "tax_id": "07.00-1-55.1",
+    "full_market_value": "245000",
+    "county_taxable": "245000",
+    "school_taxable": "245000",
+    "land_assessed_value": "25700"
+  },
+  {
+    "tax_id": "07.00-1-57",
+    "full_market_value": "256000",
+    "county_taxable": "256000",
+    "school_taxable": "226000",
+    "land_assessed_value": "26600"
+  },
+  {
+    "tax_id": "07.00-1-61.1",
+    "full_market_value": "266000",
+    "county_taxable": "266000",
+    "school_taxable": "236000",
+    "land_assessed_value": "28700"
+  },
+  {
+    "tax_id": "07.00-1-62",
+    "full_market_value": "324000",
+    "county_taxable": "194000",
+    "school_taxable": "211900",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "07.00-1-64",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "252000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "07.00-1-66",
+    "full_market_value": "246000",
+    "county_taxable": "246000",
+    "school_taxable": "246000",
+    "land_assessed_value": "33400"
+  },
+  {
+    "tax_id": "07.00-1-73",
+    "full_market_value": "41000",
+    "county_taxable": "41000",
+    "school_taxable": "41000",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "07.00-2-2",
+    "full_market_value": "263900",
+    "county_taxable": "263900",
+    "school_taxable": "263900",
+    "land_assessed_value": "77000"
+  },
+  {
+    "tax_id": "07.00-2-6",
+    "full_market_value": "31500",
+    "county_taxable": "31500",
+    "school_taxable": "31500",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "07.00-2-9",
+    "full_market_value": "387000",
+    "county_taxable": "387000",
+    "school_taxable": "387000",
+    "land_assessed_value": "158000"
+  },
+  {
+    "tax_id": "07.00-2-11.12",
+    "full_market_value": "249000",
+    "county_taxable": "249000",
+    "school_taxable": "249000",
+    "land_assessed_value": "25100"
+  },
+  {
+    "tax_id": "07.00-2-12.1",
+    "full_market_value": "344000",
+    "county_taxable": "344000",
+    "school_taxable": "344000",
+    "land_assessed_value": "51600"
+  },
+  {
+    "tax_id": "07.00-2-15",
+    "full_market_value": "304000",
+    "county_taxable": "304000",
+    "school_taxable": "304000",
+    "land_assessed_value": "35800"
+  },
+  {
+    "tax_id": "07.00-2-16.12",
+    "full_market_value": "108400",
+    "county_taxable": "108400",
+    "school_taxable": "108400",
+    "land_assessed_value": "63600"
+  },
+  {
+    "tax_id": "07.00-2-18",
+    "full_market_value": "213000",
+    "county_taxable": "213000",
+    "school_taxable": "126900",
+    "land_assessed_value": "54200"
+  },
+  {
+    "tax_id": "07.00-2-20",
+    "full_market_value": "186000",
+    "county_taxable": "130200",
+    "school_taxable": "160000",
+    "land_assessed_value": "47500"
+  },
+  {
+    "tax_id": "07.00-2-22",
+    "full_market_value": "229000",
+    "county_taxable": "229000",
+    "school_taxable": "199000",
+    "land_assessed_value": "29500"
+  },
+  {
+    "tax_id": "07.00-2-24",
+    "full_market_value": "224000",
+    "county_taxable": "224000",
+    "school_taxable": "224000",
+    "land_assessed_value": "27100"
+  },
+  {
+    "tax_id": "07.00-2-28",
+    "full_market_value": "259000",
+    "county_taxable": "259000",
+    "school_taxable": "172900",
+    "land_assessed_value": "37000"
+  },
+  {
+    "tax_id": "07.00-2-31",
+    "full_market_value": "201400",
+    "county_taxable": "201400",
+    "school_taxable": "201400",
+    "land_assessed_value": "150900"
+  },
+  {
+    "tax_id": "07.00-2-35",
+    "full_market_value": "1300000",
+    "county_taxable": "1300000",
+    "school_taxable": "1300000",
+    "land_assessed_value": "261500"
+  },
+  {
+    "tax_id": "07.00-2-36.12",
+    "full_market_value": "584000",
+    "county_taxable": "584000",
+    "school_taxable": "554000",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "07.00-2-37.1",
+    "full_market_value": "135000",
+    "county_taxable": "135000",
+    "school_taxable": "135000",
+    "land_assessed_value": "28700"
+  },
+  {
+    "tax_id": "07.00-2-37.211",
+    "full_market_value": "152100",
+    "county_taxable": "27500",
+    "school_taxable": "27500",
+    "land_assessed_value": "152100"
+  },
+  {
+    "tax_id": "07.00-2-38.2",
+    "full_market_value": "168400",
+    "county_taxable": "31400",
+    "school_taxable": "31400",
+    "land_assessed_value": "168400"
+  },
+  {
+    "tax_id": "07.00-2-39.111",
+    "full_market_value": "32400",
+    "county_taxable": "32400",
+    "school_taxable": "32400",
+    "land_assessed_value": "32400"
+  },
+  {
+    "tax_id": "07.00-2-40.111",
+    "full_market_value": "285000",
+    "county_taxable": "285000",
+    "school_taxable": "285000",
+    "land_assessed_value": "49500"
+  },
+  {
+    "tax_id": "07.00-2-40.121",
+    "full_market_value": "58300",
+    "county_taxable": "58300",
+    "school_taxable": "58300",
+    "land_assessed_value": "46000"
+  },
+  {
+    "tax_id": "07.00-2-42",
+    "full_market_value": "167000",
+    "county_taxable": "167000",
+    "school_taxable": "167000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "07.00-2-44",
+    "full_market_value": "233000",
+    "county_taxable": "233000",
+    "school_taxable": "233000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "07.00-2-46",
+    "full_market_value": "242000",
+    "county_taxable": "242000",
+    "school_taxable": "242000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "07.00-2-48",
+    "full_market_value": "281000",
+    "county_taxable": "281000",
+    "school_taxable": "251000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "07.00-2-50",
+    "full_market_value": "376000",
+    "county_taxable": "376000",
+    "school_taxable": "346000",
+    "land_assessed_value": "34500"
+  },
+  {
+    "tax_id": "07.00-2-52",
+    "full_market_value": "452000",
+    "county_taxable": "452000",
+    "school_taxable": "452000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "07.00-2-54",
+    "full_market_value": "268000",
+    "county_taxable": "268000",
+    "school_taxable": "238000",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "07.00-2-55.2",
+    "full_market_value": "186000",
+    "county_taxable": "186000",
+    "school_taxable": "186000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "07.00-2-56.12",
+    "full_market_value": "286000",
+    "county_taxable": "256000",
+    "school_taxable": "193900",
+    "land_assessed_value": "58300"
+  },
+  {
+    "tax_id": "07.00-2-57",
+    "full_market_value": "556000",
+    "county_taxable": "479200",
+    "school_taxable": "479200",
+    "land_assessed_value": "85500"
+  },
+  {
+    "tax_id": "07.00-2-60.1",
+    "full_market_value": "790000",
+    "county_taxable": "695600",
+    "school_taxable": "695600",
+    "land_assessed_value": "190500"
+  },
+  {
+    "tax_id": "07.04-1-2.2",
+    "full_market_value": "435000",
+    "county_taxable": "435000",
+    "school_taxable": "405000",
+    "land_assessed_value": "28100"
+  },
+  {
+    "tax_id": "07.04-1-2.12",
+    "full_market_value": "210000",
+    "county_taxable": "210000",
+    "school_taxable": "210000",
+    "land_assessed_value": "23500"
+  },
+  {
+    "tax_id": "07.04-1-4",
+    "full_market_value": "272000",
+    "county_taxable": "272000",
+    "school_taxable": "242000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.04-1-6",
+    "full_market_value": "221000",
+    "county_taxable": "221000",
+    "school_taxable": "221000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.04-1-8",
+    "full_market_value": "205000",
+    "county_taxable": "205000",
+    "school_taxable": "118900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "07.04-1-9.2",
+    "full_market_value": "297000",
+    "county_taxable": "297000",
+    "school_taxable": "297000",
+    "land_assessed_value": "28800"
+  },
+  {
+    "tax_id": "07.04-1-11",
+    "full_market_value": "50000",
+    "county_taxable": "50000",
+    "school_taxable": "50000",
+    "land_assessed_value": "25900"
+  },
+  {
+    "tax_id": "07.04-1-13",
+    "full_market_value": "233000",
+    "county_taxable": "233000",
+    "school_taxable": "233000",
+    "land_assessed_value": "29800"
+  },
+  {
+    "tax_id": "07.04-1-15",
+    "full_market_value": "270000",
+    "county_taxable": "270000",
+    "school_taxable": "240000",
+    "land_assessed_value": "27100"
+  },
+  {
+    "tax_id": "07.04-1-17.1",
+    "full_market_value": "152000",
+    "county_taxable": "152000",
+    "school_taxable": "152000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "07.04-1-17.212",
+    "full_market_value": "508000",
+    "county_taxable": "508000",
+    "school_taxable": "508000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "07.04-1-21",
+    "full_market_value": "298000",
+    "county_taxable": "188400",
+    "school_taxable": "238000",
+    "land_assessed_value": "76300"
+  },
+  {
+    "tax_id": "07.04-1-28",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "252000",
+    "land_assessed_value": "54200"
+  },
+  {
+    "tax_id": "07.04-1-31",
+    "full_market_value": "234000",
+    "county_taxable": "234000",
+    "school_taxable": "234000",
+    "land_assessed_value": "58200"
+  },
+  {
+    "tax_id": "07.04-1-34",
+    "full_market_value": "283000",
+    "county_taxable": "283000",
+    "school_taxable": "283000",
+    "land_assessed_value": "48900"
+  },
+  {
+    "tax_id": "07.04-1-37",
+    "full_market_value": "288000",
+    "county_taxable": "288000",
+    "school_taxable": "201900",
+    "land_assessed_value": "68000"
+  },
+  {
+    "tax_id": "07.04-1-40",
+    "full_market_value": "224000",
+    "county_taxable": "224000",
+    "school_taxable": "194000",
+    "land_assessed_value": "55800"
+  },
+  {
+    "tax_id": "07.04-1-43",
+    "full_market_value": "280000",
+    "county_taxable": "280000",
+    "school_taxable": "250000",
+    "land_assessed_value": "67300"
+  },
+  {
+    "tax_id": "07.04-1-47",
+    "full_market_value": "264000",
+    "county_taxable": "264000",
+    "school_taxable": "264000",
+    "land_assessed_value": "55200"
+  },
+  {
+    "tax_id": "07.04-1-52",
+    "full_market_value": "218400",
+    "county_taxable": "218400",
+    "school_taxable": "218400",
+    "land_assessed_value": "34200"
+  },
+  {
+    "tax_id": "07.04-1-56",
+    "full_market_value": "440000",
+    "county_taxable": "440000",
+    "school_taxable": "440000",
+    "land_assessed_value": "55800"
+  },
+  {
+    "tax_id": "07.04-1-59",
+    "full_market_value": "380000",
+    "county_taxable": "380000",
+    "school_taxable": "350000",
+    "land_assessed_value": "55800"
+  },
+  {
+    "tax_id": "07.04-1-62",
+    "full_market_value": "299000",
+    "county_taxable": "269000",
+    "school_taxable": "206900",
+    "land_assessed_value": "62900"
+  },
+  {
+    "tax_id": "07.04-1-66",
+    "full_market_value": "271000",
+    "county_taxable": "271000",
+    "school_taxable": "184900",
+    "land_assessed_value": "54800"
+  },
+  {
+    "tax_id": "07.04-1-71",
+    "full_market_value": "300000",
+    "county_taxable": "300000",
+    "school_taxable": "300000",
+    "land_assessed_value": "54800"
+  },
+  {
+    "tax_id": "07.04-1-74",
+    "full_market_value": "321000",
+    "county_taxable": "306000",
+    "school_taxable": "291000",
+    "land_assessed_value": "56200"
+  },
+  {
+    "tax_id": "19.00-1-1",
+    "full_market_value": "271000",
+    "county_taxable": "271000",
+    "school_taxable": "271000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "19.00-1-3",
+    "full_market_value": "255000",
+    "county_taxable": "255000",
+    "school_taxable": "255000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "19.00-1-5",
+    "full_market_value": "299000",
+    "county_taxable": "299000",
+    "school_taxable": "269000",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "19.00-1-7",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "254000",
+    "land_assessed_value": "22100"
+  },
+  {
+    "tax_id": "19.00-1-10.1",
+    "full_market_value": "294000",
+    "county_taxable": "294000",
+    "school_taxable": "207900",
+    "land_assessed_value": "55600"
+  },
+  {
+    "tax_id": "19.00-1-12.11",
+    "full_market_value": "275000",
+    "county_taxable": "275000",
+    "school_taxable": "275000",
+    "land_assessed_value": "67500"
+  },
+  {
+    "tax_id": "19.00-1-15",
+    "full_market_value": "230000",
+    "county_taxable": "230000",
+    "school_taxable": "200000",
+    "land_assessed_value": "33700"
+  },
+  {
+    "tax_id": "19.00-1-18",
+    "full_market_value": "295000",
+    "county_taxable": "295000",
+    "school_taxable": "208900",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "19.00-1-19.21",
+    "full_market_value": "226000",
+    "county_taxable": "226000",
+    "school_taxable": "139900",
+    "land_assessed_value": "26600"
+  },
+  {
+    "tax_id": "19.00-1-21",
+    "full_market_value": "275000",
+    "county_taxable": "275000",
+    "school_taxable": "245000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "19.00-1-23.2",
+    "full_market_value": "245000",
+    "county_taxable": "245000",
+    "school_taxable": "215000",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "19.00-1-25",
+    "full_market_value": "263000",
+    "county_taxable": "263000",
+    "school_taxable": "176900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "19.00-1-27",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "293000",
+    "land_assessed_value": "29500"
+  },
+  {
+    "tax_id": "19.00-1-29",
+    "full_market_value": "234000",
+    "county_taxable": "204000",
+    "school_taxable": "198000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "19.00-1-31",
+    "full_market_value": "387000",
+    "county_taxable": "387000",
+    "school_taxable": "357000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "19.00-1-33",
+    "full_market_value": "629000",
+    "county_taxable": "629000",
+    "school_taxable": "599000",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "19.00-1-34.12",
+    "full_market_value": "415000",
+    "county_taxable": "415000",
+    "school_taxable": "415000",
+    "land_assessed_value": "48500"
+  },
+  {
+    "tax_id": "19.00-1-35.1",
+    "full_market_value": "53900",
+    "county_taxable": "53900",
+    "school_taxable": "53900",
+    "land_assessed_value": "37600"
+  },
+  {
+    "tax_id": "19.00-1-36",
+    "full_market_value": "304000",
+    "county_taxable": "304000",
+    "school_taxable": "304000",
+    "land_assessed_value": "34700"
+  },
+  {
+    "tax_id": "19.00-1-38",
+    "full_market_value": "4900",
+    "county_taxable": "4900",
+    "school_taxable": "4900",
+    "land_assessed_value": "4900"
+  },
+  {
+    "tax_id": "19.00-1-41.11",
+    "full_market_value": "893000",
+    "county_taxable": "724200",
+    "school_taxable": "694200",
+    "land_assessed_value": "251900"
+  },
+  {
+    "tax_id": "19.00-1-42",
+    "full_market_value": "227000",
+    "county_taxable": "227000",
+    "school_taxable": "197000",
+    "land_assessed_value": "30800"
+  },
+  {
+    "tax_id": "19.00-1-44",
+    "full_market_value": "240000",
+    "county_taxable": "240000",
+    "school_taxable": "240000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "19.00-1-46.12",
+    "full_market_value": "122000",
+    "county_taxable": "122000",
+    "school_taxable": "122000",
+    "land_assessed_value": "23000"
+  },
+  {
+    "tax_id": "19.00-1-46.22",
+    "full_market_value": "343000",
+    "county_taxable": "343000",
+    "school_taxable": "313000",
+    "land_assessed_value": "38600"
+  },
+  {
+    "tax_id": "19.00-1-49",
+    "full_market_value": "212000",
+    "county_taxable": "212000",
+    "school_taxable": "125900",
+    "land_assessed_value": "36800"
+  },
+  {
+    "tax_id": "19.00-1-53.1",
+    "full_market_value": "627000",
+    "county_taxable": "627000",
+    "school_taxable": "627000",
+    "land_assessed_value": "207200"
+  },
+  {
+    "tax_id": "19.00-1-55",
+    "full_market_value": "22700",
+    "county_taxable": "22700",
+    "school_taxable": "22700",
+    "land_assessed_value": "22700"
+  },
+  {
+    "tax_id": "19.00-1-57",
+    "full_market_value": "189000",
+    "county_taxable": "189000",
+    "school_taxable": "159000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.00-1-58.12",
+    "full_market_value": "290000",
+    "county_taxable": "290000",
+    "school_taxable": "290000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "19.00-1-60",
+    "full_market_value": "233000",
+    "county_taxable": "233000",
+    "school_taxable": "146900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.00-1-61.12",
+    "full_market_value": "287000",
+    "county_taxable": "237000",
+    "school_taxable": "190900",
+    "land_assessed_value": "25600"
+  },
+  {
+    "tax_id": "19.00-1-62.1",
+    "full_market_value": "80000",
+    "county_taxable": "80000",
+    "school_taxable": "80000",
+    "land_assessed_value": "18000"
+  },
+  {
+    "tax_id": "19.00-1-63",
+    "full_market_value": "442000",
+    "county_taxable": "165200",
+    "school_taxable": "165200",
+    "land_assessed_value": "66000"
+  },
+  {
+    "tax_id": "19.00-1-65.111",
+    "full_market_value": "588000",
+    "county_taxable": "242500",
+    "school_taxable": "242500",
+    "land_assessed_value": "466100"
+  },
+  {
+    "tax_id": "19.00-1-66",
+    "full_market_value": "598000",
+    "county_taxable": "598000",
+    "school_taxable": "598000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "19.00-1-68.2",
+    "full_market_value": "404000",
+    "county_taxable": "404000",
+    "school_taxable": "404000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "19.00-1-69",
+    "full_market_value": "606000",
+    "county_taxable": "606000",
+    "school_taxable": "606000",
+    "land_assessed_value": "30300"
+  },
+  {
+    "tax_id": "19.00-1-70",
+    "full_market_value": "213000",
+    "county_taxable": "55444",
+    "school_taxable": "55444",
+    "land_assessed_value": "66644"
+  },
+  {
+    "tax_id": "19.00-2-3",
+    "full_market_value": "246000",
+    "county_taxable": "246000",
+    "school_taxable": "246000",
+    "land_assessed_value": "30100"
+  },
+  {
+    "tax_id": "19.00-2-5",
+    "full_market_value": "204000",
+    "county_taxable": "204000",
+    "school_taxable": "204000",
+    "land_assessed_value": "28500"
+  },
+  {
+    "tax_id": "19.00-2-6.2",
+    "full_market_value": "344000",
+    "county_taxable": "344000",
+    "school_taxable": "344000",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "19.00-2-8",
+    "full_market_value": "290000",
+    "county_taxable": "160000",
+    "school_taxable": "177900",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "19.00-2-10",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "231000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "19.00-2-12",
+    "full_market_value": "330000",
+    "county_taxable": "266200",
+    "school_taxable": "266200",
+    "land_assessed_value": "137900"
+  },
+  {
+    "tax_id": "19.00-2-14",
+    "full_market_value": "267000",
+    "county_taxable": "217000",
+    "school_taxable": "170900",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "19.00-2-15.12",
+    "full_market_value": "259000",
+    "county_taxable": "259000",
+    "school_taxable": "259000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "19.00-2-15.112",
+    "full_market_value": "18000",
+    "county_taxable": "18000",
+    "school_taxable": "18000",
+    "land_assessed_value": "18000"
+  },
+  {
+    "tax_id": "19.00-2-17",
+    "full_market_value": "234000",
+    "county_taxable": "234000",
+    "school_taxable": "234000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "19.00-2-18.22",
+    "full_market_value": "345000",
+    "county_taxable": "345000",
+    "school_taxable": "315000",
+    "land_assessed_value": "29900"
+  },
+  {
+    "tax_id": "19.00-2-18.121",
+    "full_market_value": "576000",
+    "county_taxable": "576000",
+    "school_taxable": "489900",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "19.00-2-19.2",
+    "full_market_value": "267000",
+    "county_taxable": "267000",
+    "school_taxable": "237000",
+    "land_assessed_value": "36500"
+  },
+  {
+    "tax_id": "19.00-2-21",
+    "full_market_value": "249000",
+    "county_taxable": "234000",
+    "school_taxable": "219000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "19.00-2-23",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "202000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "19.00-2-24.111",
+    "full_market_value": "587000",
+    "county_taxable": "587000",
+    "school_taxable": "587000",
+    "land_assessed_value": "31100"
+  },
+  {
+    "tax_id": "19.00-2-25.2",
+    "full_market_value": "354000",
+    "county_taxable": "354000",
+    "school_taxable": "324000",
+    "land_assessed_value": "41500"
+  },
+  {
+    "tax_id": "19.00-2-26.121",
+    "full_market_value": "343000",
+    "county_taxable": "343000",
+    "school_taxable": "313000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "19.00-2-29",
+    "full_market_value": "326000",
+    "county_taxable": "326000",
+    "school_taxable": "239900",
+    "land_assessed_value": "28000"
+  },
+  {
+    "tax_id": "19.00-2-31",
+    "full_market_value": "24300",
+    "county_taxable": "24300",
+    "school_taxable": "24300",
+    "land_assessed_value": "24300"
+  },
+  {
+    "tax_id": "19.00-2-33",
+    "full_market_value": "341000",
+    "county_taxable": "280900",
+    "school_taxable": "280900",
+    "land_assessed_value": "55600"
+  },
+  {
+    "tax_id": "19.00-2-35",
+    "full_market_value": "310000",
+    "county_taxable": "310000",
+    "school_taxable": "310000",
+    "land_assessed_value": "42900"
+  },
+  {
+    "tax_id": "19.00-2-37.2",
+    "full_market_value": "45500",
+    "county_taxable": "45500",
+    "school_taxable": "45500",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "19.00-2-39",
+    "full_market_value": "415000",
+    "county_taxable": "415000",
+    "school_taxable": "415000",
+    "land_assessed_value": "43500"
+  },
+  {
+    "tax_id": "19.00-2-42",
+    "full_market_value": "239000",
+    "county_taxable": "113400",
+    "school_taxable": "183000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "19.00-2-44",
+    "full_market_value": "439000",
+    "county_taxable": "439000",
+    "school_taxable": "409000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "19.00-2-47",
+    "full_market_value": "211000",
+    "county_taxable": "211000",
+    "school_taxable": "211000",
+    "land_assessed_value": "28000"
+  },
+  {
+    "tax_id": "19.00-2-49.2",
+    "full_market_value": "276000",
+    "county_taxable": "276000",
+    "school_taxable": "246000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "19.00-2-49.111",
+    "full_market_value": "251300",
+    "county_taxable": "89600",
+    "school_taxable": "89600",
+    "land_assessed_value": "223500"
+  },
+  {
+    "tax_id": "19.00-2-50.2",
+    "full_market_value": "322000",
+    "county_taxable": "322000",
+    "school_taxable": "235900",
+    "land_assessed_value": "31700"
+  },
+  {
+    "tax_id": "19.00-2-50.12",
+    "full_market_value": "558000",
+    "county_taxable": "558000",
+    "school_taxable": "558000",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "19.00-2-51.2",
+    "full_market_value": "457000",
+    "county_taxable": "457000",
+    "school_taxable": "457000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "19.00-2-51.111",
+    "full_market_value": "319000",
+    "county_taxable": "319000",
+    "school_taxable": "232900",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "19.00-2-53",
+    "full_market_value": "189000",
+    "county_taxable": "189000",
+    "school_taxable": "189000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "19.00-2-54.2",
+    "full_market_value": "325000",
+    "county_taxable": "325000",
+    "school_taxable": "325000",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "19.00-2-58",
+    "full_market_value": "362000",
+    "county_taxable": "362000",
+    "school_taxable": "362000",
+    "land_assessed_value": "49500"
+  },
+  {
+    "tax_id": "19.00-2-61",
+    "full_market_value": "64600",
+    "county_taxable": "64600",
+    "school_taxable": "64600",
+    "land_assessed_value": "64600"
+  },
+  {
+    "tax_id": "19.00-2-63",
+    "full_market_value": "458000",
+    "county_taxable": "339300",
+    "school_taxable": "341900",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "19.03-1-2.1",
+    "full_market_value": "470000",
+    "county_taxable": "470000",
+    "school_taxable": "440000",
+    "land_assessed_value": "54700"
+  },
+  {
+    "tax_id": "19.03-1-4",
+    "full_market_value": "284000",
+    "county_taxable": "284000",
+    "school_taxable": "254000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "19.03-1-6",
+    "full_market_value": "203000",
+    "county_taxable": "153000",
+    "school_taxable": "106900",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "19.03-1-8",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "216000",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "19.03-1-10",
+    "full_market_value": "331000",
+    "county_taxable": "331000",
+    "school_taxable": "331000",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "19.03-1-12",
+    "full_market_value": "229000",
+    "county_taxable": "229000",
+    "school_taxable": "199000",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "19.03-1-14",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "252000",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "19.03-1-16",
+    "full_market_value": "255000",
+    "county_taxable": "255000",
+    "school_taxable": "225000",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "19.03-1-18.1",
+    "full_market_value": "373000",
+    "county_taxable": "373000",
+    "school_taxable": "373000",
+    "land_assessed_value": "29100"
+  },
+  {
+    "tax_id": "19.03-1-18.3",
+    "full_market_value": "425000",
+    "county_taxable": "425000",
+    "school_taxable": "425000",
+    "land_assessed_value": "28900"
+  },
+  {
+    "tax_id": "19.03-1-19",
+    "full_market_value": "254000",
+    "county_taxable": "224000",
+    "school_taxable": "161900",
+    "land_assessed_value": "35300"
+  },
+  {
+    "tax_id": "19.03-1-20.2",
+    "full_market_value": "292000",
+    "county_taxable": "292000",
+    "school_taxable": "292000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "19.03-1-22",
+    "full_market_value": "213000",
+    "county_taxable": "213000",
+    "school_taxable": "213000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "19.03-1-24",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "144900",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "19.03-1-26",
+    "full_market_value": "208000",
+    "county_taxable": "208000",
+    "school_taxable": "121900",
+    "land_assessed_value": "34500"
+  },
+  {
+    "tax_id": "19.03-1-28",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "254000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "19.03-1-30",
+    "full_market_value": "301000",
+    "county_taxable": "301000",
+    "school_taxable": "214900",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "19.03-1-31.2",
+    "full_market_value": "186000",
+    "county_taxable": "186000",
+    "school_taxable": "186000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "19.03-1-35",
+    "full_market_value": "208000",
+    "county_taxable": "208000",
+    "school_taxable": "208000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-37",
+    "full_market_value": "181000",
+    "county_taxable": "181000",
+    "school_taxable": "181000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-39",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "182000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-41",
+    "full_market_value": "183000",
+    "county_taxable": "183000",
+    "school_taxable": "96900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-43",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "95900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-45",
+    "full_market_value": "173000",
+    "county_taxable": "173000",
+    "school_taxable": "173000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-47",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "182000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-49",
+    "full_market_value": "187000",
+    "county_taxable": "187000",
+    "school_taxable": "100900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-51",
+    "full_market_value": "176000",
+    "county_taxable": "132000",
+    "school_taxable": "79900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-53",
+    "full_market_value": "206000",
+    "county_taxable": "206000",
+    "school_taxable": "206000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-55",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "182000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-57",
+    "full_market_value": "183000",
+    "county_taxable": "183000",
+    "school_taxable": "96900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-59",
+    "full_market_value": "171000",
+    "county_taxable": "171000",
+    "school_taxable": "84900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-61",
+    "full_market_value": "205000",
+    "county_taxable": "205000",
+    "school_taxable": "205000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-63",
+    "full_market_value": "178000",
+    "county_taxable": "178000",
+    "school_taxable": "178000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-65",
+    "full_market_value": "189000",
+    "county_taxable": "132300",
+    "school_taxable": "177000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-67",
+    "full_market_value": "166000",
+    "county_taxable": "166000",
+    "school_taxable": "136000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.03-1-69",
+    "full_market_value": "178000",
+    "county_taxable": "163000",
+    "school_taxable": "178000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "19.17-1-1",
+    "full_market_value": "400000",
+    "county_taxable": "400000",
+    "school_taxable": "400000",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "19.17-1-3",
+    "full_market_value": "17000",
+    "county_taxable": "17000",
+    "school_taxable": "17000",
+    "land_assessed_value": "10500"
+  },
+  {
+    "tax_id": "19.17-1-5",
+    "full_market_value": "208000",
+    "county_taxable": "208000",
+    "school_taxable": "208000",
+    "land_assessed_value": "22600"
+  },
+  {
+    "tax_id": "19.17-1-7",
+    "full_market_value": "277000",
+    "county_taxable": "277000",
+    "school_taxable": "277000",
+    "land_assessed_value": "25800"
+  },
+  {
+    "tax_id": "19.17-1-9",
+    "full_market_value": "20600",
+    "county_taxable": "20600",
+    "school_taxable": "20600",
+    "land_assessed_value": "20600"
+  },
+  {
+    "tax_id": "19.17-1-11",
+    "full_market_value": "286000",
+    "county_taxable": "286000",
+    "school_taxable": "286000",
+    "land_assessed_value": "35600"
+  },
+  {
+    "tax_id": "19.17-1-13",
+    "full_market_value": "38900",
+    "county_taxable": "38900",
+    "school_taxable": "38900",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "19.17-1-14.11",
+    "full_market_value": "244000",
+    "county_taxable": "214000",
+    "school_taxable": "151900",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "19.17-1-15",
+    "full_market_value": "309000",
+    "county_taxable": "309000",
+    "school_taxable": "309000",
+    "land_assessed_value": "33700"
+  },
+  {
+    "tax_id": "19.17-1-17",
+    "full_market_value": "257000",
+    "county_taxable": "227000",
+    "school_taxable": "164900",
+    "land_assessed_value": "33600"
+  },
+  {
+    "tax_id": "19.17-1-19",
+    "full_market_value": "230000",
+    "county_taxable": "230000",
+    "school_taxable": "230000",
+    "land_assessed_value": "24700"
+  },
+  {
+    "tax_id": "19.17-1-21",
+    "full_market_value": "312000",
+    "county_taxable": "312000",
+    "school_taxable": "312000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "19.17-1-23",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "222000",
+    "land_assessed_value": "25900"
+  },
+  {
+    "tax_id": "19.17-1-25",
+    "full_market_value": "250000",
+    "county_taxable": "60000",
+    "school_taxable": "45900",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "19.17-1-27",
+    "full_market_value": "372000",
+    "county_taxable": "372000",
+    "school_taxable": "372000",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "19.17-1-29",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "231000",
+    "land_assessed_value": "25100"
+  },
+  {
+    "tax_id": "19.17-1-31",
+    "full_market_value": "374000",
+    "county_taxable": "374000",
+    "school_taxable": "344000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "19.17-1-33",
+    "full_market_value": "28600",
+    "county_taxable": "28600",
+    "school_taxable": "28600",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "19.17-1-35",
+    "full_market_value": "234000",
+    "county_taxable": "234000",
+    "school_taxable": "234000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "19.17-1-37",
+    "full_market_value": "279000",
+    "county_taxable": "249000",
+    "school_taxable": "186900",
+    "land_assessed_value": "22100"
+  },
+  {
+    "tax_id": "19.17-1-39",
+    "full_market_value": "216000",
+    "county_taxable": "216000",
+    "school_taxable": "216000",
+    "land_assessed_value": "21500"
+  },
+  {
+    "tax_id": "19.17-1-41",
+    "full_market_value": "243000",
+    "county_taxable": "193000",
+    "school_taxable": "146900",
+    "land_assessed_value": "25300"
+  },
+  {
+    "tax_id": "19.17-1-43",
+    "full_market_value": "221000",
+    "county_taxable": "221000",
+    "school_taxable": "221000",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "19.17-1-45",
+    "full_market_value": "330000",
+    "county_taxable": "330000",
+    "school_taxable": "330000",
+    "land_assessed_value": "21100"
+  },
+  {
+    "tax_id": "19.17-1-47",
+    "full_market_value": "134000",
+    "county_taxable": "134000",
+    "school_taxable": "134000",
+    "land_assessed_value": "21500"
+  },
+  {
+    "tax_id": "19.17-1-49",
+    "full_market_value": "290000",
+    "county_taxable": "290000",
+    "school_taxable": "260000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "19.17-1-51",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "254000",
+    "land_assessed_value": "64000"
+  },
+  {
+    "tax_id": "19.17-1-53",
+    "full_market_value": "185000",
+    "county_taxable": "185000",
+    "school_taxable": "185000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-1-55.1",
+    "full_market_value": "5300",
+    "county_taxable": "5300",
+    "school_taxable": "5300",
+    "land_assessed_value": "5300"
+  },
+  {
+    "tax_id": "19.17-1-56",
+    "full_market_value": "191000",
+    "county_taxable": "162350",
+    "school_taxable": "98900",
+    "land_assessed_value": "24800"
+  },
+  {
+    "tax_id": "19.17-1-58",
+    "full_market_value": "238000",
+    "county_taxable": "238000",
+    "school_taxable": "238000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-1-60",
+    "full_market_value": "323000",
+    "county_taxable": "323000",
+    "school_taxable": "323000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-1-62",
+    "full_market_value": "309000",
+    "county_taxable": "309000",
+    "school_taxable": "309000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-1-65",
+    "full_market_value": "308000",
+    "county_taxable": "308000",
+    "school_taxable": "278000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-1-67",
+    "full_market_value": "325000",
+    "county_taxable": "325000",
+    "school_taxable": "325000",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "19.17-1-68.2",
+    "full_market_value": "321000",
+    "county_taxable": "321000",
+    "school_taxable": "234900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "19.17-2-2",
+    "full_market_value": "5600",
+    "county_taxable": "5600",
+    "school_taxable": "5600",
+    "land_assessed_value": "5000"
+  },
+  {
+    "tax_id": "19.17-2-4",
+    "full_market_value": "482000",
+    "county_taxable": "482000",
+    "school_taxable": "482000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-6",
+    "full_market_value": "374000",
+    "county_taxable": "374000",
+    "school_taxable": "374000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-8",
+    "full_market_value": "387000",
+    "county_taxable": "317650",
+    "school_taxable": "327650",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-10",
+    "full_market_value": "407000",
+    "county_taxable": "407000",
+    "school_taxable": "377000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-12",
+    "full_market_value": "404000",
+    "county_taxable": "404000",
+    "school_taxable": "374000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-14",
+    "full_market_value": "413000",
+    "county_taxable": "413000",
+    "school_taxable": "326900",
+    "land_assessed_value": "58200"
+  },
+  {
+    "tax_id": "19.17-2-16",
+    "full_market_value": "417000",
+    "county_taxable": "417000",
+    "school_taxable": "417000",
+    "land_assessed_value": "56500"
+  },
+  {
+    "tax_id": "19.17-2-18",
+    "full_market_value": "377000",
+    "county_taxable": "377000",
+    "school_taxable": "377000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-20",
+    "full_market_value": "390000",
+    "county_taxable": "390000",
+    "school_taxable": "360000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-22",
+    "full_market_value": "413000",
+    "county_taxable": "413000",
+    "school_taxable": "413000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "19.17-2-24",
+    "full_market_value": "410000",
+    "county_taxable": "410000",
+    "school_taxable": "410000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "20.00-1-2.1",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "263000",
+    "land_assessed_value": "65000"
+  },
+  {
+    "tax_id": "20.00-1-3.11",
+    "full_market_value": "501000",
+    "county_taxable": "501000",
+    "school_taxable": "501000",
+    "land_assessed_value": "135300"
+  },
+  {
+    "tax_id": "20.00-1-4.1",
+    "full_market_value": "416700",
+    "county_taxable": "242800",
+    "school_taxable": "156700",
+    "land_assessed_value": "272200"
+  },
+  {
+    "tax_id": "20.00-1-5",
+    "full_market_value": "234000",
+    "county_taxable": "204000",
+    "school_taxable": "141900",
+    "land_assessed_value": "27500"
+  },
+  {
+    "tax_id": "20.00-1-6.12",
+    "full_market_value": "466000",
+    "county_taxable": "436000",
+    "school_taxable": "373900",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "20.00-1-6.112",
+    "full_market_value": "691000",
+    "county_taxable": "691000",
+    "school_taxable": "691000",
+    "land_assessed_value": "31500"
+  },
+  {
+    "tax_id": "20.00-1-13",
+    "full_market_value": "303000",
+    "county_taxable": "303000",
+    "school_taxable": "303000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "20.00-1-15",
+    "full_market_value": "235000",
+    "county_taxable": "235000",
+    "school_taxable": "205000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "20.00-1-17",
+    "full_market_value": "195000",
+    "county_taxable": "195000",
+    "school_taxable": "108900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "20.00-1-18.2",
+    "full_market_value": "216000",
+    "county_taxable": "186000",
+    "school_taxable": "180000",
+    "land_assessed_value": "28900"
+  },
+  {
+    "tax_id": "20.00-1-19.111",
+    "full_market_value": "175800",
+    "county_taxable": "41300",
+    "school_taxable": "41300",
+    "land_assessed_value": "175300"
+  },
+  {
+    "tax_id": "20.00-1-20",
+    "full_market_value": "242000",
+    "county_taxable": "242000",
+    "school_taxable": "212000",
+    "land_assessed_value": "31900"
+  },
+  {
+    "tax_id": "20.00-1-22",
+    "full_market_value": "326000",
+    "county_taxable": "188300",
+    "school_taxable": "158300",
+    "land_assessed_value": "219500"
+  },
+  {
+    "tax_id": "20.00-1-24.111",
+    "full_market_value": "125200",
+    "county_taxable": "125200",
+    "school_taxable": "125200",
+    "land_assessed_value": "55600"
+  },
+  {
+    "tax_id": "20.00-1-25.2",
+    "full_market_value": "407000",
+    "county_taxable": "407000",
+    "school_taxable": "377000",
+    "land_assessed_value": "41500"
+  },
+  {
+    "tax_id": "20.00-1-25.112",
+    "full_market_value": "81400",
+    "county_taxable": "81400",
+    "school_taxable": "81400",
+    "land_assessed_value": "81400"
+  },
+  {
+    "tax_id": "20.00-1-27",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "332000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "20.00-1-29.2",
+    "full_market_value": "197000",
+    "county_taxable": "197000",
+    "school_taxable": "167000",
+    "land_assessed_value": "29100"
+  },
+  {
+    "tax_id": "20.00-1-29.4",
+    "full_market_value": "265000",
+    "county_taxable": "265000",
+    "school_taxable": "265000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "20.00-1-29.6",
+    "full_market_value": "203000",
+    "county_taxable": "203000",
+    "school_taxable": "173000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "20.00-1-29.8",
+    "full_market_value": "286000",
+    "county_taxable": "286000",
+    "school_taxable": "256000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "20.00-1-30.2",
+    "full_market_value": "442000",
+    "county_taxable": "442000",
+    "school_taxable": "355900",
+    "land_assessed_value": "29800"
+  },
+  {
+    "tax_id": "20.00-1-30.111",
+    "full_market_value": "64800",
+    "county_taxable": "12800",
+    "school_taxable": "12800",
+    "land_assessed_value": "64800"
+  },
+  {
+    "tax_id": "20.00-1-33",
+    "full_market_value": "319000",
+    "county_taxable": "319000",
+    "school_taxable": "319000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "20.00-1-35",
+    "full_market_value": "198000",
+    "county_taxable": "168300",
+    "school_taxable": "105900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.00-1-37",
+    "full_market_value": "255000",
+    "county_taxable": "225000",
+    "school_taxable": "162900",
+    "land_assessed_value": "25000"
+  },
+  {
+    "tax_id": "20.00-1-39",
+    "full_market_value": "3600",
+    "county_taxable": "3600",
+    "school_taxable": "3600",
+    "land_assessed_value": "3600"
+  },
+  {
+    "tax_id": "20.00-1-41",
+    "full_market_value": "81700",
+    "county_taxable": "20500",
+    "school_taxable": "20500",
+    "land_assessed_value": "81700"
+  },
+  {
+    "tax_id": "20.00-1-43",
+    "full_market_value": "281000",
+    "county_taxable": "281000",
+    "school_taxable": "194900",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "20.00-1-45",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "145900",
+    "land_assessed_value": "35600"
+  },
+  {
+    "tax_id": "20.00-1-47.2",
+    "full_market_value": "217000",
+    "county_taxable": "217000",
+    "school_taxable": "217000",
+    "land_assessed_value": "40400"
+  },
+  {
+    "tax_id": "20.00-1-47.111",
+    "full_market_value": "315000",
+    "county_taxable": "315000",
+    "school_taxable": "315000",
+    "land_assessed_value": "39800"
+  },
+  {
+    "tax_id": "20.00-1-49",
+    "full_market_value": "415000",
+    "county_taxable": "415000",
+    "school_taxable": "328900",
+    "land_assessed_value": "37400"
+  },
+  {
+    "tax_id": "20.00-1-51",
+    "full_market_value": "205000",
+    "county_taxable": "205000",
+    "school_taxable": "175000",
+    "land_assessed_value": "39200"
+  },
+  {
+    "tax_id": "20.00-1-52.2",
+    "full_market_value": "207000",
+    "county_taxable": "207000",
+    "school_taxable": "207000",
+    "land_assessed_value": "31800"
+  },
+  {
+    "tax_id": "20.00-1-54",
+    "full_market_value": "548000",
+    "county_taxable": "548000",
+    "school_taxable": "548000",
+    "land_assessed_value": "26400"
+  },
+  {
+    "tax_id": "20.00-1-57",
+    "full_market_value": "218000",
+    "county_taxable": "218000",
+    "school_taxable": "218000",
+    "land_assessed_value": "31800"
+  },
+  {
+    "tax_id": "20.00-1-59",
+    "full_market_value": "222000",
+    "county_taxable": "192000",
+    "school_taxable": "129900",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "20.00-1-60.11",
+    "full_market_value": "235000",
+    "county_taxable": "235000",
+    "school_taxable": "148900",
+    "land_assessed_value": "28200"
+  },
+  {
+    "tax_id": "20.00-1-61.3",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "282000",
+    "land_assessed_value": "38600"
+  },
+  {
+    "tax_id": "20.00-1-61.11",
+    "full_market_value": "248000",
+    "county_taxable": "233000",
+    "school_taxable": "248000",
+    "land_assessed_value": "38800"
+  },
+  {
+    "tax_id": "20.00-1-62",
+    "full_market_value": "298000",
+    "county_taxable": "298000",
+    "school_taxable": "211900",
+    "land_assessed_value": "46200"
+  },
+  {
+    "tax_id": "20.00-1-64",
+    "full_market_value": "280000",
+    "county_taxable": "280000",
+    "school_taxable": "250000",
+    "land_assessed_value": "29100"
+  },
+  {
+    "tax_id": "20.00-1-67",
+    "full_market_value": "324000",
+    "county_taxable": "324000",
+    "school_taxable": "294000",
+    "land_assessed_value": "34600"
+  },
+  {
+    "tax_id": "20.00-1-69",
+    "full_market_value": "297000",
+    "county_taxable": "297000",
+    "school_taxable": "267000",
+    "land_assessed_value": "35400"
+  },
+  {
+    "tax_id": "20.00-1-71",
+    "full_market_value": "30500",
+    "county_taxable": "30500",
+    "school_taxable": "30500",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "20.00-1-73",
+    "full_market_value": "289000",
+    "county_taxable": "259000",
+    "school_taxable": "196900",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "20.00-1-75",
+    "full_market_value": "258000",
+    "county_taxable": "117700",
+    "school_taxable": "228000",
+    "land_assessed_value": "33600"
+  },
+  {
+    "tax_id": "20.00-1-77",
+    "full_market_value": "328000",
+    "county_taxable": "328000",
+    "school_taxable": "241900",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "20.00-1-79",
+    "full_market_value": "287000",
+    "county_taxable": "287000",
+    "school_taxable": "200900",
+    "land_assessed_value": "29600"
+  },
+  {
+    "tax_id": "20.00-1-81",
+    "full_market_value": "55100",
+    "county_taxable": "55100",
+    "school_taxable": "55100",
+    "land_assessed_value": "55100"
+  },
+  {
+    "tax_id": "20.00-2-1",
+    "full_market_value": "654200",
+    "county_taxable": "594000",
+    "school_taxable": "564000",
+    "land_assessed_value": "147300"
+  },
+  {
+    "tax_id": "20.00-2-3.2",
+    "full_market_value": "514000",
+    "county_taxable": "514000",
+    "school_taxable": "484000",
+    "land_assessed_value": "52500"
+  },
+  {
+    "tax_id": "20.00-2-3.4",
+    "full_market_value": "380800",
+    "county_taxable": "304700",
+    "school_taxable": "304700",
+    "land_assessed_value": "114700"
+  },
+  {
+    "tax_id": "20.00-2-3.12",
+    "full_market_value": "425000",
+    "county_taxable": "425000",
+    "school_taxable": "425000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "20.00-2-4.1",
+    "full_market_value": "417000",
+    "county_taxable": "267000",
+    "school_taxable": "387000",
+    "land_assessed_value": "55000"
+  },
+  {
+    "tax_id": "20.00-2-6.2",
+    "full_market_value": "66900",
+    "county_taxable": "12700",
+    "school_taxable": "12700",
+    "land_assessed_value": "66900"
+  },
+  {
+    "tax_id": "20.00-2-11",
+    "full_market_value": "259000",
+    "county_taxable": "229000",
+    "school_taxable": "166900",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "20.00-2-13.1",
+    "full_market_value": "48000",
+    "county_taxable": "48000",
+    "school_taxable": "48000",
+    "land_assessed_value": "48000"
+  },
+  {
+    "tax_id": "20.00-2-13.3",
+    "full_market_value": "270000",
+    "county_taxable": "270000",
+    "school_taxable": "240000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "20.00-2-13.5",
+    "full_market_value": "233000",
+    "county_taxable": "233000",
+    "school_taxable": "233000",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "20.00-2-17.1",
+    "full_market_value": "339000",
+    "county_taxable": "339000",
+    "school_taxable": "339000",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "20.00-2-18",
+    "full_market_value": "266000",
+    "county_taxable": "266000",
+    "school_taxable": "179900",
+    "land_assessed_value": "42000"
+  },
+  {
+    "tax_id": "20.00-2-21.11",
+    "full_market_value": "339000",
+    "county_taxable": "339000",
+    "school_taxable": "339000",
+    "land_assessed_value": "106000"
+  },
+  {
+    "tax_id": "20.00-2-21.21",
+    "full_market_value": "359000",
+    "county_taxable": "359000",
+    "school_taxable": "359000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "20.00-2-22.1",
+    "full_market_value": "220000",
+    "county_taxable": "220000",
+    "school_taxable": "133900",
+    "land_assessed_value": "27500"
+  },
+  {
+    "tax_id": "20.00-2-22.222",
+    "full_market_value": "804000",
+    "county_taxable": "654000",
+    "school_taxable": "774000",
+    "land_assessed_value": "33600"
+  },
+  {
+    "tax_id": "20.00-2-23.2",
+    "full_market_value": "242000",
+    "county_taxable": "242000",
+    "school_taxable": "212000",
+    "land_assessed_value": "28800"
+  },
+  {
+    "tax_id": "20.00-2-25",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "282000",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "20.00-2-27",
+    "full_market_value": "358000",
+    "county_taxable": "358000",
+    "school_taxable": "328000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "20.00-2-28.2",
+    "full_market_value": "446000",
+    "county_taxable": "446000",
+    "school_taxable": "446000",
+    "land_assessed_value": "30700"
+  },
+  {
+    "tax_id": "20.00-2-29.2",
+    "full_market_value": "5900",
+    "county_taxable": "5900",
+    "school_taxable": "5900",
+    "land_assessed_value": "1"
+  },
+  {
+    "tax_id": "20.00-2-33",
+    "full_market_value": "191000",
+    "county_taxable": "191000",
+    "school_taxable": "161000",
+    "land_assessed_value": "34000"
+  },
+  {
+    "tax_id": "20.00-2-35",
+    "full_market_value": "234000",
+    "county_taxable": "234000",
+    "school_taxable": "234000",
+    "land_assessed_value": "24700"
+  },
+  {
+    "tax_id": "20.00-2-37.2",
+    "full_market_value": "322000",
+    "county_taxable": "322000",
+    "school_taxable": "322000",
+    "land_assessed_value": "50500"
+  },
+  {
+    "tax_id": "20.00-2-37.112",
+    "full_market_value": "204000",
+    "county_taxable": "204000",
+    "school_taxable": "117900",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "20.00-2-37.122",
+    "full_market_value": "35500",
+    "county_taxable": "35500",
+    "school_taxable": "35500",
+    "land_assessed_value": "35500"
+  },
+  {
+    "tax_id": "20.00-2-38.11",
+    "full_market_value": "167000",
+    "county_taxable": "167000",
+    "school_taxable": "167000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "20.00-2-38.13",
+    "full_market_value": "400000",
+    "county_taxable": "400000",
+    "school_taxable": "400000",
+    "land_assessed_value": "28700"
+  },
+  {
+    "tax_id": "20.00-2-39",
+    "full_market_value": "158200",
+    "county_taxable": "39000",
+    "school_taxable": "39000",
+    "land_assessed_value": "156500"
+  },
+  {
+    "tax_id": "20.00-2-41",
+    "full_market_value": "365000",
+    "county_taxable": "335000",
+    "school_taxable": "329000",
+    "land_assessed_value": "63800"
+  },
+  {
+    "tax_id": "20.00-2-44",
+    "full_market_value": "248000",
+    "county_taxable": "248000",
+    "school_taxable": "161900",
+    "land_assessed_value": "34600"
+  },
+  {
+    "tax_id": "20.00-2-47",
+    "full_market_value": "517000",
+    "county_taxable": "355200",
+    "school_taxable": "355200",
+    "land_assessed_value": "258300"
+  },
+  {
+    "tax_id": "20.00-2-48.12",
+    "full_market_value": "281000",
+    "county_taxable": "266000",
+    "school_taxable": "194900",
+    "land_assessed_value": "37000"
+  },
+  {
+    "tax_id": "20.00-2-49.2",
+    "full_market_value": "367000",
+    "county_taxable": "328600",
+    "school_taxable": "242500",
+    "land_assessed_value": "91900"
+  },
+  {
+    "tax_id": "20.00-2-50.12",
+    "full_market_value": "22600",
+    "county_taxable": "22600",
+    "school_taxable": "22600",
+    "land_assessed_value": "22600"
+  },
+  {
+    "tax_id": "20.00-2-50.22",
+    "full_market_value": "416000",
+    "county_taxable": "416000",
+    "school_taxable": "416000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "20.00-2-52",
+    "full_market_value": "281000",
+    "county_taxable": "281000",
+    "school_taxable": "281000",
+    "land_assessed_value": "49000"
+  },
+  {
+    "tax_id": "20.00-2-54.2",
+    "full_market_value": "230000",
+    "county_taxable": "230000",
+    "school_taxable": "200000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "20.00-2-56",
+    "full_market_value": "496000",
+    "county_taxable": "496000",
+    "school_taxable": "496000",
+    "land_assessed_value": "31200"
+  },
+  {
+    "tax_id": "20.00-2-58",
+    "full_market_value": "124500",
+    "county_taxable": "25500",
+    "school_taxable": "25500",
+    "land_assessed_value": "124500"
+  },
+  {
+    "tax_id": "20.07-1-1",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "302000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "20.07-1-3",
+    "full_market_value": "243000",
+    "county_taxable": "243000",
+    "school_taxable": "213000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-5",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "144900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-7",
+    "full_market_value": "374000",
+    "county_taxable": "374000",
+    "school_taxable": "374000",
+    "land_assessed_value": "23500"
+  },
+  {
+    "tax_id": "20.07-1-9",
+    "full_market_value": "211000",
+    "county_taxable": "211000",
+    "school_taxable": "211000",
+    "land_assessed_value": "24300"
+  },
+  {
+    "tax_id": "20.07-1-11",
+    "full_market_value": "246000",
+    "county_taxable": "246000",
+    "school_taxable": "216000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "20.07-1-13",
+    "full_market_value": "331000",
+    "county_taxable": "331000",
+    "school_taxable": "331000",
+    "land_assessed_value": "23300"
+  },
+  {
+    "tax_id": "20.07-1-15",
+    "full_market_value": "338000",
+    "county_taxable": "323000",
+    "school_taxable": "308000",
+    "land_assessed_value": "25600"
+  },
+  {
+    "tax_id": "20.07-1-17",
+    "full_market_value": "311000",
+    "county_taxable": "266000",
+    "school_taxable": "275000",
+    "land_assessed_value": "23900"
+  },
+  {
+    "tax_id": "20.07-1-19",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "263000",
+    "land_assessed_value": "26900"
+  },
+  {
+    "tax_id": "20.07-1-21",
+    "full_market_value": "348000",
+    "county_taxable": "348000",
+    "school_taxable": "348000",
+    "land_assessed_value": "26500"
+  },
+  {
+    "tax_id": "20.07-1-23",
+    "full_market_value": "317000",
+    "county_taxable": "317000",
+    "school_taxable": "287000",
+    "land_assessed_value": "24300"
+  },
+  {
+    "tax_id": "20.07-1-25",
+    "full_market_value": "341000",
+    "county_taxable": "311000",
+    "school_taxable": "305000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "20.07-1-27",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "302000",
+    "land_assessed_value": "25400"
+  },
+  {
+    "tax_id": "20.07-1-29",
+    "full_market_value": "326000",
+    "county_taxable": "326000",
+    "school_taxable": "296000",
+    "land_assessed_value": "25400"
+  },
+  {
+    "tax_id": "20.07-1-31",
+    "full_market_value": "371000",
+    "county_taxable": "371000",
+    "school_taxable": "371000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-33",
+    "full_market_value": "364000",
+    "county_taxable": "364000",
+    "school_taxable": "364000",
+    "land_assessed_value": "26800"
+  },
+  {
+    "tax_id": "20.07-1-35",
+    "full_market_value": "323000",
+    "county_taxable": "323000",
+    "school_taxable": "293000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-37",
+    "full_market_value": "387000",
+    "county_taxable": "387000",
+    "school_taxable": "300900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-39",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "302000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-41",
+    "full_market_value": "433000",
+    "county_taxable": "283000",
+    "school_taxable": "403000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "20.07-1-43",
+    "full_market_value": "261000",
+    "county_taxable": "261000",
+    "school_taxable": "231000",
+    "land_assessed_value": "26000"
+  },
+  {
+    "tax_id": "20.07-1-46",
+    "full_market_value": "278000",
+    "county_taxable": "278000",
+    "school_taxable": "191900",
+    "land_assessed_value": "24100"
+  },
+  {
+    "tax_id": "20.07-1-48",
+    "full_market_value": "345000",
+    "county_taxable": "345000",
+    "school_taxable": "345000",
+    "land_assessed_value": "24100"
+  },
+  {
+    "tax_id": "20.07-1-50",
+    "full_market_value": "311000",
+    "county_taxable": "311000",
+    "school_taxable": "281000",
+    "land_assessed_value": "24100"
+  },
+  {
+    "tax_id": "20.07-1-52",
+    "full_market_value": "359000",
+    "county_taxable": "359000",
+    "school_taxable": "359000",
+    "land_assessed_value": "24100"
+  },
+  {
+    "tax_id": "20.07-1-54",
+    "full_market_value": "332000",
+    "county_taxable": "332000",
+    "school_taxable": "332000",
+    "land_assessed_value": "24100"
+  },
+  {
+    "tax_id": "20.17-1-1",
+    "full_market_value": "132000",
+    "county_taxable": "132000",
+    "school_taxable": "45900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-3",
+    "full_market_value": "161000",
+    "county_taxable": "161000",
+    "school_taxable": "161000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-5",
+    "full_market_value": "182000",
+    "county_taxable": "182000",
+    "school_taxable": "182000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-7",
+    "full_market_value": "165000",
+    "county_taxable": "165000",
+    "school_taxable": "165000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-9",
+    "full_market_value": "156000",
+    "county_taxable": "156000",
+    "school_taxable": "69900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-11",
+    "full_market_value": "162000",
+    "county_taxable": "162000",
+    "school_taxable": "162000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-13",
+    "full_market_value": "157000",
+    "county_taxable": "86350",
+    "school_taxable": "250",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-15",
+    "full_market_value": "155000",
+    "county_taxable": "77500",
+    "school_taxable": "0",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-17",
+    "full_market_value": "161000",
+    "county_taxable": "161000",
+    "school_taxable": "161000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-19",
+    "full_market_value": "158000",
+    "county_taxable": "158000",
+    "school_taxable": "158000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-21",
+    "full_market_value": "145000",
+    "county_taxable": "145000",
+    "school_taxable": "58900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-23",
+    "full_market_value": "150000",
+    "county_taxable": "150000",
+    "school_taxable": "63900",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-25",
+    "full_market_value": "112000",
+    "county_taxable": "112000",
+    "school_taxable": "112000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-1-27.1",
+    "full_market_value": "146000",
+    "county_taxable": "146000",
+    "school_taxable": "146000",
+    "land_assessed_value": "20000"
+  },
+  {
+    "tax_id": "20.17-2-1.3",
+    "full_market_value": "170000",
+    "county_taxable": "170000",
+    "school_taxable": "170000",
+    "land_assessed_value": "85500"
+  },
+  {
+    "tax_id": "20.17-2-1.5",
+    "full_market_value": "113500",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "113500"
+  },
+  {
+    "tax_id": "20.17-2-1.12",
+    "full_market_value": "64500",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "64500"
+  },
+  {
+    "tax_id": "20.17-2-3",
+    "full_market_value": "450000",
+    "county_taxable": "66700",
+    "school_taxable": "66700",
+    "land_assessed_value": "46500"
+  },
+  {
+    "tax_id": "20.17-2-5.1",
+    "full_market_value": "610000",
+    "county_taxable": "610000",
+    "school_taxable": "610000",
+    "land_assessed_value": "65300"
+  },
+  {
+    "tax_id": "20.17-2-6.2",
+    "full_market_value": "150000",
+    "county_taxable": "150000",
+    "school_taxable": "150000",
+    "land_assessed_value": "6500"
+  },
+  {
+    "tax_id": "21.00-1-1.2",
+    "full_market_value": "43500",
+    "county_taxable": "43500",
+    "school_taxable": "43500",
+    "land_assessed_value": "43500"
+  },
+  {
+    "tax_id": "21.00-1-1.111",
+    "full_market_value": "367700",
+    "county_taxable": "62800",
+    "school_taxable": "62800",
+    "land_assessed_value": "367700"
+  },
+  {
+    "tax_id": "21.00-1-4",
+    "full_market_value": "206000",
+    "county_taxable": "206000",
+    "school_taxable": "206000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-1-5.2",
+    "full_market_value": "229000",
+    "county_taxable": "180337",
+    "school_taxable": "132900",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-1-6.3",
+    "full_market_value": "45500",
+    "county_taxable": "45500",
+    "school_taxable": "45500",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "21.00-1-6.111",
+    "full_market_value": "591700",
+    "county_taxable": "591700",
+    "school_taxable": "591700",
+    "land_assessed_value": "570900"
+  },
+  {
+    "tax_id": "21.00-1-7.1",
+    "full_market_value": "31000",
+    "county_taxable": "31000",
+    "school_taxable": "31000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "21.00-1-8",
+    "full_market_value": "392000",
+    "county_taxable": "392000",
+    "school_taxable": "305900",
+    "land_assessed_value": "52500"
+  },
+  {
+    "tax_id": "21.00-1-9.12",
+    "full_market_value": "333000",
+    "county_taxable": "333000",
+    "school_taxable": "246900",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "21.00-1-11",
+    "full_market_value": "350000",
+    "county_taxable": "350000",
+    "school_taxable": "350000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "21.00-1-13",
+    "full_market_value": "176000",
+    "county_taxable": "176000",
+    "school_taxable": "176000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "21.00-1-15",
+    "full_market_value": "243000",
+    "county_taxable": "243000",
+    "school_taxable": "243000",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "21.00-1-17",
+    "full_market_value": "241000",
+    "county_taxable": "241000",
+    "school_taxable": "241000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "21.00-1-18.2",
+    "full_market_value": "241000",
+    "county_taxable": "241000",
+    "school_taxable": "241000",
+    "land_assessed_value": "23300"
+  },
+  {
+    "tax_id": "21.00-1-22",
+    "full_market_value": "359000",
+    "county_taxable": "359000",
+    "school_taxable": "359000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "21.00-1-23.111",
+    "full_market_value": "177800",
+    "county_taxable": "177800",
+    "school_taxable": "177800",
+    "land_assessed_value": "177800"
+  },
+  {
+    "tax_id": "21.00-1-24.1",
+    "full_market_value": "348000",
+    "county_taxable": "318000",
+    "school_taxable": "312000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "21.00-1-26",
+    "full_market_value": "377000",
+    "county_taxable": "377000",
+    "school_taxable": "377000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "21.00-1-30.1",
+    "full_market_value": "542000",
+    "county_taxable": "542000",
+    "school_taxable": "542000",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "21.00-1-30.3",
+    "full_market_value": "28300",
+    "county_taxable": "28300",
+    "school_taxable": "28300",
+    "land_assessed_value": "28300"
+  },
+  {
+    "tax_id": "21.00-1-34.1",
+    "full_market_value": "453000",
+    "county_taxable": "403000",
+    "school_taxable": "443000",
+    "land_assessed_value": "37500"
+  },
+  {
+    "tax_id": "21.00-1-37.2",
+    "full_market_value": "201000",
+    "county_taxable": "201000",
+    "school_taxable": "201000",
+    "land_assessed_value": "29600"
+  },
+  {
+    "tax_id": "21.00-1-40",
+    "full_market_value": "242000",
+    "county_taxable": "242000",
+    "school_taxable": "242000",
+    "land_assessed_value": "37400"
+  },
+  {
+    "tax_id": "21.00-1-43.2",
+    "full_market_value": "313000",
+    "county_taxable": "313000",
+    "school_taxable": "313000",
+    "land_assessed_value": "38200"
+  },
+  {
+    "tax_id": "21.00-1-43.111",
+    "full_market_value": "268000",
+    "county_taxable": "268000",
+    "school_taxable": "238000",
+    "land_assessed_value": "51800"
+  },
+  {
+    "tax_id": "21.00-1-44.2",
+    "full_market_value": "414000",
+    "county_taxable": "414000",
+    "school_taxable": "384000",
+    "land_assessed_value": "40400"
+  },
+  {
+    "tax_id": "21.00-1-45.2",
+    "full_market_value": "465000",
+    "county_taxable": "465000",
+    "school_taxable": "465000",
+    "land_assessed_value": "54800"
+  },
+  {
+    "tax_id": "21.00-1-46.2",
+    "full_market_value": "208000",
+    "county_taxable": "208000",
+    "school_taxable": "121900",
+    "land_assessed_value": "29800"
+  },
+  {
+    "tax_id": "21.00-1-49",
+    "full_market_value": "422000",
+    "county_taxable": "422000",
+    "school_taxable": "392000",
+    "land_assessed_value": "28600"
+  },
+  {
+    "tax_id": "21.00-1-51",
+    "full_market_value": "70300",
+    "county_taxable": "18200",
+    "school_taxable": "18200",
+    "land_assessed_value": "70300"
+  },
+  {
+    "tax_id": "21.00-2-1.112",
+    "full_market_value": "300000",
+    "county_taxable": "300000",
+    "school_taxable": "300000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "21.00-2-4.211",
+    "full_market_value": "243000",
+    "county_taxable": "243000",
+    "school_taxable": "213000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "21.00-2-4.221",
+    "full_market_value": "1206000",
+    "county_taxable": "1054044",
+    "school_taxable": "967944",
+    "land_assessed_value": "134100"
+  },
+  {
+    "tax_id": "21.00-2-5.2",
+    "full_market_value": "349000",
+    "county_taxable": "219000",
+    "school_taxable": "236900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "21.00-2-5.12",
+    "full_market_value": "23700",
+    "county_taxable": "23700",
+    "school_taxable": "23700",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-2-6.2",
+    "full_market_value": "261000",
+    "county_taxable": "211000",
+    "school_taxable": "164900",
+    "land_assessed_value": "28000"
+  },
+  {
+    "tax_id": "21.00-2-8.1",
+    "full_market_value": "23700",
+    "county_taxable": "23700",
+    "school_taxable": "23700",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-2-9",
+    "full_market_value": "208000",
+    "county_taxable": "208000",
+    "school_taxable": "208000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-2-11",
+    "full_market_value": "354000",
+    "county_taxable": "354000",
+    "school_taxable": "267900",
+    "land_assessed_value": "45500"
+  },
+  {
+    "tax_id": "21.00-2-13.1",
+    "full_market_value": "212000",
+    "county_taxable": "106000",
+    "school_taxable": "106000",
+    "land_assessed_value": "24800"
+  },
+  {
+    "tax_id": "21.00-2-13.22",
+    "full_market_value": "12300",
+    "county_taxable": "2700",
+    "school_taxable": "2700",
+    "land_assessed_value": "12300"
+  },
+  {
+    "tax_id": "21.00-2-14.12",
+    "full_market_value": "231500",
+    "county_taxable": "77200",
+    "school_taxable": "77200",
+    "land_assessed_value": "198200"
+  },
+  {
+    "tax_id": "21.00-2-16",
+    "full_market_value": "206000",
+    "county_taxable": "206000",
+    "school_taxable": "206000",
+    "land_assessed_value": "23700"
+  },
+  {
+    "tax_id": "21.00-2-18",
+    "full_market_value": "377600",
+    "county_taxable": "377600",
+    "school_taxable": "377600",
+    "land_assessed_value": "122100"
+  },
+  {
+    "tax_id": "21.00-2-19.12",
+    "full_market_value": "210000",
+    "county_taxable": "210000",
+    "school_taxable": "210000",
+    "land_assessed_value": "33100"
+  },
+  {
+    "tax_id": "21.00-2-19.22",
+    "full_market_value": "449000",
+    "county_taxable": "449000",
+    "school_taxable": "419000",
+    "land_assessed_value": "136600"
+  },
+  {
+    "tax_id": "21.00-2-19.112",
+    "full_market_value": "292000",
+    "county_taxable": "292000",
+    "school_taxable": "292000",
+    "land_assessed_value": "47000"
+  },
+  {
+    "tax_id": "21.00-2-21",
+    "full_market_value": "270000",
+    "county_taxable": "270000",
+    "school_taxable": "240000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "21.00-2-22.2",
+    "full_market_value": "600000",
+    "county_taxable": "600000",
+    "school_taxable": "600000",
+    "land_assessed_value": "72000"
+  },
+  {
+    "tax_id": "21.00-2-24.1",
+    "full_market_value": "336300",
+    "county_taxable": "336300",
+    "school_taxable": "336300",
+    "land_assessed_value": "52000"
+  },
+  {
+    "tax_id": "21.00-2-25",
+    "full_market_value": "222000",
+    "county_taxable": "222000",
+    "school_taxable": "222000",
+    "land_assessed_value": "162000"
+  },
+  {
+    "tax_id": "21.00-2-26.2",
+    "full_market_value": "221600",
+    "county_taxable": "221600",
+    "school_taxable": "221600",
+    "land_assessed_value": "221600"
+  },
+  {
+    "tax_id": "21.00-2-27.11",
+    "full_market_value": "58400",
+    "county_taxable": "58400",
+    "school_taxable": "58400",
+    "land_assessed_value": "57800"
+  },
+  {
+    "tax_id": "21.00-2-28",
+    "full_market_value": "110000",
+    "county_taxable": "110000",
+    "school_taxable": "110000",
+    "land_assessed_value": "30700"
+  },
+  {
+    "tax_id": "21.00-2-29.2",
+    "full_market_value": "90700",
+    "county_taxable": "28800",
+    "school_taxable": "28800",
+    "land_assessed_value": "90700"
+  },
+  {
+    "tax_id": "21.00-2-31",
+    "full_market_value": "352000",
+    "county_taxable": "352000",
+    "school_taxable": "322000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "21.00-2-33",
+    "full_market_value": "177000",
+    "county_taxable": "177000",
+    "school_taxable": "177000",
+    "land_assessed_value": "36000"
+  },
+  {
+    "tax_id": "21.00-2-36",
+    "full_market_value": "265000",
+    "county_taxable": "265000",
+    "school_taxable": "235000",
+    "land_assessed_value": "55000"
+  },
+  {
+    "tax_id": "21.00-2-38.2",
+    "full_market_value": "190000",
+    "county_taxable": "190000",
+    "school_taxable": "190000",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "21.00-2-40",
+    "full_market_value": "210900",
+    "county_taxable": "210900",
+    "school_taxable": "210900",
+    "land_assessed_value": "210900"
+  },
+  {
+    "tax_id": "21.00-2-43.12",
+    "full_market_value": "252000",
+    "county_taxable": "252000",
+    "school_taxable": "222000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "21.00-2-44",
+    "full_market_value": "345000",
+    "county_taxable": "345000",
+    "school_taxable": "345000",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "21.00-2-46.1",
+    "full_market_value": "319000",
+    "county_taxable": "289000",
+    "school_taxable": "226900",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "21.00-2-46.212",
+    "full_market_value": "100000",
+    "county_taxable": "100000",
+    "school_taxable": "100000",
+    "land_assessed_value": "100000"
+  },
+  {
+    "tax_id": "21.00-2-47.1",
+    "full_market_value": "153000",
+    "county_taxable": "34100",
+    "school_taxable": "34100",
+    "land_assessed_value": "153000"
+  },
+  {
+    "tax_id": "21.00-2-48.12",
+    "full_market_value": "297000",
+    "county_taxable": "282000",
+    "school_taxable": "210900",
+    "land_assessed_value": "27500"
+  },
+  {
+    "tax_id": "21.00-2-48.112",
+    "full_market_value": "238000",
+    "county_taxable": "238000",
+    "school_taxable": "238000",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "21.00-2-50.2",
+    "full_market_value": "293000",
+    "county_taxable": "293000",
+    "school_taxable": "206900",
+    "land_assessed_value": "24500"
+  },
+  {
+    "tax_id": "21.00-2-50.112",
+    "full_market_value": "528000",
+    "county_taxable": "528000",
+    "school_taxable": "528000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "21.00-2-53",
+    "full_market_value": "363000",
+    "county_taxable": "363000",
+    "school_taxable": "363000",
+    "land_assessed_value": "31000"
+  },
+  {
+    "tax_id": "21.00-2-55",
+    "full_market_value": "201000",
+    "county_taxable": "201000",
+    "school_taxable": "201000",
+    "land_assessed_value": "32000"
+  },
+  {
+    "tax_id": "21.00-2-57",
+    "full_market_value": "40000",
+    "county_taxable": "40000",
+    "school_taxable": "40000",
+    "land_assessed_value": "40000"
+  },
+  {
+    "tax_id": "21.00-2-58.2",
+    "full_market_value": "410000",
+    "county_taxable": "306100",
+    "school_taxable": "306100",
+    "land_assessed_value": "189100"
+  },
+  {
+    "tax_id": "21.00-2-60.1",
+    "full_market_value": "339000",
+    "county_taxable": "339000",
+    "school_taxable": "339000",
+    "land_assessed_value": "53100"
+  },
+  {
+    "tax_id": "21.00-2-61.1",
+    "full_market_value": "282000",
+    "county_taxable": "282000",
+    "school_taxable": "282000",
+    "land_assessed_value": "50000"
+  },
+  {
+    "tax_id": "21.00-2-61.3",
+    "full_market_value": "19900",
+    "county_taxable": "19900",
+    "school_taxable": "19900",
+    "land_assessed_value": "19900"
+  },
+  {
+    "tax_id": "21.00-2-63",
+    "full_market_value": "166000",
+    "county_taxable": "166000",
+    "school_taxable": "136000",
+    "land_assessed_value": "18800"
+  },
+  {
+    "tax_id": "21.00-2-64.2",
+    "full_market_value": "477000",
+    "county_taxable": "477000",
+    "school_taxable": "447000",
+    "land_assessed_value": "28800"
+  },
+  {
+    "tax_id": "21.00-2-66",
+    "full_market_value": "384000",
+    "county_taxable": "384000",
+    "school_taxable": "354000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "21.00-2-69",
+    "full_market_value": "540000",
+    "county_taxable": "540000",
+    "school_taxable": "540000",
+    "land_assessed_value": "51200"
+  },
+  {
+    "tax_id": "21.00-2-71",
+    "full_market_value": "54000",
+    "county_taxable": "54000",
+    "school_taxable": "54000",
+    "land_assessed_value": "54000"
+  },
+  {
+    "tax_id": "21.00-2-73",
+    "full_market_value": "875000",
+    "county_taxable": "875000",
+    "school_taxable": "875000",
+    "land_assessed_value": "65000"
+  },
+  {
+    "tax_id": "21.00-2-75.1",
+    "full_market_value": "537900",
+    "county_taxable": "287100",
+    "school_taxable": "287100",
+    "land_assessed_value": "321400"
+  },
+  {
+    "tax_id": "21.00-2-76",
+    "full_market_value": "210000",
+    "county_taxable": "184950",
+    "school_taxable": "210000",
+    "land_assessed_value": "74800"
+  },
+  {
+    "tax_id": "21.00-2-78",
+    "full_market_value": "300000",
+    "county_taxable": "300000",
+    "school_taxable": "300000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "34.00-1-1.2",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "232000",
+    "land_assessed_value": "32900"
+  },
+  {
+    "tax_id": "34.00-1-1.7",
+    "full_market_value": "2500000",
+    "county_taxable": "2500000",
+    "school_taxable": "2500000",
+    "land_assessed_value": "82500"
+  },
+  {
+    "tax_id": "34.00-1-1.9",
+    "full_market_value": "44400",
+    "county_taxable": "44400",
+    "school_taxable": "44400",
+    "land_assessed_value": "44400"
+  },
+  {
+    "tax_id": "34.00-1-1.41",
+    "full_market_value": "61100",
+    "county_taxable": "15200",
+    "school_taxable": "15200",
+    "land_assessed_value": "61100"
+  },
+  {
+    "tax_id": "34.00-1-1.112",
+    "full_market_value": "54200",
+    "county_taxable": "54200",
+    "school_taxable": "54200",
+    "land_assessed_value": "54200"
+  },
+  {
+    "tax_id": "34.00-1-1.312",
+    "full_market_value": "231000",
+    "county_taxable": "231000",
+    "school_taxable": "231000",
+    "land_assessed_value": "32800"
+  },
+  {
+    "tax_id": "34.00-1-5",
+    "full_market_value": "254000",
+    "county_taxable": "254000",
+    "school_taxable": "224000",
+    "land_assessed_value": "35300"
+  },
+  {
+    "tax_id": "34.00-1-7",
+    "full_market_value": "180000",
+    "county_taxable": "180000",
+    "school_taxable": "93900",
+    "land_assessed_value": "63200"
+  },
+  {
+    "tax_id": "34.00-1-9.1",
+    "full_market_value": "57600",
+    "county_taxable": "13800",
+    "school_taxable": "13800",
+    "land_assessed_value": "57600"
+  },
+  {
+    "tax_id": "34.00-1-10",
+    "full_market_value": "232000",
+    "county_taxable": "232000",
+    "school_taxable": "145900",
+    "land_assessed_value": "31900"
+  },
+  {
+    "tax_id": "34.00-1-12.22",
+    "full_market_value": "740000",
+    "county_taxable": "740000",
+    "school_taxable": "740000",
+    "land_assessed_value": "67500"
+  },
+  {
+    "tax_id": "34.00-1-13",
+    "full_market_value": "325000",
+    "county_taxable": "325000",
+    "school_taxable": "295000",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "34.00-1-15.1",
+    "full_market_value": "35000",
+    "county_taxable": "35000",
+    "school_taxable": "35000",
+    "land_assessed_value": "35000"
+  },
+  {
+    "tax_id": "34.00-1-16.2",
+    "full_market_value": "287000",
+    "county_taxable": "257000",
+    "school_taxable": "194900",
+    "land_assessed_value": "29000"
+  },
+  {
+    "tax_id": "34.00-1-16.112",
+    "full_market_value": "296000",
+    "county_taxable": "296000",
+    "school_taxable": "209900",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "34.00-1-19.111",
+    "full_market_value": "364700",
+    "county_taxable": "93300",
+    "school_taxable": "93300",
+    "land_assessed_value": "364700"
+  },
+  {
+    "tax_id": "34.00-1-22.11",
+    "full_market_value": "370800",
+    "county_taxable": "370800",
+    "school_taxable": "340800",
+    "land_assessed_value": "32500"
+  },
+  {
+    "tax_id": "34.00-1-23",
+    "full_market_value": "471500",
+    "county_taxable": "349300",
+    "school_taxable": "319300",
+    "land_assessed_value": "189600"
+  },
+  {
+    "tax_id": "34.00-1-25.1",
+    "full_market_value": "328000",
+    "county_taxable": "328000",
+    "school_taxable": "328000",
+    "land_assessed_value": "48700"
+  },
+  {
+    "tax_id": "34.00-1-27",
+    "full_market_value": "278000",
+    "county_taxable": "278000",
+    "school_taxable": "278000",
+    "land_assessed_value": "33500"
+  },
+  {
+    "tax_id": "34.00-1-29.2",
+    "full_market_value": "226000",
+    "county_taxable": "226000",
+    "school_taxable": "139900",
+    "land_assessed_value": "33000"
+  },
+  {
+    "tax_id": "34.00-1-29.12",
+    "full_market_value": "408600",
+    "county_taxable": "231000",
+    "school_taxable": "231000",
+    "land_assessed_value": "276400"
+  },
+  {
+    "tax_id": "34.00-1-30.21",
+    "full_market_value": "30100",
+    "county_taxable": "30100",
+    "school_taxable": "30100",
+    "land_assessed_value": "30100"
+  },
+  {
+    "tax_id": "34.00-1-31",
+    "full_market_value": "253000",
+    "county_taxable": "253000",
+    "school_taxable": "223000",
+    "land_assessed_value": "36400"
+  },
+  {
+    "tax_id": "34.00-1-33",
+    "full_market_value": "303000",
+    "county_taxable": "303000",
+    "school_taxable": "303000",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "34.00-1-35",
+    "full_market_value": "257000",
+    "county_taxable": "257000",
+    "school_taxable": "170900",
+    "land_assessed_value": "30400"
+  },
+  {
+    "tax_id": "34.00-1-36.3",
+    "full_market_value": "8300",
+    "county_taxable": "8300",
+    "school_taxable": "8300",
+    "land_assessed_value": "8300"
+  },
+  {
+    "tax_id": "34.00-1-36.111",
+    "full_market_value": "188800",
+    "county_taxable": "47200",
+    "school_taxable": "47200",
+    "land_assessed_value": "188800"
+  },
+  {
+    "tax_id": "34.00-1-38",
+    "full_market_value": "274000",
+    "county_taxable": "244000",
+    "school_taxable": "181900",
+    "land_assessed_value": "29400"
+  },
+  {
+    "tax_id": "34.00-1-40",
+    "full_market_value": "265000",
+    "county_taxable": "265000",
+    "school_taxable": "265000",
+    "land_assessed_value": "30500"
+  },
+  {
+    "tax_id": "34.00-1-41.2",
+    "full_market_value": "421000",
+    "county_taxable": "421000",
+    "school_taxable": "421000",
+    "land_assessed_value": "38000"
+  },
+  {
+    "tax_id": "34.00-1-42.2",
+    "full_market_value": "215000",
+    "county_taxable": "215000",
+    "school_taxable": "128900",
+    "land_assessed_value": "31200"
+  },
+  {
+    "tax_id": "34.00-1-44",
+    "full_market_value": "299000",
+    "county_taxable": "299000",
+    "school_taxable": "299000",
+    "land_assessed_value": "39200"
+  },
+  {
+    "tax_id": "34.00-1-46",
+    "full_market_value": "29300",
+    "county_taxable": "29300",
+    "school_taxable": "29300",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "34.00-1-48",
+    "full_market_value": "315000",
+    "county_taxable": "315000",
+    "school_taxable": "228900",
+    "land_assessed_value": "39800"
+  },
+  {
+    "tax_id": "34.00-1-50",
+    "full_market_value": "430000",
+    "county_taxable": "430000",
+    "school_taxable": "430000",
+    "land_assessed_value": "40500"
+  },
+  {
+    "tax_id": "34.00-1-56",
+    "full_market_value": "26200",
+    "county_taxable": "26200",
+    "school_taxable": "26200",
+    "land_assessed_value": "26200"
+  },
+  {
+    "tax_id": "34.00-1-58",
+    "full_market_value": "373000",
+    "county_taxable": "373000",
+    "school_taxable": "343000",
+    "land_assessed_value": "26300"
+  },
+  {
+    "tax_id": "34.00-1-60",
+    "full_market_value": "513000",
+    "county_taxable": "513000",
+    "school_taxable": "426900",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "34.00-1-62",
+    "full_market_value": "371000",
+    "county_taxable": "341000",
+    "school_taxable": "278900",
+    "land_assessed_value": "27800"
+  },
+  {
+    "tax_id": "34.00-1-64",
+    "full_market_value": "433000",
+    "county_taxable": "433000",
+    "school_taxable": "403000",
+    "land_assessed_value": "27400"
+  },
+  {
+    "tax_id": "34.00-1-66",
+    "full_market_value": "353000",
+    "county_taxable": "353000",
+    "school_taxable": "323000",
+    "land_assessed_value": "29200"
+  },
+  {
+    "tax_id": "34.00-1-69",
+    "full_market_value": "175000",
+    "county_taxable": "175000",
+    "school_taxable": "175000",
+    "land_assessed_value": "29300"
+  },
+  {
+    "tax_id": "34.00-1-70",
+    "full_market_value": "289000",
+    "county_taxable": "289000",
+    "school_taxable": "259000",
+    "land_assessed_value": "41000"
+  },
+  {
+    "tax_id": "79.00-1-13.1",
+    "full_market_value": "45000",
+    "county_taxable": "45000",
+    "school_taxable": "45000",
+    "land_assessed_value": "0"
+  },
+  {
+    "tax_id": "05.00-2-67",
+    "full_market_value": "4000",
+    "county_taxable": "4000",
+    "school_taxable": "4000",
+    "land_assessed_value": "4000"
+  },
+  {
+    "tax_id": "06.00-1-27.2",
+    "full_market_value": "45000",
+    "county_taxable": "45000",
+    "school_taxable": "45000",
+    "land_assessed_value": "0"
+  },
+  {
+    "tax_id": "07.00-2-36.2",
+    "full_market_value": "30652400",
+    "county_taxable": "29526938",
+    "school_taxable": "29526938",
+    "land_assessed_value": "461500"
+  },
+  {
+    "tax_id": "20.00-1-24.2",
+    "full_market_value": "6000",
+    "county_taxable": "6000",
+    "school_taxable": "6000",
+    "land_assessed_value": "3200"
+  },
+  {
+    "tax_id": "20.00-1-32",
+    "full_market_value": "69200",
+    "county_taxable": "69200",
+    "school_taxable": "69200"
+  },
+  {
+    "tax_id": "20.00-2-15",
+    "full_market_value": "125900",
+    "county_taxable": "125900",
+    "school_taxable": "125900"
+  },
+  {
+    "tax_id": "21.00-1-3",
+    "full_market_value": "116700",
+    "county_taxable": "116700",
+    "school_taxable": "116700"
+  },
+  {
+    "tax_id": "21.00-1-21",
+    "full_market_value": "120000",
+    "county_taxable": "120000",
+    "school_taxable": "120000"
+  },
+  {
+    "tax_id": "21.00-2-41",
+    "full_market_value": "43900",
+    "county_taxable": "43900",
+    "school_taxable": "43900"
+  },
+  {
+    "tax_id": "21.00-2-46.221",
+    "full_market_value": "45000",
+    "county_taxable": "45000",
+    "school_taxable": "45000",
+    "land_assessed_value": "0"
+  },
+  {
+    "tax_id": "34.00-1-16.111",
+    "full_market_value": "5000",
+    "county_taxable": "5000",
+    "school_taxable": "5000",
+    "land_assessed_value": "5000"
+  },
+  {
+    "tax_id": "77.00-2-41",
+    "full_market_value": "340000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "204500"
+  },
+  {
+    "tax_id": "77.00-2-44.",
+    "full_market_value": "140000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "30000"
+  },
+  {
+    "tax_id": "78.00-1-42",
+    "full_market_value": "620000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "35400"
+  },
+  {
+    "tax_id": "79.00-1-35",
+    "full_market_value": "4000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "4000"
+  },
+  {
+    "tax_id": "92.00-1-26",
+    "full_market_value": "460000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "23000"
+  },
+  {
+    "tax_id": "05.00-1-2",
+    "full_market_value": "2200000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "88500"
+  },
+  {
+    "tax_id": "05.00-1-45",
+    "full_market_value": "188000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "39600"
+  },
+  {
+    "tax_id": "05.00-1-48",
+    "full_market_value": "9200",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "9200"
+  },
+  {
+    "tax_id": "05.00-1-71.12",
+    "full_market_value": "250000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "22500"
+  },
+  {
+    "tax_id": "05.13-1-46",
+    "full_market_value": "6300",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "6300"
+  },
+  {
+    "tax_id": "06.00-1-24",
+    "full_market_value": "1700000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "143900"
+  },
+  {
+    "tax_id": "06.00-1-30.12",
+    "full_market_value": "900000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "449100"
+  },
+  {
+    "tax_id": "07.00-1-14",
+    "full_market_value": "1600",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "1600"
+  },
+  {
+    "tax_id": "07.00-2-32",
+    "full_market_value": "340700",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "340700"
+  },
+  {
+    "tax_id": "07.04-1-1",
+    "full_market_value": "27600",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "27600"
+  },
+  {
+    "tax_id": "07.04-1-77",
+    "full_market_value": "82700",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "82700"
+  },
+  {
+    "tax_id": "19.00-1-50.1",
+    "full_market_value": "96500000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "1176900"
+  },
+  {
+    "tax_id": "20.00-1-19.2",
+    "full_market_value": "29700",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "29700"
+  },
+  {
+    "tax_id": "20.00-2-45",
+    "full_market_value": "1800000",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "314800"
+  },
+  {
+    "tax_id": "34.00-1-12.1",
+    "full_market_value": "46500",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "46500"
+  },
+  {
+    "tax_id": "34.00-1-12.211",
+    "full_market_value": "520700",
+    "county_taxable": "0",
+    "school_taxable": "0",
+    "land_assessed_value": "53300"
+  }
+]
