@@ -11,7 +11,6 @@ const outputPath = "cambria_2025_roll.json";
 // -------------------- Parser --------------------
 function parsePropertyBlock(blockText, taxLine) {
   const prop = {};
-
   prop.tax_id = taxLine || "";
 
   // Full Market Value
@@ -26,12 +25,12 @@ function parsePropertyBlock(blockText, taxLine) {
   const schoolMatch = blockText.match(/SCHOOL TAXABLE VALUE[:\s]*\$?([\d,]+)/i);
   if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
 
-  // Land Value = first number in second column
+  // Land Value = first number in third column
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
   for (let line of lines) {
     const cols = line.split(/\s+/);
-    if (cols.length >= 2 && /^\$?\d/.test(cols[1])) {
-      prop.land_assessed_value = cols[1].replace(/,/g, "");
+    if (cols.length >= 3 && /^\$?\d/.test(cols[2])) {
+      prop.land_assessed_value = cols[2].replace(/,/g, "");
       break;
     }
   }
@@ -48,48 +47,51 @@ async function extractFullPDF(res = null, maxEntries = null) {
   // Split by ************ lines
   const parts = fullText.split(/[\*]{5,}/).map(p => p.trim()).filter(Boolean);
 
-  const extracted = [];
+  const taxMap = new Map();
 
   for (let block of parts) {
-    // Stop immediately if we reached the limit
-    if (maxEntries && extracted.length >= maxEntries) break;
+    if (maxEntries && taxMap.size >= maxEntries) break;
 
-    // Tax ID = first line that looks like NN.NN-N-N.NN
     const taxLineMatch = block.match(/\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*/);
     const taxLine = taxLineMatch ? taxLineMatch[0] : null;
 
     if (taxLine) {
       const propData = parsePropertyBlock(block, taxLine);
-      extracted.push(propData);
+
+      if (taxMap.has(taxLine)) {
+        const existing = taxMap.get(taxLine);
+        taxMap.set(taxLine, { ...existing, ...propData });
+      } else {
+        taxMap.set(taxLine, propData);
+      }
 
       if (res) res.write(`Processed parcel: Tax ID ${taxLine}\n`);
     }
   }
 
-  // Save JSON
-  fs.writeFileSync(outputPath, JSON.stringify(extracted, null, 2));
-
-  return extracted;
+  const extractedArray = Array.from(taxMap.values());
+  fs.writeFileSync(outputPath, JSON.stringify(extractedArray, null, 2));
+  return extractedArray;
 }
 
 // -------------------- Routes --------------------
 
-// Extract + stream logs with optional limit
-app.get("/extract", async (req, res) => {
+// Extract + optional limit + download in one call
+app.get("/extract-download", async (req, res) => {
   if (!fs.existsSync(pdfPath)) return res.status(404).send("PDF not found");
-
-  res.setHeader("Content-Type", "text/plain; charset=utf-8");
-  res.setHeader("Transfer-Encoding", "chunked");
 
   const limit = req.query.limit ? parseInt(req.query.limit) : null;
 
   try {
-    await extractFullPDF(res, limit);
-    res.write(`\nExtraction complete!${limit ? ` (${limit} parcels)` : ""}\n`);
-    res.end();
+    const data = await extractFullPDF(null, limit);
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename="cambria_2025_roll.json"`
+    );
+    res.end(JSON.stringify(data, null, 2));
   } catch (err) {
-    res.write(`Error: ${err.message}\n`);
-    res.end();
+    res.status(500).send({ error: err.message });
   }
 });
 
@@ -105,7 +107,7 @@ app.get("/parcel/:tax_id", (req, res) => {
   res.json(parcel);
 });
 
-// Download JSON
+// Download JSON (already extracted)
 app.get("/parcels/download", (req, res) => {
   if (!fs.existsSync(outputPath)) return res.status(404).send("Run /extract first");
   res.download(outputPath, "cambria_2025_roll.json");
