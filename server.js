@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3000;
 const pdfPath = "./Cambria 2025 Final Roll by SBL.pdf";
 const outputPath = "cambria_2025_roll.json";
 
-// Clean numbers and dollar amounts
+// -------------------- Helpers --------------------
 function cleanNumber(val) {
   return val ? val.replace(/\$/g, "").replace(/,/g, "").trim() : "";
 }
 
-// Parse a single property block (same as before)
+// -------------------- Parser --------------------
 function parsePropertyBlock(blockText) {
   const prop = {
     parcel_id: "",
@@ -74,13 +74,16 @@ function parsePropertyBlock(blockText) {
 
   const lines = blockText.split("\n");
 
+  // Tax ID
   const taxIdMatch = blockText.match(/(\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*)/);
   if (taxIdMatch) prop.tax_id = taxIdMatch[1];
 
+  // Parcel ID
   const parcelMatch = blockText.match(/Parcel\s*ID[: ]*(\d+)/i);
   if (parcelMatch) prop.parcel_id = parcelMatch[1];
   else if (prop.tax_id) prop.parcel_id = prop.tax_id.replace(/\D/g, "");
 
+  // Property location
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].includes(prop.tax_id)) {
       if (i + 1 < lines.length) prop.property_location = lines[i + 1].trim();
@@ -88,6 +91,7 @@ function parsePropertyBlock(blockText) {
     }
   }
 
+  // Money fields
   const moneyFields = [
     "land_assessed_value",
     "total_assessed_value",
@@ -102,19 +106,24 @@ function parsePropertyBlock(blockText) {
     if (match) prop[field] = `$${cleanNumber(match[1])}`;
   });
 
+  // Acres / Front / Depth
   const acresMatch = blockText.match(/ACRES[:\s]*([\d\.]+)/i);
   if (acresMatch) prop.acres = acresMatch[1];
 
   const frontMatch = blockText.match(/FRONT[:\s]*([\d\.]+)/i);
-  const depthMatch = blockText.match(/DEPTH[:\s]*([\d\.]+)/i);
   if (frontMatch) prop.front = frontMatch[1];
+
+  const depthMatch = blockText.match(/DEPTH[:\s]*([\d\.]+)/i);
   if (depthMatch) prop.depth = depthMatch[1];
 
+  // Grid
   const gridEastMatch = blockText.match(/EASTING[:\s]*(\d+)/i);
-  const gridNorthMatch = blockText.match(/NORTHING[:\s]*(\d+)/i);
   if (gridEastMatch) prop.grid_east = gridEastMatch[1];
+
+  const gridNorthMatch = blockText.match(/NORTHING[:\s]*(\d+)/i);
   if (gridNorthMatch) prop.grid_north = gridNorthMatch[1];
 
+  // Other fields
   const swisMatch = blockText.match(/SWIS[:\s]*(\d+)/i);
   if (swisMatch) prop.swis = swisMatch[1];
 
@@ -147,10 +156,12 @@ function parsePropertyBlock(blockText) {
 
   prop["4_5"] = "1 text contrast ratio";
 
+  console.log(`Processed parcel: ${prop.parcel_id} | Tax ID: ${prop.tax_id}`);
+
   return prop;
 }
 
-// --- Extract full PDF (with resume)
+// -------------------- Extraction --------------------
 async function extractFullPDF() {
   const dataBuffer = fs.readFileSync(pdfPath);
   const data = await pdf(dataBuffer);
@@ -161,7 +172,9 @@ async function extractFullPDF() {
   let existingProperties = [];
   if (fs.existsSync(outputPath)) {
     existingProperties = JSON.parse(fs.readFileSync(outputPath));
+    console.log(`Resuming from ${existingProperties.length} parcels...`);
   }
+
   const processedTaxIds = new Set(existingProperties.map(p => p.tax_id));
 
   for (const block of blocks) {
@@ -173,40 +186,74 @@ async function extractFullPDF() {
       existingProperties.push(propData);
       processedTaxIds.add(taxId);
 
-      // Save incrementally
       fs.writeFileSync(outputPath, JSON.stringify(existingProperties, null, 2));
-      console.log(`Processed parcel: ${propData.parcel_id} | Tax ID: ${propData.tax_id}`);
     }
   }
+
   return existingProperties;
 }
 
-// --- Endpoint to extract PDF (resume enabled)
+// -------------------- Routes --------------------
+
+// Trigger extraction
 app.get("/extract", async (req, res) => {
   try {
-    const allProperties = await extractFullPDF();
-    res.json({ message: "Extraction complete", total_parcels: allProperties.length });
+    const data = await extractFullPDF();
+    res.json({ message: "Extraction complete", total: data.length });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: err.message });
   }
 });
 
-// --- Endpoint to get a parcel by tax_id
+// Get single parcel by tax_id
 app.get("/parcel/:tax_id", (req, res) => {
-  const taxId = req.params.tax_id;
   if (!fs.existsSync(outputPath)) {
-    return res.status(404).json({ error: "Data not found. Run /extract first." });
+    return res.status(404).json({ error: "Run /extract first" });
   }
 
-  const allProperties = JSON.parse(fs.readFileSync(outputPath));
-  const parcel = allProperties.find(p => p.tax_id === taxId);
+  const data = JSON.parse(fs.readFileSync(outputPath));
+  const parcel = data.find(p => p.tax_id === req.params.tax_id);
 
   if (!parcel) {
-    return res.status(404).json({ error: `Parcel with tax_id ${taxId} not found.` });
+    return res.status(404).json({ error: "Parcel not found" });
   }
 
   res.json(parcel);
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Get all parcels (paginated)
+app.get("/parcels", (req, res) => {
+  if (!fs.existsSync(outputPath)) {
+    return res.status(404).json({ error: "Run /extract first" });
+  }
+
+  const data = JSON.parse(fs.readFileSync(outputPath));
+
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 50;
+
+  const start = (page - 1) * limit;
+  const end = start + limit;
+
+  res.json({
+    total: data.length,
+    page,
+    limit,
+    data: data.slice(start, end)
+  });
+});
+
+// Download JSON file
+app.get("/parcels/download", (req, res) => {
+  if (!fs.existsSync(outputPath)) {
+    return res.status(404).send("Run /extract first");
+  }
+
+  res.download(outputPath, "cambria_2025_roll.json");
+});
+
+// -------------------- Start Server --------------------
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
