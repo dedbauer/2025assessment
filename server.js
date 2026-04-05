@@ -13,16 +13,16 @@ function parsePropertyBlock(blockText, taxLine) {
   const prop = {};
   prop.tax_id = taxLine || "";
 
-  // Full Market Value
-  const fullMatch = blockText.match(/FULL MARKET VALUE[:\s]*\$?([\d,]+)/i);
+  // Full Market Value (allow spaces/newlines)
+  const fullMatch = blockText.match(/FULL\s*MARKET\s*VALUE[:\s]*\$?([\d,]+)/i);
   if (fullMatch) prop.full_market_value = fullMatch[1].replace(/,/g, "");
 
   // County Taxable Value
-  const countyMatch = blockText.match(/COUNTY TAXABLE VALUE[:\s]*\$?([\d,]+)/i);
+  const countyMatch = blockText.match(/COUNTY\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
   if (countyMatch) prop.county_taxable = countyMatch[1].replace(/,/g, "");
 
   // School Taxable Value
-  const schoolMatch = blockText.match(/SCHOOL TAXABLE VALUE[:\s]*\$?([\d,]+)/i);
+  const schoolMatch = blockText.match(/SCHOOL\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
   if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
 
   // Land Value = first number in third column
@@ -37,7 +37,6 @@ function parsePropertyBlock(blockText, taxLine) {
 
   return prop;
 }
-
 // -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null) {
   const dataBuffer = fs.readFileSync(pdfPath);
