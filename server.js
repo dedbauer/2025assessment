@@ -24,25 +24,44 @@ async function ensurePDF() {
 }
 
 // -------------------- Parser --------------------
-// Land Assessed Value: 3rd line of block, first number after 6-digit school code
-const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-if (lines.length >= 3) {
-  const thirdLine = lines[2];
-  if (debug) console.log(`DEBUG: 3rd line for ${taxLine}: "${thirdLine}"`);
+function parsePropertyBlock(blockText, taxLine, debug = false) {
+  const prop = {};
+  prop.tax_id = taxLine || "";
 
-  // Find 6-digit number (school code)
-  const schoolCodeMatch = thirdLine.match(/\b\d{6}\b/);
-  if (schoolCodeMatch) {
-    const afterSchoolCode = thirdLine.slice(schoolCodeMatch.index + 6);
+  // Full Market Value
+  const fullMatch = blockText.match(/FULL\s*MARKET\s*VALUE[:\s]*\$?([\d,]+)/i);
+  if (fullMatch) prop.full_market_value = fullMatch[1].replace(/,/g, "");
+  else if (debug) console.log(`DEBUG: FULL MARKET VALUE not found for ${taxLine}`);
 
-    // More robust: match first numeric sequence (allow commas/periods)
-    const numberMatch = afterSchoolCode.match(/[\d,.]+/);
-    if (numberMatch) {
-      prop.land_assessed_value = numberMatch[0].replace(/,/g, "");
-      if (debug) console.log(`DEBUG: Land Assessed Value for ${taxLine}: ${prop.land_assessed_value}`);
-    } else if (debug) console.log(`DEBUG: No number found after school code for ${taxLine}`);
-  } else if (debug) console.log(`DEBUG: No 6-digit school code found on 3rd line for ${taxLine}`);
-} else if (debug) console.log(`DEBUG: Block too short to find 3rd line for ${taxLine}`);
+  // County Taxable Value
+  const countyMatch = blockText.match(/COUNTY\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
+  if (countyMatch) prop.county_taxable = countyMatch[1].replace(/,/g, "");
+  else if (debug) console.log(`DEBUG: COUNTY TAXABLE VALUE not found for ${taxLine}`);
+
+  // School Taxable Value
+  const schoolMatch = blockText.match(/SCHOOL\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
+  if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
+  else if (debug) console.log(`DEBUG: SCHOOL TAXABLE VALUE not found for ${taxLine}`);
+
+  // Land Assessed Value: 3rd line of block, first number after 6-digit school code
+  const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
+  if (lines.length >= 3) {
+    const thirdLine = lines[2];
+    if (debug) console.log(`DEBUG: 3rd line for ${taxLine}: "${thirdLine}"`);
+
+    const schoolCodeMatch = thirdLine.match(/\b\d{6}\b/);
+    if (schoolCodeMatch) {
+      const afterSchoolCode = thirdLine.slice(schoolCodeMatch.index + 6);
+      const numberMatch = afterSchoolCode.match(/[\d,.]+/);
+      if (numberMatch) {
+        prop.land_assessed_value = numberMatch[0].replace(/,/g, "");
+        if (debug) console.log(`DEBUG: Land Assessed Value for ${taxLine}: ${prop.land_assessed_value}`);
+      } else if (debug) console.log(`DEBUG: No number found after school code for ${taxLine}`);
+    } else if (debug) console.log(`DEBUG: No 6-digit school code found on 3rd line for ${taxLine}`);
+  } else if (debug) console.log(`DEBUG: Block too short to find 3rd line for ${taxLine}`);
+
+  return prop;
+}
 
 // -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null, debug = false) {
@@ -72,9 +91,7 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
       continue;
     }
 
-    if (inBlock) {
-      currentBlock.push(line);
-    }
+    if (inBlock) currentBlock.push(line);
   }
 
   const taxMap = new Map();
@@ -104,8 +121,6 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 }
 
 // -------------------- Routes --------------------
-
-// Extract + optional limit + download + debug
 app.get("/extract-download", async (req, res) => {
   const limit = req.query.limit ? parseInt(req.query.limit) : null;
   const debug = req.query.debug === "true";
@@ -127,7 +142,6 @@ app.get("/extract-download", async (req, res) => {
   }
 });
 
-// Single parcel by tax_id
 app.get("/parcel/:tax_id", (req, res) => {
   if (!fs.existsSync(outputPath)) return res.status(404).json({ error: "Run /extract first" });
 
@@ -139,11 +153,9 @@ app.get("/parcel/:tax_id", (req, res) => {
   res.json(parcel);
 });
 
-// Download JSON (already extracted)
 app.get("/parcels/download", (req, res) => {
   if (!fs.existsSync(outputPath)) return res.status(404).send("Run /extract first");
   res.download(outputPath, "cambria_2025_roll.json");
 });
 
-// -------------------- Start Server --------------------
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
