@@ -8,12 +8,10 @@ const PORT = process.env.PORT || 3000;
 const pdfPath = "./Cambria 2025 Final Roll by SBL.pdf";
 const outputPath = "cambria_2025_roll.json";
 
-// -------------------- Helpers --------------------
 function cleanNumber(val) {
   return val ? val.replace(/\$/g, "").replace(/,/g, "").trim() : "";
 }
 
-// -------------------- Parser --------------------
 function parsePropertyBlock(blockText) {
   const prop = {
     parcel_id: "",
@@ -67,8 +65,8 @@ function parsePropertyBlock(blockText) {
     acres: "",
     front: "",
     depth: "",
-    agricultural_district: "",
-    "4_5": "",
+    agricultural_district: "No",
+    "4_5": "1 text contrast ratio",
     year_built: null,
   };
 
@@ -77,86 +75,75 @@ function parsePropertyBlock(blockText) {
   // Tax ID
   const taxIdMatch = blockText.match(/(\d{1,2}\.\d{2}-\d-\d{1,2}\.?\d*)/);
   if (taxIdMatch) prop.tax_id = taxIdMatch[1];
-
-  // Parcel ID
-  const parcelMatch = blockText.match(/Parcel\s*ID[: ]*(\d+)/i);
-  if (parcelMatch) prop.parcel_id = parcelMatch[1];
-  else if (prop.tax_id) prop.parcel_id = prop.tax_id.replace(/\D/g, "");
+  if (prop.tax_id) prop.parcel_id = prop.tax_id.replace(/\D/g, "");
 
   // Property location
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].includes(prop.tax_id)) {
-      if (i + 1 < lines.length) prop.property_location = lines[i + 1].trim();
-      break;
-    }
+  const addrMatch = blockText.match(/\d+\s+[A-Za-z0-9 .]+(Rd|Road|St|Street|Ave|Avenue|Ln|Lane)/i);
+  if (addrMatch) prop.property_location = addrMatch[0];
+
+  // Money / assessed values
+  const moneyMatches = blockText.match(/\$?\d{1,3}(,\d{3})*/g);
+  if (moneyMatches && moneyMatches.length >= 5) {
+    prop.land_assessed_value = `$${cleanNumber(moneyMatches[0])}`;
+    prop.total_assessed_value = `$${cleanNumber(moneyMatches[1])}`;
+    prop.full_market_value = `$${cleanNumber(moneyMatches[2])}`;
+    prop.county_taxable = `$${cleanNumber(moneyMatches[3])}`;
+    prop.municipal_taxable = `$${cleanNumber(moneyMatches[4])}`;
+    prop.school_taxable = `$${cleanNumber(moneyMatches[4])}`;
   }
 
-  // Money fields
-  const moneyFields = [
-    "land_assessed_value",
-    "total_assessed_value",
-    "full_market_value",
-    "county_taxable",
-    "municipal_taxable",
-    "school_taxable",
-  ];
-  moneyFields.forEach((field) => {
-    const regex = new RegExp(`${field.replace(/_/g, " ").toUpperCase()}[:\\s$]*([\\d,]+)`, "i");
-    const match = blockText.match(regex);
-    if (match) prop[field] = `$${cleanNumber(match[1])}`;
-  });
+  // Acres / front / depth
+  const numericMatches = blockText.match(/\d+\.\d+/g);
+  if (numericMatches) {
+    prop.acres = numericMatches[0] || "";
+    prop.front = numericMatches[1] || "";
+    prop.depth = numericMatches[2] || "";
+  }
 
-  // Acres / Front / Depth
-  const acresMatch = blockText.match(/ACRES[:\s]*([\d\.]+)/i);
-  if (acresMatch) prop.acres = acresMatch[1];
-
-  const frontMatch = blockText.match(/FRONT[:\s]*([\d\.]+)/i);
-  if (frontMatch) prop.front = frontMatch[1];
-
-  const depthMatch = blockText.match(/DEPTH[:\s]*([\d\.]+)/i);
-  if (depthMatch) prop.depth = depthMatch[1];
-
-  // Grid
-  const gridEastMatch = blockText.match(/EASTING[:\s]*(\d+)/i);
-  if (gridEastMatch) prop.grid_east = gridEastMatch[1];
-
-  const gridNorthMatch = blockText.match(/NORTHING[:\s]*(\d+)/i);
-  if (gridNorthMatch) prop.grid_north = gridNorthMatch[1];
-
-  // Other fields
+  // SWIS
   const swisMatch = blockText.match(/SWIS[:\s]*(\d+)/i);
   if (swisMatch) prop.swis = swisMatch[1];
 
+  // Roll section
   const rollMatch = blockText.match(/ROLL SECTION[:\s]*(\d+)/i);
   if (rollMatch) prop.roll_section = rollMatch[1];
 
-  const typeMatch = blockText.match(/PROPERTY TYPE[:\s]*([A-Z0-9\- ]+)/i);
-  if (typeMatch) prop.property_type = typeMatch[1].trim();
+  // Extract numeric attributes: stories, bedrooms, baths, kitchens, fireplaces, sq ft
+  const numbers = blockText.match(/\b\d+\b/g);
+  if (numbers && numbers.length > 0) {
+    prop.number_of_stories = numbers[0] || "";
+    prop.number_of_bedrooms = numbers[1] || "";
+    prop.number_of_full_baths = numbers[2] || "";
+    prop.number_of_half_baths = numbers[3] || "";
+    prop.number_of_kitchens = numbers[4] || "";
+    prop.number_of_fireplaces = numbers[5] || "";
+    prop["1st_story_sq_ft"] = numbers[6] || "";
+    prop["2nd_story_sq_ft"] = numbers[7] || "";
+    prop.total_sq_ft = numbers[8] || "";
+    prop.finished_basement_sq_ft = numbers[9] || "";
+  }
 
-  const schoolMatch = blockText.match(/SCHOOL[:\s]*([A-Za-z0-9 ]+)/i);
-  if (schoolMatch) prop.school = schoolMatch[1].trim();
+  // Building style / exterior / heat / fuel / central air / basement type / condition
+  const styleMatch = blockText.match(/(\d{2}\s*-\s*[A-Za-z \/]+)/);
+  if (styleMatch) prop.building_style = styleMatch[1];
 
-  const zoningMatch = blockText.match(/ZONING[:\s]*([A-Za-z0-9\/ ]+)/i);
-  if (zoningMatch) prop.zoning = zoningMatch[1].trim();
+  const exteriorMatch = blockText.match(/(0[1-9]\s*-\s*[A-Za-z \/]+)/);
+  if (exteriorMatch) prop.exterior_wall_material = exteriorMatch[1];
 
-  const neighborhoodMatch = blockText.match(/NEIGHBORHOOD CODE[:\s]*([A-Za-z0-9 .]+)/i);
-  if (neighborhoodMatch) prop.neighborhood_code = neighborhoodMatch[1].trim();
+  const heatMatch = blockText.match(/(2\s*-\s*Hot air|3\s*-\s*Steam|1\s*-\s*Other)/i);
+  if (heatMatch) prop.heat_type = heatMatch[1];
 
-  const partialMatch = blockText.match(/PARTIAL CONSTRUCTION[:\s]*(Yes|No)/i);
-  if (partialMatch) prop.partial_construction = partialMatch[1];
+  const fuelMatch = blockText.match(/(9\s*-\s*Propane\/LPG|1\s*-\s*Gas|2\s*-\s*Oil)/i);
+  if (fuelMatch) prop.fuel_type = fuelMatch[1];
 
-  const waterMatch = blockText.match(/WATER SUPPLY[:\s]*([0-9A-Za-z -]+)/i);
-  if (waterMatch) prop.water_supply = waterMatch[1].trim();
+  const airMatch = blockText.match(/(Yes|No)\s*Central Air/i);
+  if (airMatch) prop.central_air = airMatch[1];
 
-  const utilitiesMatch = blockText.match(/UTILITIES[:\s]*([0-9A-Za-z -]+)/i);
-  if (utilitiesMatch) prop.utilities = utilitiesMatch[1].trim();
+  const basementMatch = blockText.match(/(4\s*-\s*Full|2\s*-\s*Partial|0\s*-\s*None)/i);
+  if (basementMatch) prop.basement_type = basementMatch[1];
 
-  const sewerMatch = blockText.match(/SEWER TYPE[:\s]*([0-9A-Za-z -]+)/i);
-  if (sewerMatch) prop.sewer_type = sewerMatch[1].trim();
-
-  prop["4_5"] = "1 text contrast ratio";
-
-  console.log(`Processed parcel: ${prop.parcel_id} | Tax ID: ${prop.tax_id}`);
+  const conditionMatch = blockText.match(/(4\s*-\s*Good|3\s*-\s*Average|5\s*-\s*Excellent)/i);
+  if (conditionMatch) prop.condition = conditionMatch[1];
 
   return prop;
 }
@@ -194,8 +181,6 @@ async function extractFullPDF() {
 }
 
 // -------------------- Routes --------------------
-
-// Trigger extraction
 app.get("/extract", async (req, res) => {
   try {
     const data = await extractFullPDF();
@@ -206,27 +191,29 @@ app.get("/extract", async (req, res) => {
   }
 });
 
-// Get single parcel by tax_id
-app.get("/parcel/:tax_id", (req, res) => {
-  if (!fs.existsSync(outputPath)) {
-    return res.status(404).json({ error: "Run /extract first" });
+app.get("/extract-download", async (req, res) => {
+  try {
+    const data = await extractFullPDF();
+    res.download(outputPath, "cambria_2025_roll.json");
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
   }
+});
+
+app.get("/parcel/:tax_id", (req, res) => {
+  if (!fs.existsSync(outputPath)) return res.status(404).json({ error: "Run /extract first" });
 
   const data = JSON.parse(fs.readFileSync(outputPath));
   const parcel = data.find(p => p.tax_id === req.params.tax_id);
 
-  if (!parcel) {
-    return res.status(404).json({ error: "Parcel not found" });
-  }
+  if (!parcel) return res.status(404).json({ error: "Parcel not found" });
 
   res.json(parcel);
 });
 
-// Get all parcels (paginated)
 app.get("/parcels", (req, res) => {
-  if (!fs.existsSync(outputPath)) {
-    return res.status(404).json({ error: "Run /extract first" });
-  }
+  if (!fs.existsSync(outputPath)) return res.status(404).json({ error: "Run /extract first" });
 
   const data = JSON.parse(fs.readFileSync(outputPath));
 
@@ -244,12 +231,8 @@ app.get("/parcels", (req, res) => {
   });
 });
 
-// Download JSON file
 app.get("/parcels/download", (req, res) => {
-  if (!fs.existsSync(outputPath)) {
-    return res.status(404).send("Run /extract first");
-  }
-
+  if (!fs.existsSync(outputPath)) return res.status(404).send("Run /extract first");
   res.download(outputPath, "cambria_2025_roll.json");
 });
 
