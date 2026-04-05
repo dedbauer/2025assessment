@@ -43,32 +43,33 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
   if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
   else if (debug) console.log(`DEBUG: SCHOOL TAXABLE VALUE not found for ${taxLine}`);
 
-  // Land Assessed Value = second number 6 lines below "ASSESSMENT"
+  // Land Assessed Value: 3rd line of block, first number after 6-digit school code
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-  let assessmentIndex = -1;
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].toUpperCase().includes("ASSESSMENT")) {
-      assessmentIndex = i;
-      break;
-    }
-  }
+  if (lines.length >= 3) {
+    const thirdLine = lines[2];
+    if (debug) console.log(`DEBUG: 3rd line for ${taxLine}: "${thirdLine}"`);
 
-  if (assessmentIndex >= 0 && assessmentIndex + 6 < lines.length) {
-    const targetLine = lines[assessmentIndex + 6];
-    const numbers = targetLine.match(/\$?([\d,]+)/g);
-    if (numbers && numbers.length >= 2) {
-      prop.land_assessed_value = numbers[1].replace(/,/g, "");
+    // Match a 6-digit number first
+    const schoolCodeMatch = thirdLine.match(/\b\d{6}\b/);
+    if (schoolCodeMatch) {
+      const afterSchoolCode = thirdLine.slice(schoolCodeMatch.index + 6);
+      // Find first numeric field after the school code
+      const numberMatch = afterSchoolCode.match(/\d[\d,]*/);
+      if (numberMatch) {
+        prop.land_assessed_value = numberMatch[0].replace(/,/g, "");
+        if (debug) console.log(`DEBUG: Land Assessed Value for ${taxLine}: ${prop.land_assessed_value}`);
+      } else if (debug) {
+        console.log(`DEBUG: No number found after school code for ${taxLine}`);
+      }
     } else if (debug) {
-      console.log(`DEBUG: Could not parse Land Assessed Value line for ${taxLine}: "${targetLine}"`);
+      console.log(`DEBUG: No 6-digit school code found on 3rd line for ${taxLine}`);
     }
   } else if (debug) {
-    console.log(`DEBUG: Assessment line not found or too short for ${taxLine}`);
+    console.log(`DEBUG: Block too short to find 3rd line for ${taxLine}`);
   }
 
-  if (debug) console.log(`DEBUG: Parsed property ${taxLine}`, prop);
   return prop;
 }
-
 // -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null, debug = false) {
   await ensurePDF();
