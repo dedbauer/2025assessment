@@ -58,8 +58,8 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
     l.toUpperCase().includes("ASSESSMENT")
   );
 
-  if (assessmentIndex >= 0 && assessmentIndex + 3 < lines.length) {
-    const targetLine = lines[assessmentIndex + 3];
+  if (assessmentIndex >= 0 && 3 < lines.length) {
+    const targetLine = lines[2];
     const numbers = targetLine.match(/([\d,]+)/g);
 
     if (numbers && numbers.length >= 2) {
@@ -112,7 +112,7 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
     if (match) taxLine = match[0];
 
     // 🚫 Skip junk blocks
-    if (lines.length < 3) {
+    if (lines.length < 9) {
       if (debug && res) res.write(`SKIPPED (too small): ${taxLine}\n`);
       continue;
     }
