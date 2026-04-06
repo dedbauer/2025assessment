@@ -26,41 +26,35 @@ async function ensurePDF() {
 function parsePropertyBlock(blockText, taxLine, debug = false) {
   const prop = { tax_id: taxLine };
 
+  // Normalize spacing for inline parsing
   const cleanText = blockText.replace(/\s+/g, " ");
 
   function extractValue(label) {
-    // Match: LABEL ... number (same line)
+    // Try inline (same line)
     const regexInline = new RegExp(label + "[^\\d]*([\\d,]+)", "i");
     const matchInline = cleanText.match(regexInline);
+    if (matchInline) return matchInline[1].replace(/,/g, "");
 
-    if (matchInline) {
-      return matchInline[1].replace(/,/g, "");
-    }
-
-    // Fallback: label on one line, number on next
+    // Fallback: next line
     const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-    const idx = lines.findIndex(l =>
-      l.toUpperCase().includes(label)
-    );
+    const idx = lines.findIndex(l => l.toUpperCase().includes(label));
 
     if (idx >= 0 && idx + 1 < lines.length) {
       const matchNext = lines[idx + 1].match(/([\d,]+)/);
       if (matchNext) return matchNext[1].replace(/,/g, "");
     }
 
-    if (debug) console.log(`DEBUG: Failed to find ${label} for ${taxLine}`);
+    if (debug) console.log(`DEBUG: Missing ${label} for ${taxLine}`);
     return undefined;
   }
 
-  // ✅ Extract values robustly
   prop.full_market_value = extractValue("FULL MARKET VALUE");
   prop.county_taxable = extractValue("COUNTY TAXABLE VALUE");
   prop.school_taxable = extractValue("SCHOOL TAXABLE VALUE");
 
-  // ✅ LAND VALUE (same logic, but normalize spacing first)
+  // LAND VALUE (6 lines below ASSESSMENT)
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-
-  let assessmentIndex = lines.findIndex(l =>
+  const assessmentIndex = lines.findIndex(l =>
     l.toUpperCase().includes("ASSESSMENT")
   );
 
@@ -71,16 +65,16 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
     if (numbers && numbers.length >= 2) {
       prop.land_assessed_value = numbers[1].replace(/,/g, "");
     } else if (debug) {
-      console.log(`DEBUG: LAND FAIL ${taxLine} -> ${targetLine}`);
+      console.log(`DEBUG LAND FAIL ${taxLine}: ${targetLine}`);
     }
-  }
-
-  if (debug) {
-    console.log("PARSED:", prop);
+  } else if (debug) {
+    console.log(`DEBUG: No ASSESSMENT block for ${taxLine}`);
   }
 
   return prop;
-}// -------------------- Extraction --------------------
+}
+
+// -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null, debug = false) {
   await ensurePDF();
 
@@ -95,44 +89,60 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 
   const taxMap = new Map();
 
-for (let block of parts) {
-  if (maxEntries && taxMap.size >= maxEntries) break;
+  for (let block of parts) {
+    if (maxEntries && taxMap.size >= maxEntries) break;
 
-  const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
+    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
 
-  // Find tax ID anywhere in the block
-  const taxLine = lines.find(l =>
-    /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
-  );
+    // Find tax_id anywhere in block
+    let taxLine = lines.find(l =>
+      /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
+    );
 
-  if (!taxLine) {
-    if (debug && res) {
-      res.write(`DEBUG: No tax_id found in block\n`);
-      res.write("----- FULL BLOCK START -----\n");
-      res.write(block + "\n");
-      res.write("------ FULL BLOCK END ------\n\n");
+    if (!taxLine) {
+      if (debug && res) {
+        res.write("DEBUG: No tax_id found\n");
+        res.write(block + "\n\n");
+      }
+      continue;
     }
-    continue;
+
+    // Clean tax_id
+    const match = taxLine.match(/^\d{1,2}\.\d{2}-\d-\d{1,2}(\.\d+)?/);
+    if (match) taxLine = match[0];
+
+    // 🚫 Skip junk blocks
+    if (lines.length < 3) {
+      if (debug && res) res.write(`SKIPPED (too small): ${taxLine}\n`);
+      continue;
+    }
+
+    if (taxMap.has(taxLine) && lines.length < 5) {
+      if (debug && res) res.write(`SKIPPED duplicate junk: ${taxLine}\n`);
+      continue;
+    }
+
+    // Debug full block
+    if (debug && res) {
+      res.write(`\n----- FULL BLOCK FOR ${taxLine} -----\n`);
+      res.write(block + "\n");
+      res.write(`----- END BLOCK FOR ${taxLine} -----\n\n`);
+    }
+
+    const propData = parsePropertyBlock(block, taxLine, debug);
+
+    if (taxMap.has(taxLine)) {
+      taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
+    } else {
+      taxMap.set(taxLine, propData);
+    }
+
+    if (debug && res) {
+      res.write(`Processed parcel: ${taxLine}\n`);
+    }
   }
 
-  if (debug && res) {
-    res.write(`----- FULL BLOCK FOR ${taxLine} -----\n`);
-    res.write(block + "\n");
-    res.write(`----- END BLOCK FOR ${taxLine} -----\n\n`);
-  }
-
-  const propData = parsePropertyBlock(block, taxLine, debug);
-
-  if (taxMap.has(taxLine)) {
-    taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
-  } else {
-    taxMap.set(taxLine, propData);
-  }
-
-  if (debug && res) {
-    res.write(`Processed parcel: ${taxLine}\n\n`);
-  }
-}  const result = Array.from(taxMap.values());
+  const result = Array.from(taxMap.values());
   fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
 
   return result;
@@ -155,7 +165,10 @@ app.get("/extract-download", async (req, res) => {
       const data = await extractFullPDF(null, limit, false);
 
       res.setHeader("Content-Type", "application/json");
-      res.setHeader("Content-Disposition", "attachment; filename=cambria_2025_roll.json");
+      res.setHeader(
+        "Content-Disposition",
+        "attachment; filename=cambria_2025_roll.json"
+      );
 
       res.end(JSON.stringify(data, null, 2));
     }
