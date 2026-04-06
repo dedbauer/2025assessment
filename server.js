@@ -74,14 +74,23 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 
   const taxMap = new Map();
 
-  for (let block of parts) {
-    if (maxEntries && taxMap.size >= maxEntries) break;
+for (let block of parts) {
+  if (maxEntries && taxMap.size >= maxEntries) break;
 
     const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
 
-    // First line = tax_id
-    const taxLine = lines[0];
+    // Find the line that contains stars + tax id
+    const starLine = lines.find(l => /^\*{5,}/.test(l));
 
+    let taxLine = null;
+
+    if (starLine) {
+      // Extract text between first ***** and next *
+      const match = starLine.match(/^\*+\s*([^*]+?)\s*\*/);
+      if (match) {
+        taxLine = match[1].trim();
+      }
+    }
     if (taxLine) {
       const propData = parsePropertyBlock(block, taxLine, debug);
 
