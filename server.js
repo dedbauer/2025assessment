@@ -5,54 +5,74 @@ import fetch from "node-fetch";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
 const pdfPath = "./Cambria 2025 Final Roll by SBL.pdf";
 const outputPath = "cambria_2025_roll.json";
 
 // -------------------- Ensure PDF exists --------------------
 async function ensurePDF() {
   if (!fs.existsSync(pdfPath)) {
-    console.log("PDF not found locally. Downloading...");
+    console.log("Downloading PDF...");
     const url = "https://media.cmsmax.com/lv20xzze8ydi4trylfuou/Cambria%202025%20Final%20Roll%20by%20SBL.pdf";
     const res = await fetch(url);
     if (!res.ok) throw new Error("Failed to download PDF");
     const buffer = await res.arrayBuffer();
     fs.writeFileSync(pdfPath, Buffer.from(buffer));
-    console.log("PDF downloaded successfully.");
-  } else {
-    console.log("PDF already exists.");
+    console.log("PDF downloaded.");
   }
 }
 
 // -------------------- Parser --------------------
 function parsePropertyBlock(blockText, taxLine, debug = false) {
-  const prop = {};
-  prop.tax_id = taxLine || "";
+  const prop = { tax_id: taxLine };
 
+  // FULL MARKET VALUE
   const fullMatch = blockText.match(/FULL\s*MARKET\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (fullMatch) prop.full_market_value = fullMatch[1].replace(/,/g, "");
-  else if (debug) console.log(`DEBUG: FULL MARKET VALUE not found for ${taxLine}`);
+  if (fullMatch) {
+    prop.full_market_value = fullMatch[1].replace(/,/g, "");
+  } else if (debug) {
+    console.log(`DEBUG: Missing FULL MARKET VALUE for ${taxLine}`);
+  }
 
+  // COUNTY TAXABLE
   const countyMatch = blockText.match(/COUNTY\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (countyMatch) prop.county_taxable = countyMatch[1].replace(/,/g, "");
-  else if (debug) console.log(`DEBUG: COUNTY TAXABLE VALUE not found for ${taxLine}`);
+  if (countyMatch) {
+    prop.county_taxable = countyMatch[1].replace(/,/g, "");
+  } else if (debug) {
+    console.log(`DEBUG: Missing COUNTY TAXABLE for ${taxLine}`);
+  }
 
+  // SCHOOL TAXABLE
   const schoolMatch = blockText.match(/SCHOOL\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (schoolMatch) prop.school_taxable = schoolMatch[1].replace(/,/g, "");
-  else if (debug) console.log(`DEBUG: SCHOOL TAXABLE VALUE not found for ${taxLine}`);
+  if (schoolMatch) {
+    prop.school_taxable = schoolMatch[1].replace(/,/g, "");
+  } else if (debug) {
+    console.log(`DEBUG: Missing SCHOOL TAXABLE for ${taxLine}`);
+  }
 
-  // Land Assessed Value
+  // LAND VALUE (critical logic)
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-  if (lines.length >= 4) {
-    const thirdLine = lines[3];
 
-    const schoolCodeMatch = thirdLine.match(/\b\d{6}\b/);
-    if (schoolCodeMatch) {
-      const afterSchoolCode = thirdLine.slice(schoolCodeMatch.index + 6);
-      const numberMatch = afterSchoolCode.match(/[\d,.]+/);
-      if (numberMatch) {
-        prop.land_assessed_value = numberMatch[0].replace(/,/g, "");
-      }
+  let assessmentIndex = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].toUpperCase().includes("ASSESSMENT")) {
+      assessmentIndex = i;
+      break;
     }
+  }
+
+  if (assessmentIndex >= 0 && assessmentIndex + 6 < lines.length) {
+    const targetLine = lines[assessmentIndex + 6];
+    const numbers = targetLine.match(/\$?([\d,]+)/g);
+
+    if (numbers && numbers.length >= 2) {
+      prop.land_assessed_value = numbers[1].replace(/,/g, "");
+    } else if (debug) {
+      console.log(`DEBUG: Land parse failed for ${taxLine}`);
+      console.log(`Line: ${targetLine}`);
+    }
+  } else if (debug) {
+    console.log(`DEBUG: Assessment block not found for ${taxLine}`);
   }
 
   return prop;
@@ -64,140 +84,101 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 
   const dataBuffer = fs.readFileSync(pdfPath);
   const data = await pdf(dataBuffer);
-  const lines = data.text.split("\n").map(l => l.trim());
+  const fullText = data.text;
+
+  const parts = fullText
+    .split(/[\*]{5,}/)
+    .map(p => p.trim())
+    .filter(Boolean);
 
   const taxMap = new Map();
 
-  let currentBlock = [];
-  let currentTaxId = null;
+  for (let block of parts) {
+    if (maxEntries && taxMap.size >= maxEntries) break;
 
-  for (let line of lines) {
-    // Detect tax ID line (*****  TAXID  *****)
-    const match = line.match(/^\*+\s*([^*]+?)\s*\*+/);
+    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
 
-    if (match) {
-      // Save previous block before starting new one
-      if (currentTaxId && currentBlock.length > 0) {
-        const blockText = currentBlock.join("\n");
+    // ✅ FIXED TAX ID EXTRACTION
+    const taxLine = lines.find(l =>
+      /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
+    );
 
-        const propData = parsePropertyBlock(blockText, currentTaxId, debug);
-
-        if (taxMap.has(currentTaxId)) {
-          taxMap.set(currentTaxId, { ...taxMap.get(currentTaxId), ...propData });
-        } else {
-          taxMap.set(currentTaxId, propData);
-        }
-
-        if (res && debug) {
-          res.write(`Processed parcel: Tax ID ${currentTaxId}\n`);
-        }
-
-        if (maxEntries && taxMap.size >= maxEntries) break;
+    if (!taxLine) {
+      if (debug && res) {
+        res.write(`DEBUG: No tax_id found in block\n`);
       }
-
-      // Start new block
-      currentTaxId = match[1].trim();
-      currentBlock = [];
       continue;
     }
 
-    // Accumulate lines inside block
-    if (currentTaxId) {
-      currentBlock.push(line);
-    }
-  }
+    const propData = parsePropertyBlock(block, taxLine, debug);
 
-  // Process last block
-  if (currentTaxId && currentBlock.length > 0) {
-    const blockText = currentBlock.join("\n");
-
-    const propData = parsePropertyBlock(blockText, currentTaxId, debug);
-
-    if (taxMap.has(currentTaxId)) {
-      taxMap.set(currentTaxId, { ...taxMap.get(currentTaxId), ...propData });
+    if (taxMap.has(taxLine)) {
+      taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
     } else {
-      taxMap.set(currentTaxId, propData);
+      taxMap.set(taxLine, propData);
     }
 
-    if (res && debug) {
-      res.write(`Processed parcel: Tax ID ${currentTaxId}\n`);
+    if (debug && res) {
+      res.write(`Processed: ${taxLine}\n`);
     }
   }
 
-  const extractedArray = Array.from(taxMap.values());
-  fs.writeFileSync(outputPath, JSON.stringify(extractedArray, null, 2));
+  const result = Array.from(taxMap.values());
+  fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
 
-  return extractedArray;
-}
-// -------------------- Dataset Manager --------------------
-async function getDataset({ force = false, limit = null, debug = false, res = null } = {}) {
-  if (!force && fs.existsSync(outputPath)) {
-    console.log("Using cached dataset...");
-    return JSON.parse(fs.readFileSync(outputPath));
-  }
-
-  console.log("Rebuilding dataset...");
-  return await extractFullPDF(res, limit, debug);
+  return result;
 }
 
 // -------------------- Routes --------------------
 
-// Extract + download
+// Extract + Download OR Debug
 app.get("/extract-download", async (req, res) => {
   const limit = req.query.limit ? parseInt(req.query.limit) : null;
   const debug = req.query.debug === "true";
-  const force = req.query.force === "true";
 
   try {
     if (debug) {
       res.setHeader("Content-Type", "text/plain; charset=utf-8");
-      await getDataset({ force, limit, debug: true, res });
-      res.write("\nExtraction complete!\n");
+      await extractFullPDF(res, limit, true);
+      res.write("\nDONE\n");
       res.end();
     } else {
-      const data = await getDataset({ force, limit });
+      const data = await extractFullPDF(null, limit, false);
 
-      res.setHeader("Content-Type", "application/json; charset=utf-8");
-      res.setHeader("Content-Disposition", `attachment; filename="cambria_2025_roll.json"`);
+      res.setHeader("Content-Type", "application/json");
+      res.setHeader("Content-Disposition", "attachment; filename=cambria_2025_roll.json");
 
       res.end(JSON.stringify(data, null, 2));
     }
   } catch (err) {
-    res.status(500).send(`Error: ${err.message}`);
+    res.status(500).send(err.message);
   }
 });
 
 // Get single parcel
-app.get("/parcel/:tax_id", async (req, res) => {
-  const force = req.query.force === "true";
-
-  try {
-    const data = await getDataset({ force });
-    const parcel = data.find(p => p.tax_id === req.params.tax_id);
-
-    if (!parcel) return res.status(404).json({ error: "Parcel not found" });
-
-    res.json(parcel);
-  } catch (err) {
-    res.status(500).send(`Error: ${err.message}`);
+app.get("/parcel/:tax_id", (req, res) => {
+  if (!fs.existsSync(outputPath)) {
+    return res.status(404).json({ error: "Run extraction first" });
   }
+
+  const data = JSON.parse(fs.readFileSync(outputPath));
+  const parcel = data.find(p => p.tax_id === req.params.tax_id);
+
+  if (!parcel) return res.status(404).json({ error: "Not found" });
+
+  res.json(parcel);
 });
 
-// Download dataset
-app.get("/parcels/download", async (req, res) => {
-  const force = req.query.force === "true";
-
-  try {
-    const data = await getDataset({ force });
-
-    res.setHeader("Content-Type", "application/json; charset=utf-8");
-    res.setHeader("Content-Disposition", `attachment; filename="cambria_2025_roll.json"`);
-
-    res.end(JSON.stringify(data, null, 2));
-  } catch (err) {
-    res.status(500).send(`Error: ${err.message}`);
+// Download existing JSON
+app.get("/parcels/download", (req, res) => {
+  if (!fs.existsSync(outputPath)) {
+    return res.status(404).send("Run extraction first");
   }
+
+  res.download(outputPath);
 });
 
 // -------------------- Start Server --------------------
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
