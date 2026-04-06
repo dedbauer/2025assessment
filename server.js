@@ -26,58 +26,55 @@ async function ensurePDF() {
 function parsePropertyBlock(blockText, taxLine, debug = false) {
   const prop = { tax_id: taxLine };
 
-  // FULL MARKET VALUE
-  const fullMatch = blockText.match(/FULL\s*MARKET\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (fullMatch) {
-    prop.full_market_value = fullMatch[1].replace(/,/g, "");
-  } else if (debug) {
-    console.log(`DEBUG: Missing FULL MARKET VALUE for ${taxLine}`);
-  }
-
-  // COUNTY TAXABLE
-  const countyMatch = blockText.match(/COUNTY\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (countyMatch) {
-    prop.county_taxable = countyMatch[1].replace(/,/g, "");
-  } else if (debug) {
-    console.log(`DEBUG: Missing COUNTY TAXABLE for ${taxLine}`);
-  }
-
-  // SCHOOL TAXABLE
-  const schoolMatch = blockText.match(/SCHOOL\s*TAXABLE\s*VALUE[:\s]*\$?([\d,]+)/i);
-  if (schoolMatch) {
-    prop.school_taxable = schoolMatch[1].replace(/,/g, "");
-  } else if (debug) {
-    console.log(`DEBUG: Missing SCHOOL TAXABLE for ${taxLine}`);
-  }
-
-  // LAND VALUE (critical logic)
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
 
-  let assessmentIndex = -1;
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].toUpperCase().includes("ASSESSMENT")) {
-      assessmentIndex = i;
-      break;
+  // Helper: find value BELOW a label
+  function getValueBelow(label) {
+    const idx = lines.findIndex(l =>
+      l.toUpperCase().includes(label)
+    );
+
+    if (idx >= 0 && idx + 1 < lines.length) {
+      const nextLine = lines[idx + 1];
+      const match = nextLine.match(/([\d,]+)/);
+      if (match) return match[1].replace(/,/g, "");
     }
+
+    return undefined;
   }
+
+  // ✅ FULL MARKET VALUE
+  prop.full_market_value = getValueBelow("FULL MARKET VALUE");
+
+  // ✅ COUNTY TAXABLE
+  prop.county_taxable = getValueBelow("COUNTY TAXABLE VALUE");
+
+  // ✅ SCHOOL TAXABLE
+  prop.school_taxable = getValueBelow("SCHOOL TAXABLE VALUE");
+
+  // ✅ LAND VALUE (your rule)
+  let assessmentIndex = lines.findIndex(l =>
+    l.toUpperCase().includes("ASSESSMENT")
+  );
 
   if (assessmentIndex >= 0 && assessmentIndex + 6 < lines.length) {
     const targetLine = lines[assessmentIndex + 6];
-    const numbers = targetLine.match(/\$?([\d,]+)/g);
+    const numbers = targetLine.match(/([\d,]+)/g);
 
     if (numbers && numbers.length >= 2) {
       prop.land_assessed_value = numbers[1].replace(/,/g, "");
     } else if (debug) {
-      console.log(`DEBUG: Land parse failed for ${taxLine}`);
-      console.log(`Line: ${targetLine}`);
+      console.log("LAND FAIL:", taxLine, targetLine);
     }
-  } else if (debug) {
-    console.log(`DEBUG: Assessment block not found for ${taxLine}`);
+  }
+
+  // Debug output
+  if (debug) {
+    console.log("PARSED:", prop);
   }
 
   return prop;
 }
-
 // -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null, debug = false) {
   await ensurePDF();
