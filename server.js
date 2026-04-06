@@ -22,20 +22,52 @@ async function ensurePDF() {
   }
 }
 
+// -------------------- Split into correct blocks --------------------
+function splitIntoBlocks(fullText) {
+  const lines = fullText.split("\n");
+
+  const blocks = [];
+  let currentBlock = null;
+
+  for (let line of lines) {
+    if (/\*{5,}/.test(line)) {
+      const match = line.match(/\d{1,3}\.\d{2}-\d-\d{1,3}(\.\d+)?/);
+
+      if (match) {
+        if (currentBlock) {
+          blocks.push(currentBlock);
+        }
+
+        currentBlock = {
+          tax_id: match[0],
+          text: ""
+        };
+      }
+    } else {
+      if (currentBlock) {
+        currentBlock.text += line + "\n";
+      }
+    }
+  }
+
+  if (currentBlock) {
+    blocks.push(currentBlock);
+  }
+
+  return blocks;
+}
+
 // -------------------- Parser --------------------
 function parsePropertyBlock(blockText, taxLine, debug = false) {
   const prop = { tax_id: taxLine };
 
-  // Normalize spacing for inline parsing
   const cleanText = blockText.replace(/\s+/g, " ");
 
   function extractValue(label) {
-    // Try inline (same line)
-    const regexInline = new RegExp(label + "[^\\d]*([\\d,]+)", "i");
-    const matchInline = cleanText.match(regexInline);
+    const inlineRegex = new RegExp(label + "[^\\d]*([\\d,]+)", "i");
+    const matchInline = cleanText.match(inlineRegex);
     if (matchInline) return matchInline[1].replace(/,/g, "");
 
-    // Fallback: next line
     const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
     const idx = lines.findIndex(l => l.toUpperCase().includes(label));
 
@@ -48,27 +80,38 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
     return undefined;
   }
 
+  // Core values
   prop.full_market_value = extractValue("FULL MARKET VALUE");
   prop.county_taxable = extractValue("COUNTY TAXABLE VALUE");
   prop.school_taxable = extractValue("SCHOOL TAXABLE VALUE");
 
-  // LAND VALUE (6 lines below ASSESSMENT)
+  // -------------------- LAND VALUE (school code rule) --------------------
   const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
-  const assessmentIndex = lines.findIndex(l =>
-    l.toUpperCase().includes("ASSESSMENT")
-  );
 
-  if (assessmentIndex >= 0 && 3 < lines.length) {
-    const targetLine = lines[2];
-    const numbers = targetLine.match(/([\d,]+)/g);
+  for (let line of lines) {
+    const schoolMatch = line.match(/\b\d{6}\b/);
 
-    if (numbers && numbers.length >= 2) {
-      prop.land_assessed_value = numbers[1].replace(/,/g, "");
-    } else if (debug) {
-      console.log(`DEBUG LAND FAIL ${taxLine}: ${targetLine}`);
+    if (schoolMatch) {
+      const after = line.split(schoolMatch[0])[1];
+
+      if (after) {
+        const numbers = after.match(/([\d,]+)/g);
+
+        if (numbers && numbers.length > 0) {
+          prop.land_assessed_value = numbers[0].replace(/,/g, "");
+
+          if (debug) {
+            console.log(`LAND FOUND ${taxLine}: ${prop.land_assessed_value}`);
+          }
+
+          break;
+        }
+      }
     }
-  } else if (debug) {
-    console.log(`DEBUG: No ASSESSMENT block for ${taxLine}`);
+  }
+
+  if (!prop.land_assessed_value && debug) {
+    console.log(`DEBUG: Land value NOT found for ${taxLine}`);
   }
 
   return prop;
@@ -82,70 +125,30 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
   const data = await pdf(dataBuffer);
   const fullText = data.text;
 
-  const parts = fullText
-    .split(/[\*]{5,}/)
-    .map(p => p.trim())
-    .filter(Boolean);
+  const blocks = splitIntoBlocks(fullText);
+  const results = [];
 
-  const taxMap = new Map();
+  for (let i = 0; i < blocks.length; i++) {
+    if (maxEntries && results.length >= maxEntries) break;
 
-  for (let block of parts) {
-    if (maxEntries && taxMap.size >= maxEntries) break;
-
-    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
-
-    // Find tax_id anywhere in block
-    let taxLine = lines.find(l =>
-      /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
-    );
-
-    if (!taxLine) {
-      if (debug && res) {
-        res.write("DEBUG: No tax_id found\n");
-        res.write(block + "\n\n");
-      }
-      continue;
-    }
-
-    // Clean tax_id
-    const match = taxLine.match(/^\d{1,2}\.\d{2}-\d-\d{1,2}(\.\d+)?/);
-    if (match) taxLine = match[0];
-
-    // 🚫 Skip junk blocks
-    if (lines.length < 9) {
-      if (debug && res) res.write(`SKIPPED (too small): ${taxLine}\n`);
-      continue;
-    }
-
-    if (taxMap.has(taxLine) && lines.length < 5) {
-      if (debug && res) res.write(`SKIPPED duplicate junk: ${taxLine}\n`);
-      continue;
-    }
-
-    // Debug full block
-    if (debug && res) {
-      res.write(`\n----- FULL BLOCK FOR ${taxLine} -----\n`);
-      res.write(block + "\n");
-      res.write(`----- END BLOCK FOR ${taxLine} -----\n\n`);
-    }
-
-    const propData = parsePropertyBlock(block, taxLine, debug);
-
-    if (taxMap.has(taxLine)) {
-      taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
-    } else {
-      taxMap.set(taxLine, propData);
-    }
+    const { tax_id, text } = blocks[i];
 
     if (debug && res) {
-      res.write(`Processed parcel: ${taxLine}\n`);
+      res.write(`\n----- FULL BLOCK FOR ${tax_id} -----\n`);
+      res.write(text + "\n");
+      res.write(`----- END BLOCK FOR ${tax_id} -----\n\n`);
+    }
+
+    const parsed = parsePropertyBlock(text, tax_id, debug);
+    results.push(parsed);
+
+    if (debug && res) {
+      res.write(`Processed parcel: ${tax_id}\n`);
     }
   }
 
-  const result = Array.from(taxMap.values());
-  fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
-
-  return result;
+  fs.writeFileSync(outputPath, JSON.stringify(results, null, 2));
+  return results;
 }
 
 // -------------------- Routes --------------------
@@ -191,7 +194,7 @@ app.get("/parcel/:tax_id", (req, res) => {
   res.json(parcel);
 });
 
-// Download existing JSON
+// Download JSON
 app.get("/parcels/download", (req, res) => {
   if (!fs.existsSync(outputPath)) {
     return res.status(404).send("Run extraction first");
