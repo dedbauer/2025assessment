@@ -26,33 +26,40 @@ async function ensurePDF() {
 function parsePropertyBlock(blockText, taxLine, debug = false) {
   const prop = { tax_id: taxLine };
 
-  const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
+  const cleanText = blockText.replace(/\s+/g, " ");
 
-  // Helper: find value BELOW a label
-  function getValueBelow(label) {
+  function extractValue(label) {
+    // Match: LABEL ... number (same line)
+    const regexInline = new RegExp(label + "[^\\d]*([\\d,]+)", "i");
+    const matchInline = cleanText.match(regexInline);
+
+    if (matchInline) {
+      return matchInline[1].replace(/,/g, "");
+    }
+
+    // Fallback: label on one line, number on next
+    const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
     const idx = lines.findIndex(l =>
       l.toUpperCase().includes(label)
     );
 
     if (idx >= 0 && idx + 1 < lines.length) {
-      const nextLine = lines[idx + 1];
-      const match = nextLine.match(/([\d,]+)/);
-      if (match) return match[1].replace(/,/g, "");
+      const matchNext = lines[idx + 1].match(/([\d,]+)/);
+      if (matchNext) return matchNext[1].replace(/,/g, "");
     }
 
+    if (debug) console.log(`DEBUG: Failed to find ${label} for ${taxLine}`);
     return undefined;
   }
 
-  // ✅ FULL MARKET VALUE
-  prop.full_market_value = getValueBelow("FULL MARKET VALUE");
+  // ✅ Extract values robustly
+  prop.full_market_value = extractValue("FULL MARKET VALUE");
+  prop.county_taxable = extractValue("COUNTY TAXABLE VALUE");
+  prop.school_taxable = extractValue("SCHOOL TAXABLE VALUE");
 
-  // ✅ COUNTY TAXABLE
-  prop.county_taxable = getValueBelow("COUNTY TAXABLE VALUE");
+  // ✅ LAND VALUE (same logic, but normalize spacing first)
+  const lines = blockText.split("\n").map(l => l.trim()).filter(Boolean);
 
-  // ✅ SCHOOL TAXABLE
-  prop.school_taxable = getValueBelow("SCHOOL TAXABLE VALUE");
-
-  // ✅ LAND VALUE (your rule)
   let assessmentIndex = lines.findIndex(l =>
     l.toUpperCase().includes("ASSESSMENT")
   );
@@ -64,18 +71,16 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
     if (numbers && numbers.length >= 2) {
       prop.land_assessed_value = numbers[1].replace(/,/g, "");
     } else if (debug) {
-      console.log("LAND FAIL:", taxLine, targetLine);
+      console.log(`DEBUG: LAND FAIL ${taxLine} -> ${targetLine}`);
     }
   }
 
-  // Debug output
   if (debug) {
     console.log("PARSED:", prop);
   }
 
   return prop;
-}
-// -------------------- Extraction --------------------
+}// -------------------- Extraction --------------------
 async function extractFullPDF(res = null, maxEntries = null, debug = false) {
   await ensurePDF();
 
