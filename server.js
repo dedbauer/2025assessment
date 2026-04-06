@@ -95,37 +95,44 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 
   const taxMap = new Map();
 
-  for (let block of parts) {
-    if (maxEntries && taxMap.size >= maxEntries) break;
+for (let block of parts) {
+  if (maxEntries && taxMap.size >= maxEntries) break;
 
-    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
+  const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
 
-    // ✅ FIXED TAX ID EXTRACTION
-    const taxLine = lines.find(l =>
-      /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
-    );
+  // Find tax ID anywhere in the block
+  const taxLine = lines.find(l =>
+    /^\d{1,2}\.\d{2}-\d-\d{1,2}/.test(l)
+  );
 
-    if (!taxLine) {
-      if (debug && res) {
-        res.write(`DEBUG: No tax_id found in block\n`);
-      }
-      continue;
-    }
-
-    const propData = parsePropertyBlock(block, taxLine, debug);
-
-    if (taxMap.has(taxLine)) {
-      taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
-    } else {
-      taxMap.set(taxLine, propData);
-    }
-
+  if (!taxLine) {
     if (debug && res) {
-      res.write(`Processed: ${taxLine}\n`);
+      res.write(`DEBUG: No tax_id found in block\n`);
+      res.write("----- FULL BLOCK START -----\n");
+      res.write(block + "\n");
+      res.write("------ FULL BLOCK END ------\n\n");
     }
+    continue;
   }
 
-  const result = Array.from(taxMap.values());
+  if (debug && res) {
+    res.write(`----- FULL BLOCK FOR ${taxLine} -----\n`);
+    res.write(block + "\n");
+    res.write(`----- END BLOCK FOR ${taxLine} -----\n\n`);
+  }
+
+  const propData = parsePropertyBlock(block, taxLine, debug);
+
+  if (taxMap.has(taxLine)) {
+    taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
+  } else {
+    taxMap.set(taxLine, propData);
+  }
+
+  if (debug && res) {
+    res.write(`Processed parcel: ${taxLine}\n\n`);
+  }
+}  const result = Array.from(taxMap.values());
   fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
 
   return result;
