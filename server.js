@@ -64,47 +64,63 @@ async function extractFullPDF(res = null, maxEntries = null, debug = false) {
 
   const dataBuffer = fs.readFileSync(pdfPath);
   const data = await pdf(dataBuffer);
-  const fullText = data.text;
-
-  // Split using ***** boundaries
-  const parts = fullText
-    .split(/[\*]{5,}/)
-    .map(p => p.trim())
-    .filter(Boolean);
+  const lines = data.text.split("\n").map(l => l.trim());
 
   const taxMap = new Map();
 
-for (let block of parts) {
-  if (maxEntries && taxMap.size >= maxEntries) break;
+  let currentBlock = [];
+  let currentTaxId = null;
 
-    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
+  for (let line of lines) {
+    // Detect tax ID line (*****  TAXID  *****)
+    const match = line.match(/^\*+\s*([^*]+?)\s*\*+/);
 
-    // Find the line that contains stars + tax id
-    const starLine = lines.find(l => /^\*{5,}/.test(l));
+    if (match) {
+      // Save previous block before starting new one
+      if (currentTaxId && currentBlock.length > 0) {
+        const blockText = currentBlock.join("\n");
 
-    let taxLine = null;
+        const propData = parsePropertyBlock(blockText, currentTaxId, debug);
 
-    if (starLine) {
-      // Extract text between first ***** and next *
-      const match = starLine.match(/^\*+\s*([^*]+?)\s*\*/);
-      if (match) {
-        taxLine = match[1].trim();
+        if (taxMap.has(currentTaxId)) {
+          taxMap.set(currentTaxId, { ...taxMap.get(currentTaxId), ...propData });
+        } else {
+          taxMap.set(currentTaxId, propData);
+        }
+
+        if (res && debug) {
+          res.write(`Processed parcel: Tax ID ${currentTaxId}\n`);
+        }
+
+        if (maxEntries && taxMap.size >= maxEntries) break;
       }
+
+      // Start new block
+      currentTaxId = match[1].trim();
+      currentBlock = [];
+      continue;
     }
-    if (taxLine) {
-      const propData = parsePropertyBlock(block, taxLine, debug);
 
-      if (taxMap.has(taxLine)) {
-        taxMap.set(taxLine, { ...taxMap.get(taxLine), ...propData });
-      } else {
-        taxMap.set(taxLine, propData);
-      }
+    // Accumulate lines inside block
+    if (currentTaxId) {
+      currentBlock.push(line);
+    }
+  }
 
-      if (res && debug) {
-        res.write(`Processed parcel: Tax ID ${taxLine}\n`);
-      }
-    } else if (debug && res) {
-      res.write(`DEBUG: Missing Tax ID in block\n`);
+  // Process last block
+  if (currentTaxId && currentBlock.length > 0) {
+    const blockText = currentBlock.join("\n");
+
+    const propData = parsePropertyBlock(blockText, currentTaxId, debug);
+
+    if (taxMap.has(currentTaxId)) {
+      taxMap.set(currentTaxId, { ...taxMap.get(currentTaxId), ...propData });
+    } else {
+      taxMap.set(currentTaxId, propData);
+    }
+
+    if (res && debug) {
+      res.write(`Processed parcel: Tax ID ${currentTaxId}\n`);
     }
   }
 
@@ -113,7 +129,6 @@ for (let block of parts) {
 
   return extractedArray;
 }
-
 // -------------------- Dataset Manager --------------------
 async function getDataset({ force = false, limit = null, debug = false, res = null } = {}) {
   if (!force && fs.existsSync(outputPath)) {
