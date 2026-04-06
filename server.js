@@ -58,8 +58,8 @@ function parsePropertyBlock(blockText, taxLine, debug = false) {
     l.toUpperCase().includes("ASSESSMENT")
   );
 
-  if (assessmentIndex >= 0 && assessmentIndex + 6 < lines.length) {
-    const targetLine = lines[assessmentIndex + 6];
+  if (assessmentIndex >= 0 && assessmentIndex + 3 < lines.length) {
+    const targetLine = lines[assessmentIndex + 3];
     const numbers = targetLine.match(/([\d,]+)/g);
 
     if (numbers && numbers.length >= 2) {
